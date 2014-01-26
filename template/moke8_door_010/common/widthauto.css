@@ -1,0 +1,11 @@
+/* ----------------------------------
+Self-adaption Width CSS file for Discuz! X
+(C) Comsenz Inc.
+http://www.xinyunkeji.com
+Created & Modified by Pony.
+---------------------------------- */
+
+#nv, #mu { border-left:0px solid {COMMONBORDER}; border-right: 0px solid {COMMONBORDER}; }
+
+.wp { width: 98%; }
+	#hd .wp, #wp { min-width: 960px; }
