@@ -1,6 +1,6 @@
-﻿<?php echo '【魔客吧】www.moke8.com';exit;?>
+<?php if(!defined('IN_DISCUZ')) exit('Access Denied'); ?>
 <style type="text/css">
-.box_os .os_x, .box_os .osqq, .ico_os, .ico_gt, .ico_pp, .osqq .qq{ background:url("template/moke8_door_010/images/os20130523.gif") no-repeat;}
+.box_os .os_x, .box_os .osqq, .ico_os, .ico_gt, .ico_pp, .osqq .qq{ background:url("template/jianshen/images/os20130523.gif") no-repeat;}
 .box_os{ height:auto; overflow:hidden; width:131px; position:fixed; right:0; top:174px; _position:absolute; z-index:9999;display:none;}
 .box_os .os_x{ background-color:#f7f7f7; background-position:2px 2px; width:18px; height:20px; float:right; display:inline; cursor:pointer;}
 .box_os .osqq{ width:129px; border:1px solid #D1D1D1; background-color:#fff; background-position:0 -120px; clear:both; padding:37px 0 8px 0; text-align:center;}
@@ -19,16 +19,16 @@
 .onlineService .ico_pp{ background-position:right -60px; border:1px solid #81b140; cursor:pointer; width:39px; height:37px; float:right; margin:0 0 1px 0; clear:both;}
 .box_os .osqq p span a{color:#557917;}
 </style>
-<script type="text/javascript" src="template/moke8_door_010/images/onlineService.js" ></script>
+<script src="template/jianshen/images/onlineService.js" type="text/javascript" ></script>
 <div class="box_os" style="display: none;">
-	<div class="os_x"></div>
+<div class="os_x"></div>
     <div class="osqq">
     <p><em>(工作日：9:30-18:30)</em></p>
     	<p><strong>在线QQ</strong></p>
         <a class="qq" id="ico_onlineqq" href="#"></a>
         <p><strong>客服电话</strong><span>028-88888888</span><span>028-88888888</span></p>
-        <p><strong>购买模板</strong><span>QQ：272922238</span></p>
-        <p><strong>微博</strong><span><a href="http://www.moke8.com" target="_blank">@魔客吧</a></span></p>
+        <p><strong>作者</strong><span>QQ：4296411</span></p>
+        <p><strong>微博</strong><span><a href="http://www.oiahoon.com" target="_blank">@oiahoon</a></span></p>
     </div>
     <div class="acbox">
     	<a title="" href="javascript:void(0);" onclick="FeedbackUtil.feed('#');" class="ico_pp" target="_self"></a>
@@ -37,7 +37,7 @@
 </div>
 
 <div class="onlineService" style="display: block;">
-	<p class="ico_os"></p>
+<p class="ico_os"></p>
     <a title="" href="javascript:void(0);" onclick="FeedbackUtil.feed('#');" class="ico_pp" target="_self" style="width: 39px;"></a>
     <a title="" target="_self" href="javascript:void(0);" class="ico_gt" style="width: 39px;"></a>
 </div>

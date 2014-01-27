@@ -1,4 +1,4 @@
-<?php echo '¡¾Ä§¿Í°É¡¿www.moke8.com';exit;?>
+<?php echo 'Oiahoon www.oiahoon.com';exit;?>
 <!--{subtemplate common/header_common}-->
 	<meta name="application-name" content="$_G['setting']['bbname']" />
 	<meta name="msapplication-tooltip" content="$_G['setting']['bbname']" />
@@ -27,10 +27,10 @@
 	<!--{if $_GET['diy'] == 'yes' && check_diy_perm($topic)}-->
 	<link rel="stylesheet" type="text/css" id="diy_common" href="data/cache/style_{STYLEID}_css_diy.css?{VERHASH}" />
 	<!--{/if}-->
- <script type="text/javascript" src="template/moke8_door_010/images/jquery.min.js" ></script>
+ <script type="text/javascript" src="template/jianshen/jquery.min.js" ></script>
 <script type="text/javascript">
   xinyunkeji = jQuery.noConflict();
-//ÒÔºójqueryÖĞµÄ$¶¼ÓÃxinyunkeji´úÌæ¼´¿É¡£
+//ä»¥åjqueryä¸­çš„$éƒ½ç”¨ Oiahoon ä»£æ›¿å³å¯ã€‚
 xinyunkeji(function(){});
 </script>
 <SCRIPT language=javascript>
@@ -39,7 +39,7 @@ window.onerror=function(){return true;}
 // -->
 </SCRIPT> 
  <!--[if IE 6]>
-<script src="template/moke8_door_010/images/iepng.js" type="text/javascript"></script> 
+<script src="template/jianshen/images/iepng.js" type="text/javascript"></script> 
 <script type="text/javascript">
    EvPNG.fix('div, ul, img, li, input');  
 </script>

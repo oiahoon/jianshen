@@ -7,7 +7,7 @@ var indexcourse2 = {
 	curr:0,
 	load:function()
 	{
-		xinyunkeji.getScript('template/moke8_door_010/images/api.js');
+		xinyunkeji.getScript('template/jianshen/images/api.js');
 	},
 	date_conv:function(d)
 	{

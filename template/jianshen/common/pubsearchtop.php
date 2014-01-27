@@ -1,4 +1,4 @@
-<?php echo '¡¾Ä§¿Í°É¡¿www.moke8.com';exit;?>
+<?php echo 'Oiahoon www.oiahoon.com';exit;?>
 <!--{if $_G['setting']['search']}-->
 	<!--{eval $slist = array();}-->
 	<!--{if $_G['fid'] && $_G['forum']['status'] != 3 && $mod != 'group'}--><!--{block slist[forumfid]}--><li><a href="javascript:;" rel="curforum" fid="$_G[fid]" >{lang search_this_forum}</a></li><!--{/block}--><!--{/if}-->

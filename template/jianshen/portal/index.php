@@ -1,8 +1,8 @@
-﻿<?php echo '【魔客吧】www.moke8.com';exit;?>
+<?php echo 'Oiahoon www.oiahoon.com';exit;?>
 <!--{template common/header}-->
-<script type="text/javascript" src="template/moke8_door_010/images/jquery.slides.min.js" ></script>
-<script type="text/javascript" src="template/moke8_door_010/images/xinyunkeji.js" ></script>
-<script type="text/javascript" src="template/moke8_door_010/images/xinyun_gundong.js" ></script>
+<script type="text/javascript" src="template/jianshen/images/jquery.slides.min.js" ></script>
+<script type="text/javascript" src="template/jianshen/images/xinyunkeji.js" ></script>
+<script type="text/javascript" src="template/jianshen/images/xinyun_gundong.js" ></script>
 <!--{if $_GET['diy'] == 'yes' && check_diy_perm($topic)}-->
 <style>
 .hotmain_l .slides_container, .hotmain_r .slides_container li{ width:630px;}
@@ -21,7 +21,7 @@
 	</div>
     	<!-- 轮播右侧 S 1421--><div class="hotmain_r">
 <div class="hotmain_r_bg"></div>
-<img border="0" style="" class="jrymhy" usemap="#Map" alt="" src="template/moke8_door_010/images/jrymhy.gif">
+<img border="0" style="" class="jrymhy" usemap="#Map" alt="" src="template/jianshen/images/jrymhy.gif">
 <map id="Map" name="Map"><area target="_self" href="member.php?mod=register" coords="67,280,239,323" shape="rect"></map>
 
 </div><!-- 轮播右侧 e -->
@@ -35,7 +35,7 @@
 <div class="wp">
 <div id="zdkc" class="column columnbug">
     <div class="topbg2"></div>
-    <h2><span><a href="http://www.moke8.com/" target="_blank">魔客吧</a> 建站资源共享学习平台！</span><em class="h2l"></em></h2>
+    <h2><span><a href="http://www.oiahoon.com/" target="_blank">oiahoon</a> 健身平台！</span><em class="h2l"></em></h2>
     <div class="column_c">
    
 <ul id="course_zdkc" class="zdkclist">

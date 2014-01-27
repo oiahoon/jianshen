@@ -1,4 +1,4 @@
-<?php echo '¡¾Ä§¿Í°É¡¿www.moke8.com';exit;?>
+<?php echo 'Oiahoon www.oiahoon.com';exit;?>
  <!--{if $_G['uid']}-->
 					
 						
