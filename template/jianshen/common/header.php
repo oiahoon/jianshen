@@ -27,7 +27,7 @@
 	<!--{if $_GET['diy'] == 'yes' && check_diy_perm($topic)}-->
 	<link rel="stylesheet" type="text/css" id="diy_common" href="data/cache/style_{STYLEID}_css_diy.css?{VERHASH}" />
 	<!--{/if}-->
- <script type="text/javascript" src="template/jianshen/jquery.min.js" ></script>
+ <script type="text/javascript" src="template/jianshen/images/jquery.min.js" ></script>
 <script type="text/javascript">
   xinyunkeji = jQuery.noConflict();
 //以后jquery中的$都用 Oiahoon 代替即可。
