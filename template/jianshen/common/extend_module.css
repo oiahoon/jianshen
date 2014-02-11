@@ -295,16 +295,20 @@ background: -webkit-gradient(linear, 0 0, 0 100%, from(rgba(0,0,0,0.7)), to(rgba
 .columnbug{ clear:both; padding-top:15px; float:left; width:960px;}
 .topbg2{ width:1200px; height:25px; background-position:0 -105px;  margin-left:-125px;  margin-right:-125px; }
 
-#zdkc .topbg2{ width:815px; height:25px; background-position:0 -152px; position:relative; margin-left:-125px;}
+.left_block{ width:690px; _overflow:hidden; float: left; clear:none;}
+.left_block .topbg2{ width:815px; height:25px; background-position:0 -152px; position:relative; margin-left:-125px;}
+.left_block span.menu_r{float: right;text-align: right;font-size: 13px;margin-top: -42px;}
+.left_block span.menu_r a{padding: 0 10px 0 5px;}
+.left_block h2{ width:225px;}
 
 .column h2{ height:59px; margin-top:-9px; position:relative; }
 .column h2 a{ font-size:18px;}
-.column h2 span{ font-size:14px; color:#666666;display:block; width:650px; float:left; height:32px; margin-top:27px; background:url({STYLEIMGDIR}/home_hy_bg.gif) no-repeat scroll 0 -39px transparent}
+.column h2 span{ font-size:14px; color:#666666;display:block;float:left; height:32px; margin-top:27px; background:url({STYLEIMGDIR}/home_hy_bg.gif) no-repeat scroll 0 -39px transparent}
 .column h2 span a{ font-size:24px; text-decoration:none; line-height:25px; margin-left:25px; margin-right:5px; }
 .column h2 .cy_t{width:180px; height:32px; background-position:0 -359px; float:left; margin-top:27px;}
 .column h2 .zc_t{width:180px; height:32px; background-position:0 -321px; float:left; margin-top:27px;}
 .column h2 .sh_t{width:187px; height:32px; background-position:0 -352px; float:left; margin-top:27px;}
-#zdkc h2{ width:625px;}
+
 
 
 #cy h2,#zc h2{ width:900px;}
@@ -399,7 +403,7 @@ background: -webkit-gradient(linear, 0 0, 0 100%, from(rgba(0,0,0,0.7)), to(rgba
 .lk .x li{  width:auto;}
 
 #home div,#home ul,#home li{ _zoom:1;}
-#zdkc{ width:690px; _overflow:hidden; clear:none;}
+
 
 .xydcolumn{ width:254px; height:483px; overflow:hidden; float:left; background-position:0 -800px; margin-top:35px;}
 .xydcolumn ul{ margin-top:72px; padding-left:22px; overflow:hidden;}
@@ -466,8 +470,9 @@ background: -webkit-gradient(linear, 0 0, 0 100%, from(rgba(0,0,0,0.7)), to(rgba
 #course_xyd li .study{ height:26px; line-height:26px; overflow:hidden; padding-left:30px; color:#666; margin-top:16px; }
 #course_xyd li .study a{ display:inline-block; margin-right:23px;width:56px; height:25px; text-indent:-9999px; float:right;}
 
-.xkll{ width:252px; float:right;}
-.xkll h2{ padding:7px 0 0 0px;height:13px;  font-size:12px; color:#999; font-weight:normal; margin-top:39px; line-height:13px;}
+.right_block{ width:252px; float:right;}
+.right_block h2{ padding:7px 0 0 0px;height:13px;  font-size:12px; color:#999; font-weight:normal; margin-top:39px; line-height:13px;}
+
 .newvideolist{ margin-top:30px; position:relative;width:252px;}
 .newvideolist a.up{ width:17px; height:16px; line-height:0; font-size:0; overflow:hidden; background-position:-132px -53px; position:absolute; right:21px; top:5px; z-index:599;}
 .newvideolist a.up.on:hover{ background-position:-174px -53px;}
@@ -741,4 +746,5 @@ background: -webkit-gradient(linear, 0 0, 0 100%, from(rgba(0,0,0,0.7)), to(rgba
 	padding:0px;
 }
 .ad .plc{ background:none repeat scroll 0 0 #F2F2F2;}
+
 /** end **/

@@ -63,12 +63,8 @@
     <div class="topbg2"></div>
     <h2>
       <!--[diy=jianshen_door_010_106]--><div id="jianshen_door_010_106" class="area"></div><!--[/diy]-->
-      
       <em class="h2l"></em>
     </h2>
-    <span class="menu_r">
-      <a href="#">性感</a><a href="#">蓝天</a><a href="#">草原</a><a href="#">户外</a>
-    </span>
     <!-- 列表 -->
     <div class="column_c">
       <!--[diy=jianshen_door_010_103]--><div id="jianshen_door_010_103" class="area"></div><!--[/diy]-->
@@ -333,8 +329,8 @@
 <a class="hd_video" target="_blank" href="#">精美图片</a><em class="h2l"></em>
 </h2>
 <span class="menu_r">
-<a href="#">性感</a><a href="#">清纯</a><a href="#">可爱</a>|
-<a href="#">蓝天</a><a href="#">草原</a><a href="#">户外</a>|
+<a href="http://www.oiahoon.com/"><strong>网站模板</strong></a><a href="#">性感</a><a href="#">清纯</a><a href="#">可爱</a>|
+<a href="http://www.oiahoon.com/"><strong>网页模板</strong></a><a href="#">蓝天</a><a href="#">草原</a><a href="#">户外</a>|
 <a href="#"><strong>平面设计</strong></a><a href="#">作品</a><a href="#">欣赏</a><a href="#">创意</a></span>
 </div>
         <div class="sdbox_lr_big video_active clearfix">

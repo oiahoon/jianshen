@@ -1,4 +1,4 @@
-/* é€šç”¨åŒºåŸŸ */
+/* Í¨ÓÃÇøÓò */
 .block{ margin:0px;}
 .frame, .frame-tab, .temp {margin:0px !important;
 padding:0px !important;
@@ -49,7 +49,7 @@ body{ background:none repeat scroll 0 0 #f7f7f7;}
 
 
 
-/* ä¼šå‘˜ç™»å½• */
+/* »áÔ±µÇÂ¼ */
 .liveproduct{ margin-top:4px; margin-left:12px; float:right;}
 .liveproduct li{margin-left:0;border:#fff 1px solid;float:left;}
 .liveproduct .on{border:#009ad9 1px solid;box-shadow:2px 2px 4px #ccc;}
@@ -63,7 +63,7 @@ body{ background:none repeat scroll 0 0 #f7f7f7;}
 .liveproduct .ie9{background:url({STYLEIMGDIR}/ap.jpg) no-repeat;}
 .liveproduct .android{background:url({STYLEIMGDIR}/an.jpg) no-repeat;}
 
-/* æœç´¢*/
+/* ËÑË÷*/
 #scbar{ width:450px; float:right; margin:20px 0 0 70px; background:none repeat scroll 0 0 #FFFFFF; border:3px solid #e3e3e3; height:35px; line-height:35px;}
 .scbar_txt_td, .scbar_icon_td, .scbar_btn_td{ background:none;}
 #scbar_txt, .scbar_narrow #scbar_txt{ width:300px;}
@@ -74,7 +74,7 @@ body{ background:none repeat scroll 0 0 #f7f7f7;}
 *html .scbar_type_td{ display:none}
 *html #scbar_txt, .scbar_narrow #scbar_txt{ width:375px;}
 *html .hdc .p_pop{ margin-top:-200px; margin-left:-180px; z-index:10; padding-top:-50px; display:none;}
-/* å¯¼èˆª */
+/* µ¼º½ */
 #diy-tg_menu li a{ color:#333333}
 
 #hd{ background-color:#FFFFFF}
@@ -108,7 +108,7 @@ background-image:none;
 #nv li#mn_portal{border-left:0px solid #ccc;}
 #nv li a{ color: #FFFFFF;
     display: block;
-    font-family: "Hiragino Sans GB","WenQuanYi Micro Hei","å¾®è½¯é›…é»‘",Arial;
+    font-family: "Hiragino Sans GB","WenQuanYi Micro Hei","Î¢ÈíÑÅºÚ",Arial;
     font-size: 15px;
     font-weight: bold;
     height: 48px;
@@ -122,13 +122,13 @@ background-image:none;
 #qmenu{ background:none repeat scroll 0 0 #0086f8;line-height: 28px;text-align: center;width: 100px; margin:0px; height:28px; color:#FFFFFF; font-weight:normal; font-size:14px; padding-right:0px;border-radius:3px; margin:12px;}
 
 
-/* æŒ‰é’®  */
+/* °´Å¥  */
 .pgs #newspecial, .pgs #newspecialtmp { float: left; background: url({STYLEIMGDIR}/pn_post.png) no-repeat 0 0;  width: 100px; height: 35px;}
 #post_reply, #post_replytmp { float: left; background: url({STYLEIMGDIR}/pn_reply.png) no-repeat 0 0;  width: 70px; height: 35px;}
 #newspecial img, #newspecialtmp img, #post_reply img, #post_replytmp img { opacity: 0; filter: alpha(opacity=0); }
 #newspecial:active { background-position: 0 -35px; }
 
-/* åº•éƒ¨  */
+/* µ×²¿  */
 #mybottom{background-image: url({STYLEIMGDIR}/bottom-bg.gif);
     margin-top: 30px;
     padding-bottom: 20px;
