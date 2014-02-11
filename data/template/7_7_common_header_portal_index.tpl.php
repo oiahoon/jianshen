@@ -1,8 +1,8 @@
 <?php if(!defined('IN_DISCUZ')) exit('Access Denied'); 
 0
-|| checktplrefresh('./template/jianshen/common/header.htm', './template/default/common/header_common.htm', 1390837035, '7', './data/template/7_7_common_header_portal_index.tpl.php', './template/jianshen', 'common/header_portal_index')
-|| checktplrefresh('./template/jianshen/common/header.htm', './template/default/common/header_qmenu.htm', 1390837035, '7', './data/template/7_7_common_header_portal_index.tpl.php', './template/jianshen', 'common/header_portal_index')
-|| checktplrefresh('./template/jianshen/common/header.htm', './template/jianshen/common/pubsearchtop.htm', 1390837035, '7', './data/template/7_7_common_header_portal_index.tpl.php', './template/jianshen', 'common/header_portal_index')
+|| checktplrefresh('./template/jianshen/common/header.htm', './template/default/common/header_common.htm', 1391778595, '7', './data/template/7_7_common_header_portal_index.tpl.php', './template/jianshen', 'common/header_portal_index')
+|| checktplrefresh('./template/jianshen/common/header.htm', './template/default/common/header_qmenu.htm', 1391778595, '7', './data/template/7_7_common_header_portal_index.tpl.php', './template/jianshen', 'common/header_portal_index')
+|| checktplrefresh('./template/jianshen/common/header.htm', './template/jianshen/common/pubsearchtop.htm', 1391778595, '7', './data/template/7_7_common_header_portal_index.tpl.php', './template/jianshen', 'common/header_portal_index')
 ;?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -44,9 +44,9 @@
 <?php } ?>
  <script src="template/jianshen/images/jquery.min.js" type="text/javascript" ></script>
 <script type="text/javascript">
-  xinyunkeji = jQuery.noConflict();
+  oiahoon = jQuery.noConflict();
 //以后jquery中的<?php echo $都用;?> Oiahoon 代替即可。
-xinyunkeji(function(){});
+oiahoon(function(){});
 </script>
 <SCRIPT language=javascript>
 <!--

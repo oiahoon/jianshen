@@ -62,7 +62,7 @@ GMT<?php echo $_G['timenow']['offset'];?>, <?php echo $_G['timenow']['time'];?>
 </p>
 
 <p>Powered by <strong><a href="http://www.discuz.net" target="_blank">Discuz!</a></strong> <em><?php echo $_G['setting']['version'];?></em><?php if(!empty($_G['setting']['boardlicensed'])) { ?> <a href="http://license.comsenz.com/?pid=1&amp;host=<?php echo $_SERVER['HTTP_HOST'];?>" target="_blank">Licensed</a><?php } ?></p>
-<p class="xs0">&copy; 2001-2013 <a href="http://www.comsenz.com" target="_blank">Comsenz Inc.</a> <a href="http://www.moke8.com/" target="_blank">moke8</a></p>
+<p class="xs0">&copy; 2001-2013 <a href="http://www.comsenz.com" target="_blank">Comsenz Inc.</a> <a href="http://www.oiahoon.com/" target="_blank">oiahoon</a></p>
 </div><?php updatesession();?><?php if($_G['uid'] && $_G['group']['allowinvisible']) { ?>
 <script type="text/javascript">
 var invisiblestatus = '<?php if($_G['session']['invisible']) { ?>隐身<?php } else { ?>在线<?php } ?>';

@@ -82,7 +82,7 @@
 			</p>
 		
 			<p>Powered by <strong><a href="http://www.discuz.net" target="_blank">Discuz!</a></strong> <em>$_G['setting']['version']</em><!--{if !empty($_G['setting']['boardlicensed'])}--> <a href="http://license.comsenz.com/?pid=1&host=$_SERVER[HTTP_HOST]" target="_blank">Licensed</a><!--{/if}--></p>
-			<p class="xs0">&copy; 2001-2013 <a href="http://www.comsenz.com" target="_blank">Comsenz Inc.</a> <a href="http://www.moke8.com/" target="_blank">moke8</a></p>
+			<p class="xs0">&copy; 2001-2013 <a href="http://www.comsenz.com" target="_blank">Comsenz Inc.</a> <a href="http://www.oiahoon.com/" target="_blank">oiahoon</a></p>
 		</div>
 		<!--{eval updatesession();}-->
 		<!--{if $_G['uid'] && $_G['group']['allowinvisible']}-->

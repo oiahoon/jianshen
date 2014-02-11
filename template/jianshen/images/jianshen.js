@@ -1,34 +1,34 @@
 
-xinyunkeji(function(){
+oiahoon(function(){
 	
     //我的课程
-	xinyunkeji('.progress').live("mouseover",function(){		
-		var oLeft = 126+xinyunkeji(this).find('.progress_c').width()-22;
-		xinyunkeji(this).next().show();	
-		xinyunkeji(this).next().css('left',oLeft);	
+	oiahoon('.progress').live("mouseover",function(){		
+		var oLeft = 126+oiahoon(this).find('.progress_c').width()-22;
+		oiahoon(this).next().show();	
+		oiahoon(this).next().css('left',oLeft);	
 	});
-    xinyunkeji('.progress').live("mouseout",function(){		
-		xinyunkeji(this).next().hide();		
+    oiahoon('.progress').live("mouseout",function(){		
+		oiahoon(this).next().hide();		
 	});
 	
 	//最新更新、排行
-	xinyunkeji('.column_list_t li').mouseover(function(){
-	  var index=xinyunkeji(".column_list_t li").index(this); 
-	  xinyunkeji(".column_list_t li").removeClass("on");
-	  xinyunkeji(this).addClass("on");
-	  xinyunkeji(".column_list_c ul").hide();
-	  xinyunkeji(".column_list_c ul").eq(index).show();
+	oiahoon('.column_list_t li').mouseover(function(){
+	  var index=oiahoon(".column_list_t li").index(this); 
+	  oiahoon(".column_list_t li").removeClass("on");
+	  oiahoon(this).addClass("on");
+	  oiahoon(".column_list_c ul").hide();
+	  oiahoon(".column_list_c ul").eq(index).show();
     });
 	
 	//讲师团队	
-	xinyunkeji('.jstd li').hover(function(){
-		var aWrap = xinyunkeji('.jstd ul');
-		var aBox = xinyunkeji(this).find('.jsinfo'); 
+	oiahoon('.jstd li').hover(function(){
+		var aWrap = oiahoon('.jstd ul');
+		var aBox = oiahoon(this).find('.jsinfo'); 
 		
 		var wrapX = aWrap.offset().left + aWrap.width() + 35;
 		var wrapY = aWrap.offset().top + aWrap.height() + 18;		
-		var divX = xinyunkeji(this).offset().left + xinyunkeji(this).width() + 78; 
-		var divY = xinyunkeji(this).offset().top + xinyunkeji(this).width() + 127; 
+		var divX = oiahoon(this).offset().left + oiahoon(this).width() + 78; 
+		var divY = oiahoon(this).offset().top + oiahoon(this).width() + 127; 
 		
 		//alert(divX); 
 		
@@ -39,25 +39,25 @@ xinyunkeji(function(){
 			aBox.css({ top: ( wrapY - divY - 15 ) + 'px'});
 		};
 		
-		xinyunkeji(this).addClass('active');
-		xinyunkeji(this).find('.jsinfo').delay(250).fadeIn(200);
+		oiahoon(this).addClass('active');
+		oiahoon(this).find('.jsinfo').delay(250).fadeIn(200);
 	},function(){
-		xinyunkeji(this).removeClass('active');
-		xinyunkeji(this).find('.jsinfo').stop(true,true).hide(100);
+		oiahoon(this).removeClass('active');
+		oiahoon(this).find('.jsinfo').stop(true,true).hide(100);
 	});
 	
 	
 	//轮播图 
 	var idx = 1;
-	var obj_li = xinyunkeji('#lunbo li');
-	var obj_hotman = xinyunkeji('.hotmain');
+	var obj_li = oiahoon('#lunbo li');
+	var obj_hotman = oiahoon('.hotmain');
 	var _bg = obj_li.eq(0).attr('bg');
 	obj_hotman.css('background-color',_bg);
 	
-	xinyunkeji('#slides').slides({
+	oiahoon('#slides').slides({
 		generateNextPrev: true,
 		preload: true,
-		preloadImage: 'http://i3.umivi.net/u/2012/index/images/loading.gif',
+		preloadImage: 'loading.gif',
 		effect:'fade',
 		crossfade: true,
 		play: 4000,
@@ -73,26 +73,26 @@ xinyunkeji(function(){
 			idx=current;
 		}
 	});
-	xinyunkeji("#slides").hover(function(){
+	oiahoon("#slides").hover(function(){
 		
-		xinyunkeji(".hotmain_l .next,.hotmain_l .prev").show();
+		oiahoon(".hotmain_l .next,.hotmain_l .prev").show();
 		},function(){
 			
-		xinyunkeji(".hotmain_l .next,.hotmain_l .prev").hide();	
+		oiahoon(".hotmain_l .next,.hotmain_l .prev").hide();	
 	});
 	
 	
 	//视频滚动
-	xinyunkeji('#videoplay').slides({
+	oiahoon('#videoplay').slides({
 		preload: true,
-		preloadImage: 'http://i3.umivi.net/u/2012/index/images/loading.gif',
+		preloadImage: 'loading.gif',
 		play: 5000,
 		pause: 2500,
 		hoverPause: true,
 		pagination: false,
 		generatePagination: false,
 		animationComplete: function(current){
-			xinyunkeji('.video_group').animate({
+			oiahoon('.video_group').animate({
 				bottom:0
 			},200);
 		}
@@ -100,17 +100,17 @@ xinyunkeji(function(){
 	
 	
 	//热门检索关键字
-	xinyunkeji('.searchBox_l div .text').focus(function(){ 
-		xinyunkeji(this).addClass('gray3');
-		var txtValue = xinyunkeji(this).val(); 
+	oiahoon('.searchBox_l div .text').focus(function(){ 
+		oiahoon(this).addClass('gray3');
+		var txtValue = oiahoon(this).val(); 
 		if(txtValue == this.defaultValue){ 
-			xinyunkeji(this).val(""); 
+			oiahoon(this).val(""); 
 		} 
 	}); 	 
-	xinyunkeji(".searchBox_l div .text").blur(function(){ 
-		xinyunkeji(this).removeClass('gray3'); 
-		if(xinyunkeji(this).val()==''){
-			xinyunkeji(this).val(this.defaultValue);  
+	oiahoon(".searchBox_l div .text").blur(function(){ 
+		oiahoon(this).removeClass('gray3'); 
+		if(oiahoon(this).val()==''){
+			oiahoon(this).val(this.defaultValue);  
 		} 
 	}); 
 		
@@ -119,8 +119,8 @@ xinyunkeji(function(){
 
 function get_xyd() //课程许愿单
 {
-	xinyunkeji.getJSON('http://api.v.umiwi.com/api5/coursewish/?jsonp=?',function(r){
-		var xyd_obj =  xinyunkeji('#course_xyd');
+	oiahoon.getJSON('http://api.v.umiwi.com/api5/coursewish/?jsonp=?',function(r){
+		var xyd_obj =  oiahoon('#course_xyd');
 		var total = r.length;
 		var htmlxyd = '';
 

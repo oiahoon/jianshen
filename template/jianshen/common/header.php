@@ -29,9 +29,9 @@
 	<!--{/if}-->
  <script type="text/javascript" src="template/jianshen/images/jquery.min.js" ></script>
 <script type="text/javascript">
-  xinyunkeji = jQuery.noConflict();
+  oiahoon = jQuery.noConflict();
 //以后jquery中的$都用 Oiahoon 代替即可。
-xinyunkeji(function(){});
+oiahoon(function(){});
 </script>
 <SCRIPT language=javascript>
 <!--

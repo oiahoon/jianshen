@@ -3,11 +3,11 @@
 
 */
 var indexcourse2 = {
-	newvideo_list:xinyunkeji('.newvideolist'),
+	newvideo_list:oiahoon('.newvideolist'),
 	curr:0,
 	load:function()
 	{
-		xinyunkeji.getScript('template/jianshen/images/api.js');
+		oiahoon.getScript('template/jianshen/images/api.js');
 	},
 	date_conv:function(d)
 	{
@@ -106,8 +106,8 @@ var indexcourse2 = {
 	},
 	init:function()
 	{
-		var gl = xinyunkeji('#newvideoGoLeft');
-		var gr = xinyunkeji('#newvideoGoRight');
+		var gl = oiahoon('#newvideoGoLeft');
+		var gr = oiahoon('#newvideoGoRight');
 		var allHeight = new Array;
 		var days = this.days;
 		var d = new Date();
@@ -122,8 +122,8 @@ var indexcourse2 = {
 				init_i = i;
 			}
 		}
-		xinyunkeji('#newvideoGoLeft').click(function(){indexcourse2.goL()});
-		xinyunkeji('#newvideoGoRight').click(function(){indexcourse2.goR()});
+		oiahoon('#newvideoGoLeft').click(function(){indexcourse2.goL()});
+		oiahoon('#newvideoGoRight').click(function(){indexcourse2.goR()});
 		if(init_i==-1)
 		{
 			init_i = days.length;
@@ -155,39 +155,39 @@ var indexcourse2 = {
 	setPos:function(pos)
 	{
 
-		xinyunkeji('#newvideoGoLeft').remove('on');
-		xinyunkeji('#newvideoGoRight').remove('on');
+		oiahoon('#newvideoGoLeft').remove('on');
+		oiahoon('#newvideoGoRight').remove('on');
 		if(pos<=0)
 		{
 			pos = 0;
-			xinyunkeji('#newvideoGoLeft').removeClass('on');
-			xinyunkeji('#newvideoGoLeft').attr('title','');
+			oiahoon('#newvideoGoLeft').removeClass('on');
+			oiahoon('#newvideoGoLeft').attr('title','');
 		}else
 		{
-			xinyunkeji('#newvideoGoLeft').addClass('on');
-			xinyunkeji('#newvideoGoLeft').attr('title',this.date_conv_short(this.days[pos-1]));
+			oiahoon('#newvideoGoLeft').addClass('on');
+			oiahoon('#newvideoGoLeft').attr('title',this.date_conv_short(this.days[pos-1]));
 		}
 		if(pos>=this.days.length-1)
 		{
 			pos = this.days.length-1;
-			xinyunkeji('#newvideoGoRight').removeClass('on');
-			xinyunkeji('#newvideoGoRight').attr('title','');
+			oiahoon('#newvideoGoRight').removeClass('on');
+			oiahoon('#newvideoGoRight').attr('title','');
 		}else
 		{
-			xinyunkeji('#newvideoGoRight').addClass('on');
-			xinyunkeji('#newvideoGoRight').attr('title',this.date_conv_short(this.days[pos+1]));
+			oiahoon('#newvideoGoRight').addClass('on');
+			oiahoon('#newvideoGoRight').attr('title',this.date_conv_short(this.days[pos+1]));
 		}
 
 		this.curr = pos;
 		var w = 0;
 		for(i=0;i<pos;i++)
 		{
-			w-=xinyunkeji('#day'+this.days[i]).height()+170;
+			w-=oiahoon('#day'+this.days[i]).height()+170;
 		}
-		xinyunkeji('#stay_date').html(this.date_conv_short(this.days[i]));
+		oiahoon('#stay_date').html(this.date_conv_short(this.days[i]));
 
 
-		xinyunkeji('#newvideolist').animate({'margin-top':w});
+		oiahoon('#newvideolist').animate({'margin-top':w});
 	}
 
 
