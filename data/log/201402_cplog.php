@@ -553,8 +553,40 @@
 <?PHP exit;?>	1392117693	admin	1	127.0.0.1	tools	GET={operation=updatecache; }; POST={};
 <?PHP exit;?>	1392117694	admin	1	127.0.0.1	tools	GET={operation=updatecache; step=2; type={0=data; 1=tpl; }; confirmed=确定; }; POST={type={0=data; 1=tpl; }; confirmed=确定; };
 <?PHP exit;?>	1392117695	admin	1	127.0.0.1	tools	GET={operation=updatecache; step=3; type=data_tpl; }; POST={};
+<<<<<<< HEAD
 <?PHP exit;?>	1392132995	admin	1	::1		GET={}; POST={};
 <?PHP exit;?>	1392132996	admin	1	::1	index	GET={}; POST={};
 <?PHP exit;?>	1392133000	admin	1	::1	tools	GET={operation=updatecache; }; POST={};
 <?PHP exit;?>	1392133001	admin	1	::1	tools	GET={operation=updatecache; step=2; type={0=data; 1=tpl; }; confirmed=确定; }; POST={type={0=data; 1=tpl; }; confirmed=确定; };
 <?PHP exit;?>	1392133001	admin	1	::1	tools	GET={operation=updatecache; step=3; type=data_tpl; }; POST={};
+=======
+<?PHP exit;?>	1392196990	admin	1	127.0.0.1		GET={}; POST={};
+<?PHP exit;?>	1392196991	admin	1	127.0.0.1	index	GET={}; POST={};
+<?PHP exit;?>	1392196995	admin	1	127.0.0.1	forums	GET={}; POST={};
+<?PHP exit;?>	1392196997	admin	1	127.0.0.1	tools	GET={operation=updatecache; }; POST={};
+<?PHP exit;?>	1392196998	admin	1	127.0.0.1	founder	GET={operation=perm; }; POST={};
+<?PHP exit;?>	1392197001	admin	1	127.0.0.1	portalcategory	GET={}; POST={};
+<?PHP exit;?>	1392197004	admin	1	127.0.0.1	moderate	GET={}; POST={};
+<?PHP exit;?>	1392197007	admin	1	127.0.0.1	setting	GET={operation=basic; }; POST={};
+<?PHP exit;?>	1392197008	admin	1	127.0.0.1	forums	GET={}; POST={};
+<?PHP exit;?>	1392197009	admin	1	127.0.0.1	portalcategory	GET={}; POST={};
+<?PHP exit;?>	1392197011	admin	1	127.0.0.1	group	GET={operation=setting; }; POST={};
+<?PHP exit;?>	1392197013	admin	1	127.0.0.1	announce	GET={}; POST={};
+<?PHP exit;?>	1392197014	admin	1	127.0.0.1	adv	GET={}; POST={};
+<?PHP exit;?>	1392197015	admin	1	127.0.0.1	announce	GET={}; POST={};
+<?PHP exit;?>	1392197017	admin	1	127.0.0.1	announce	GET={operation=add; }; POST={};
+<?PHP exit;?>	1392197026	admin	1	127.0.0.1	announce	GET={operation=add; newsubject=&lt;span style=&quot;color: rgb(0, 153, 204); font-weight: bold; line-height: 21px; white-space: normal; background-color: rgb(255, 255, 255);&quot;&gt;站点公告1&lt;/span&gt;; newstarttime=2014-2-12 17:23; newendtime=2014-2-19 17:23; newmessage=站点公告站点公告站点公告站点公告站点公告; }; POST={newsubject=&lt;span style=&quot;color: rgb(0, 153, 204); font-weight: bold; line-height: 21px; white-space: normal; background-color: rgb(255, 255, 255);&quot;&gt;站点公告1&lt;/span&gt;; newstarttime=2014-2-12 17:23; newendtime=2014-2-19 17:23; newmessage=站点公告站点公告站点公告站点公告站点公告; };
+<?PHP exit;?>	1392197037	admin	1	127.0.0.1	announce	GET={}; POST={};
+<?PHP exit;?>	1392197037	admin	1	127.0.0.1	tools	GET={operation=updatecache; }; POST={};
+<?PHP exit;?>	1392197040	admin	1	127.0.0.1	founder	GET={operation=perm; }; POST={};
+<?PHP exit;?>	1392197042	admin	1	127.0.0.1	plugins	GET={}; POST={};
+<?PHP exit;?>	1392197042	admin	1	127.0.0.1	announce	GET={}; POST={};
+<?PHP exit;?>	1392197044	admin	1	127.0.0.1	adv	GET={}; POST={};
+<?PHP exit;?>	1392197044	admin	1	127.0.0.1	announce	GET={}; POST={};
+<?PHP exit;?>	1392197052	admin	1	127.0.0.1	announce	GET={operation=edit; announceid=1; }; POST={};
+<?PHP exit;?>	1392197060	admin	1	127.0.0.1	announce	GET={operation=edit; announceid=1; newsubject=站点公告1; starttimenew=2014-2-12 17:23; endtimenew=2014-2-19 17:23; messagenew=站点公告站点公告站点公告站点公告站点公告; editsubmit=提交; }; POST={newsubject=站点公告1; starttimenew=2014-2-12 17:23; endtimenew=2014-2-19 17:23; messagenew=站点公告站点公告站点公告站点公告站点公告; editsubmit=提交; };
+<?PHP exit;?>	1392197062	admin	1	127.0.0.1	tools	GET={operation=updatecache; }; POST={};
+<?PHP exit;?>	1392197063	admin	1	127.0.0.1	tools	GET={operation=updatecache; step=2; type={0=data; 1=tpl; }; confirmed=确定; }; POST={type={0=data; 1=tpl; }; confirmed=确定; };
+<?PHP exit;?>	1392197063	admin	1	127.0.0.1	tools	GET={operation=updatecache; step=3; type=data_tpl; }; POST={};
+<?PHP exit;?>	1392197083	admin	1	127.0.0.1	announce	GET={}; POST={};
+>>>>>>> 2268c97950a151ca48287d37707d8c2ee5ee0656

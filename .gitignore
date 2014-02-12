@@ -220,3 +220,7 @@ pip-log.txt
 */cache/*
 */cache/!index.html
 
+#discuz
+data/log/*.php
+data/template/*.php
+
