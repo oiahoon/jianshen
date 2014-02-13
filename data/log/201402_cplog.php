@@ -590,3 +590,8 @@
 <?PHP exit;?>	1392197063	admin	1	127.0.0.1	tools	GET={operation=updatecache; step=3; type=data_tpl; }; POST={};
 <?PHP exit;?>	1392197083	admin	1	127.0.0.1	announce	GET={}; POST={};
 >>>>>>> 2268c97950a151ca48287d37707d8c2ee5ee0656
+<?PHP exit;?>	1392211777	admin	1	::1		GET={}; POST={};
+<?PHP exit;?>	1392211778	admin	1	::1	index	GET={}; POST={};
+<?PHP exit;?>	1392211780	admin	1	::1	tools	GET={operation=updatecache; }; POST={};
+<?PHP exit;?>	1392211782	admin	1	::1	tools	GET={operation=updatecache; step=2; type={0=data; 1=tpl; }; confirmed=确定; }; POST={type={0=data; 1=tpl; }; confirmed=确定; };
+<?PHP exit;?>	1392211782	admin	1	::1	tools	GET={operation=updatecache; step=3; type=data_tpl; }; POST={};
