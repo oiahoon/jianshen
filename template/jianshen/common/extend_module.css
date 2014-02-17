@@ -1,4 +1,4 @@
-ï»¿/** portal::index **/
+/** portal::index **/
 .mar_0{ margin:0 !important;}
 .slides_control li{ list-style:none;}
 .hotmain_l .next,.hotmain_l .prev,.hotmain_r ul li,.why h2 span,.why .whylist1 li a i,.why .whylist1 li a:hover i,.why .whylist1 li h3,.why .whylist2 li i,.why .whylist2 li h3,.column h2 .mycourse_t,.column h2 .h2l,.column h2 .qydb_t,.qydb_c .qydb_b .ljjr,.qydb_c .qydb_b .xfhy,.qydb_c .qydb_b .sjhy,.column_list_c ul li .list_c i,.column h2 .zdkc_t,.newvideolist .newvideolist_c ul li .video_date,.newvideolist .up,.newvideolist .down,.newvideolist .newvideolist_c ul li dl dd,.wydkc .wydkc_buttom,.zdkclist li div em,.column h2 .js_t,.jstd_txt .p_btn a,.sdbox_bg_l,.sdbox_bg_r,.produced .hd_produced span,.link h2 .hd_link,.phblist li span.no1,#videoplay .prev_s, #videoplay .next_s,.searchBox .searchBox_c .searchBox_l,.searchBox .searchBox_c .searchBox_l .button,.freetrial .freetrial_l,.freetrial .freetrial_l li .yzm,.freetrial .freetrial_r li.more i,.column_r .title_hj,.column_r .title_zs,.column h2 .alfx_t,.cklist li .zx_n .zx_n1,.cklist li .zx_n .zx_n2,.mycourse_list li .zx_n .zx_n1,.mycourse_list li .zx_n .zx_n2,.mycourse_list li .finish,.mycourse_list li .study,.mycourse_list li .flo_l .progress,.mycourse_list li .flo_l .progress .progress_l,.mycourse_list li .flo_l .progress .progress_c,.mycourse_list li .flo_l .progress .progress_r,.mycourse_list li .flo_l .progress_info,.alfx_c .alld dt{ background:url({STYLEIMGDIR}/home_bg20130419.gif) no-repeat;}
@@ -9,6 +9,30 @@
 
 .topbg1,.topbg2{ background:url({STYLEIMGDIR}/home_bg220130206.gif) no-repeat;}
 #footer{ background:url({STYLEIMGDIR}/newpublic.gif) no-repeat 0 -660px; background-repeat:repeat-x;}
+
+
+.image_3 ul {
+	width: 890px;
+	background: url(../../template/jianshen/images/book_bg.gif) no-repeat 0 bottom;
+	padding: 0 32px;
+	overflow: hidden;
+	height: 300px;
+	margin-top: 5px;
+}
+.image_3 li {
+	float: left;
+	height: 280px;
+	overflow: hidden;
+}
+.image_3 li a {
+	display: block;
+	background-color: #eee;
+	padding: 1px 0 0 6px;
+	width: 280px;
+	height: 280px;
+	margin-top: 3px;
+	cursor: pointer;
+}
 
 .hdbg{ width:100%; border-bottom:1px solid #DCDCDC; overflow:hidden; height:350px; background-color:#FFFFFF; _margin-top:-2px;*margin-top:-2px;}
 .hotmain{ width:100%; height:350px; overflow:hidden;}
@@ -318,7 +342,7 @@ background: -webkit-gradient(linear, 0 0, 0 100%, from(rgba(0,0,0,0.7)), to(rgba
 .column .column_c{ margin-top:30px; }
 .column .column_c .column_t{ width:700px; float:left;}
 .column .column_c .column_t img{ width:270px; height:160px; overflow:hidden; float:left; margin-right:20px;}
-.column .column_c .column_t h3{ width:355px; float:left; height:32px; line-height:32px; overflow:hidden; font-size:18px; font-family:å¾®è½¯é›…é»‘;}
+.column .column_c .column_t h3{ width:355px; float:left; height:32px; line-height:32px; overflow:hidden; font-size:18px; font-family:Î¢ÈíÑÅºÚ;}
 .column .column_c .column_t h3 a{ color:#557917;}
 .column .column_c .column_t p{width:355px; float:left; line-height:25px; height:auto; overflow:hidden; font-size:14px; color:#666; margin-top:6px;}
 .column .column_c .column_t p a{ color:#557917;}
@@ -335,6 +359,21 @@ background: -webkit-gradient(linear, 0 0, 0 100%, from(rgba(0,0,0,0.7)), to(rgba
 .column .column_r .ad_250_60{ width:250px; height:60px; float:left; clear:both; overflow:hidden; margin-top:10px;}
 .column .column_r .ad_250_60 img{overflow:hidden;}
 
+.column .column_left_box  { width:355px; float: left; }
+
+.column .column_c .cover { width:220px; float: left; background-color: #eee; }
+.column .column_c .cover img {float: left;}
+.column .column_c .cover span { width:220px; height: 26px; padding: 3px 0; float: left;}
+.article_list { width:390px; float: right; }
+
+.hyfc { width: 590px; float: right; }
+.hyfc .zttj{ height:128px; background-position:20px 97px;}
+.hyfc .zttj dl{ width:200px; float:left;}
+.hyfc .zttj dl dt{ font-size:16px;font-family: Microsoft YaHei,SimSun; color:#557917; height:24px; line-height:24px; padding-bottom:5px; font-weight:bold; _padding-bottom:0px;*padding-bottom:0px;}
+.hyfc .zttj dl dt a{ color:#557917;}
+.hyfc .zttj dl li{ height:26px; line-height:26px; overflow:hidden; padding-right:10px; padding-left:14px; background:url({STYLEIMGDIR}/dot.gif) no-repeat scroll 0px 4px transparent; font-size:14px; _background:url({STYLEIMGDIR}/dot.gif) no-repeat scroll 0px 1px transparent; *background:url({STYLEIMGDIR}/dot.gif) no-repeat scroll 0px 1px transparent;}
+.hyfc .zttj dl li a{ color:#333333; font-weight:normal;}
+.hyfc .zttj .no1{ padding-left:48px; background:url({STYLEIMGDIR}/zt.gif) no-repeat scroll 0px 0px transparent; height:110px;_height:90px;*height:90px;}
 
 .jstd{}
 .jstd ul{ overflow:hidden; width:592px; height:226px; padding:18px 0 0 35px;}
@@ -627,7 +666,7 @@ background: -webkit-gradient(linear, 0 0, 0 100%, from(rgba(0,0,0,0.7)), to(rgba
 #header{ position:fixed; _position:absolute; left:0; top:0; z-index:900099; width:auto; height:auto; line-height:37px;border-bottom:6px solid #9ACD31;background:#000000; width:100%; z-index:900999;}
 #header .head_c{ width:950px; height:37px; line-height:37px; margin:0 auto;}
 #header .logo{ background-position:0 -65px; width:51px; height:35px; margin-top:3px; float:left; margin-right:12px; }
-#header .menu_l{ float:left; line-height:16px; display:inline; font-size:21px; color:#343434; font-family:å¾®è½¯é›…é»‘; font-style:oblique; font-weight:bold;}
+#header .menu_l{ float:left; line-height:16px; display:inline; font-size:21px; color:#343434; font-family:Î¢ÈíÑÅºÚ; font-style:oblique; font-weight:bold;}
 #header .menu_l span{margin-left:7px;  margin-top:13px;white-space:nowrap; float:left; display:inline-block; height:14px; text-indent:-99999px;background-position:right -107px; padding-right:12px;}
 #header .menu_l span.no{ background:none; padding-right:0;}
 #header .menu_l span em{ background-position:right -105px; display:inline-block; margin-top:10px; width:8px; height:16px;}
