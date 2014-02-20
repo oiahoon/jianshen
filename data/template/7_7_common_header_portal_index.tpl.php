@@ -1,8 +1,14 @@
 <?php if(!defined('IN_DISCUZ')) exit('Access Denied'); 
 0
+<<<<<<< HEAD
 || checktplrefresh('./template/jianshen/common/header.htm', './template/default/common/header_common.htm', 1392904257, '7', './data/template/7_7_common_header_portal_index.tpl.php', './template/jianshen', 'common/header_portal_index')
 || checktplrefresh('./template/jianshen/common/header.htm', './template/default/common/header_qmenu.htm', 1392904257, '7', './data/template/7_7_common_header_portal_index.tpl.php', './template/jianshen', 'common/header_portal_index')
 || checktplrefresh('./template/jianshen/common/header.htm', './template/jianshen/common/pubsearchtop.htm', 1392904257, '7', './data/template/7_7_common_header_portal_index.tpl.php', './template/jianshen', 'common/header_portal_index')
+=======
+|| checktplrefresh('./template/jianshen/common/header.htm', './template/default/common/header_common.htm', 1392877192, '7', './data/template/7_7_common_header_portal_index.tpl.php', './template/jianshen', 'common/header_portal_index')
+|| checktplrefresh('./template/jianshen/common/header.htm', './template/default/common/header_qmenu.htm', 1392877192, '7', './data/template/7_7_common_header_portal_index.tpl.php', './template/jianshen', 'common/header_portal_index')
+|| checktplrefresh('./template/jianshen/common/header.htm', './template/jianshen/common/pubsearchtop.htm', 1392877192, '7', './data/template/7_7_common_header_portal_index.tpl.php', './template/jianshen', 'common/header_portal_index')
+>>>>>>> 534bf6aeb8124b634e72f48c38723b0305ca5919
 ;?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {template common/header}
 {if $typelist}
 <select name="subtype" style="width:120px;">
@@ -6,4 +7,14 @@
 <!--{/loop}-->
 </select>
 {/if}
+=======
+{template common/header}
+{if $typelist}
+<select name="subtype" style="width:120px;">
+<!--{loop $typelist $typeid $type}-->
+<option value="$typeid">$type['subject']</option>
+<!--{/loop}-->
+</select>
+{/if}
+>>>>>>> 534bf6aeb8124b634e72f48c38723b0305ca5919
 {template common/footer}
