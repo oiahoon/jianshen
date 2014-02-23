@@ -224,3 +224,4 @@ pip-log.txt
 data/log/*.php
 data/template/*.php
 config/config_global.php
+config/config_ucenter.php
