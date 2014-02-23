@@ -69,13 +69,13 @@ jq(this).closest('.commentli').find('.replies_wp').toggle().end().find('#comment
             jq(this).showWordCount();
         });
         }else{
-        	jq('textarea').bind('keyup mouseup', function() {
+          jq('textarea').bind('keyup mouseup', function() {
             jq(this).showWordCount();
         });
         }
         jq('textarea').each(function(){
-        	if(jq(this).val().length>0)
-        		jq(this).showWordCount();
+          if(jq(this).val().length>0)
+            jq(this).showWordCount();
         })
     });
     </script><div class="wp cl" id="bdw">
@@ -167,6 +167,23 @@ announcementScroll();
 </tr>
 </tbody></table>
 </div>
+
+<div class="intro_info mtm">
+    <h2 class="viewtitle">商家活动:</h2>
+
+</div>
+<div>
+  <table class="other_info">
+    <tbody>
+      {loop $acitivities $activity}
+      <tr>
+        <th><em>&nbsp;</em><a href="forum.php?mod=viewthread&tid=$activity[tid]">$activity['subject']</a><span>{eval echo gmdate('Y-m-d H:i:s',$activity['dateline']+8*3600)}</span></th>
+      </tr>
+      {/loop}
+    </tbody>
+  </table>
+</div>
+
 
 <div id="messages" style="margin-top:15px;">
 <div class="message_tab cl">
@@ -317,7 +334,7 @@ $bd['name']&nbsp;&nbsp;&nbsp;<a href="javascript:;" class="replylink">{lang aljb
 {/loop}
 </div>
 <script charset="gbk" type="text/javascript">
-//	bindform('msgForm');
+//  bindform('msgForm');
 </script>
 <div class="comment"><!--comment form-->
 <script charset="gbk" type="text/javascript">
@@ -443,7 +460,7 @@ star_hover(rewardid,parseInt(oldscore[1]));
 </div>
 
 <script charset="gbk" type="text/javascript">
-//	bindform('msgForm');
+//  bindform('msgForm');
 </script></div>
 </div>
 {template aljbd:side}

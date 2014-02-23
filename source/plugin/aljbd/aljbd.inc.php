@@ -200,7 +200,22 @@ if($_GET['act']=='attend'){
 		$rlist=C::t('#aljbd#aljbd_region')->fetch_all_by_upid();
 		include template('aljbd:edit');
 	}
-}else if($_GET['act']=='gettype'){
+}
+else if ($_GET['act']=='editacitivity') {
+	if(submitcheck('submit')){
+		$actids = explode(',', preg_replace('#\s#', ',', $_POST['activities']));
+
+		$actids = array_slice(array_filter($actids, 'is_numeric'), 0, 5); 
+
+		C::t('#aljbd#aljbd')->update_activities_by_bid($_GET['bid'],implode(',', $actids));
+		showmsg(lang('plugin/aljbd','s30'));
+	}
+	else{
+		$bd=C::t('#aljbd#aljbd')->fetch($_GET['bid']);
+		include template('aljbd:editacitivity');
+	}
+}
+else if($_GET['act']=='gettype'){
 	if($_GET['upid']){
 		$typelist=C::t('#aljbd#aljbd_type')->fetch_all_by_upid($_GET['upid']);
 	}
@@ -227,6 +242,11 @@ if($_GET['act']=='attend'){
 	$commentlist=C::t('#aljbd#aljbd_comment')->fetch_all_by_bid_upid($_GET['bid'],0,0);
 	$asklist=C::t('#aljbd#aljbd_comment')->fetch_all_by_bid_upid($_GET['bid'],0,1);
 	$bd=C::t('#aljbd#aljbd')->fetch($_GET['bid']);
+	// add by oiahoon
+	// <a href="forum.php?mod=viewthread&tid=$thread[tid]">$subjectcut</a>
+	$tids = explode(',', $bd['activities']);
+	$acitivities = C::t('forum_thread')->fetch_all_by_tid($tids, 0, 5);
+
 	require_once libfile('function/discuzcode');
 	if(!file_exists('source/plugin/aljbd/com/intro.php')){
 		$bd['intro']=discuzcode($bd['intro']);

@@ -105,6 +105,9 @@ class table_aljbd extends discuz_table{
 	public function count_by_region(){
 		return DB::fetch_all('select region,count(*) num from %t where status=1 group by region',array($this->_table));
 	}
+	public function update_activities_by_bid($bid, $activities){
+		return DB::query('update %t set activities=%a where id=%d',array($this->_table, $activities, $bid));
+	}
 }
 
 
