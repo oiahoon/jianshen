@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+	<item id="Title"><![CDATA[Discuz! Addon MD5]]></item>
+	<item id="ID"><![CDATA[xhuaian_makefriends.plugin]]></item>
+	<item id="RevisionID"><![CDATA[13327]]></item>
+	<item id="SN"><![CDATA[2014022423VitxibTJel]]></item>
+	<item id="RevisionDateline"><![CDATA[1363591583]]></item>
+	<item id="Data">
+		<item id="/discuz_plugin_xhuaian_makefriends_SC_GBK.xml"><![CDATA[7e6724ae5031c047f4d6400d98ab7ae9]]></item>
+		<item id="/discuz_plugin_xhuaian_makefriends_SC_UTF8.xml"><![CDATA[2e49e450235a18860d5674d7a25ef6f4]]></item>
+		<item id="/discuz_plugin_xhuaian_makefriends_TC_BIG5.xml"><![CDATA[b9706a62b5991539010a1c06c16c4536]]></item>
+		<item id="/discuz_plugin_xhuaian_makefriends_TC_UTF8.xml"><![CDATA[12e6316ecfde1e2447d42f8cb6307a6d]]></item>
+		<item id="/images/ad1.gif"><![CDATA[c84bd09d040b35b189b01985d7f05636]]></item>
+		<item id="/images/ad2.jpg"><![CDATA[12c634773191a94f757dc83a44f85ecb]]></item>
+		<item id="/images/ad3.png"><![CDATA[3e1096a6e945a3e51a8a440c017c5181]]></item>
+		<item id="/main.inc.php"><![CDATA[721c3b5bd7ca9fb050946f8f4790a477]]></item>
+		<item id="/template/main.htm"><![CDATA[05b40ef4afab4d1e2ba4cf4f5634126d]]></item>
+		<item id="/template/side.htm"><![CDATA[0796fa1ac2b462134a910f014e0ce666]]></item>
+	</item>
+</root>
