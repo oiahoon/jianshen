@@ -106,3 +106,6 @@
 <?PHP exit;?>	1393254348	admin	1	::1	plugins	GET={operation=enable; pluginid=16; }; POST={};
 <?PHP exit;?>	1393254351	admin	1	::1	plugins	GET={}; POST={};
 <?PHP exit;?>	1393254352	admin	1	::1	plugins	GET={operation=config; do=16; }; POST={};
+<?PHP exit;?>	1393335453	admin	1	::1		GET={}; POST={};
+<?PHP exit;?>	1393335454	admin	1	::1	index	GET={}; POST={};
+<?PHP exit;?>	1393335455	admin	1	::1	tools	GET={operation=updatecache; }; POST={};
