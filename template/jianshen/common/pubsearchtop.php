@@ -1,4 +1,6 @@
 <?php echo 'Oiahoon www.oiahoon.com';exit;?>
+
+
 <!--{if $_G['setting']['search']}-->
 	<!--{eval $slist = array();}-->
 	<!--{if $_G['fid'] && $_G['forum']['status'] != 3 && $mod != 'group'}--><!--{block slist[forumfid]}--><li><a href="javascript:;" rel="curforum" fid="$_G[fid]" >{lang search_this_forum}</a></li><!--{/block}--><!--{/if}-->
@@ -10,7 +12,7 @@
 	<!--{block slist[user]}--><li><a href="javascript:;" rel="user">{lang users}</a></li><!--{/block}-->
 <!--{/if}-->
 <!--{if $_G['setting']['search'] && $slist}-->
-<div id="scbar" class="{if $_G['setting']['srchhotkeywords'] && count($_G['setting']['srchhotkeywords']) > 5}scbar_narrow {/if}cl">
+<div class="searchbox">
 	<form id="scbar_form" method="{if $_G[fid] && !empty($searchparams[url])}get{else}post{/if}" autocomplete="off" onsubmit="searchFocus($('scbar_txt'))" action="{if $_G[fid] && !empty($searchparams[url])}$searchparams[url]{else}search.php?searchsubmit=yes{/if}" target="_blank">
 		<input type="hidden" name="mod" id="scbar_mod" value="search" />
 		<input type="hidden" name="formhash" value="{FORMHASH}" />

@@ -1,0 +1,140 @@
+/* 通用区域 */
+.block{ margin:0px;}
+.frame, .frame-tab, .temp {margin:0px !important;
+padding:0px !important;
+border-width:0px;
+height:auto;}
+.module, .frame-1 {
+background-color:transparent !important;
+background-image:none !important;
+border:0px none !important;
+margin:0px !important;
+padding:0px !important;
+border-width:0px;
+height: auto;
+}
+.frame-1-c {
+background-color:transparent !important;
+background-image:none !important;
+border:0px none !important;
+margin:0px !important;
+padding:0px !important;
+border-width:0px;
+height: auto;
+}
+.move-span{
+background-color:transparent !important;
+background-image:none !important;
+border:0px none !important;
+margin:0px !important;
+padding:0px !important;
+border-width:0px;
+}
+.move-span .content{
+background-color:transparent !important;
+background-image:none !important;
+border:0px none !important;
+margin:0px !important;
+padding:0px !important;
+border-width:0px;
+height:auto;}
+
+body{ background:none repeat scroll 0 0 #f7f7f7;}
+#hd .wp{ background:url({STYLEIMGDIR}/topbar.png) no-repeat scroll center top transparent}
+.hdc{min-height:90px;z-index:1;}
+#hd h2{ padding:8px 0px;}
+.slidebar li{ background:none repeat scroll 0 0 #019ADD}
+.slidebar li.on{ color:#019ADD}
+#um #umnav_menu .pipe{ display:none;}
+
+
+
+/* 会员登录 */
+.liveproduct{ margin-top:4px; margin-left:12px; float:right;}
+.liveproduct li{margin-left:0;border:#fff 1px solid;float:left;}
+.liveproduct .on{border:#009ad9 1px solid;box-shadow:2px 2px 4px #ccc;}
+.liveproduct .messenger,.liveproduct .hotmail,.liveproduct .ie9,.liveproduct .android,.liveproduct .lux,.liveproduct .games,.liveproduct .macs{display:block;width:80px;height:60px;text-align:center;font-size:12px;}
+.liveproduct .messenger:hover,.liveproduct .hotmail:hover,.liveproduct .ie9:hover,.liveproduct .lux:hover,.liveproduct .android:hover,.liveproduct .games:hover,.liveproduct .macs:hover{text-decoration:none;}
+.liveproduct li span{position:relative;top:40px;}
+.liveproduct ul li a:link{color:#272727; text-decoration:none}
+.liveproduct ul li a:visited{color:#272727;text-decoration: none;}
+.liveproduct ul li a:hover,a:active,a:focus{color:#c00; text-decoration:underline;}
+.liveproduct .messenger{background:url({STYLEIMGDIR}/win.jpg) no-repeat;}
+.liveproduct .ie9{background:url({STYLEIMGDIR}/ap.jpg) no-repeat;}
+.liveproduct .android{background:url({STYLEIMGDIR}/an.jpg) no-repeat;}
+
+/* 搜索*/
+#scbar{ width:450px; float:right; margin:20px 0 0 70px; background:none repeat scroll 0 0 #FFFFFF; border:3px solid #e3e3e3; height:35px; line-height:35px;}
+.scbar_txt_td, .scbar_icon_td, .scbar_btn_td{ background:none;}
+#scbar_txt, .scbar_narrow #scbar_txt{ width:300px;}
+#scbar_type{ color:#A8A8A8; font-size:14px; font-weight:bold;}
+.scbar_type_td{ position:relative; width:78px; height:30px; background:url({STYLEIMGDIR}/select.png) no-repeat scroll 4px 4px transparent}
+#scbar_btn{ text-indent:-9999px; border:0px; display:block;background:url({STYLEIMGDIR}/search.jpg) no-repeat; width:75px; height:35px; border:none;  text-align:center; font-size:14px; font-weight:bold; color:#fff; padding:0; line-height:28px; }
+#scbar_type_menu{ margin-top:0px; }
+*html .scbar_type_td{ display:none}
+*html #scbar_txt, .scbar_narrow #scbar_txt{ width:375px;}
+*html .hdc .p_pop{ margin-top:-200px; margin-left:-180px; z-index:10; padding-top:-50px; display:none;}
+/* 导航 */
+#diy-tg_menu li a{ color:#333333}
+
+#hd{ background-color:#FFFFFF}
+#toptb{ border-bottom:1px solid #DCDCDC; background:url({STYLEIMGDIR}/bottom-bg.png) repeat scroll 0 0 #F1F1F1; height:32px; line-height:32px;}
+#toptb a{ color:#555555; padding:0px 5px; text-decoration:none;}
+#toptb a:hover{ color:#0086F8;}
+#toptb li{ float:left; list-style:none;}
+.xinyun_nav{border-bottom:solid 1px #2e86b6; line-height:48px;height:48px;background-color:#39a7e4;min-width:960px;}
+.qq2 {
+    background: url({STYLEIMGDIR}/qq-weibo.png) no-repeat scroll 0px 8px transparent;
+    color: #333333;
+    display: inline-block;
+    height: 25px;
+	padding-left:18px;
+}
+
+#nv{  height:48px;line-height:48px; margin:0 auto; background-image:none; background-repeat:repeat-x; height:48px;background-color:#39a7e4;width:960px;}
+#nv li{height:48px; line-height:48px;  background-attachment: scroll;
+    background-image: none;
+    background-position: right center;
+    background-repeat: no-repeat;
+    float: left;
+    height: 48px;
+    list-style-type: none;
+    padding-right: 2px;
+    width: auto;}
+#nv li.a, #nv li.hover a{ margin-left:0px;
+background-color:#2D86B6;
+background-image:none;
+}
+#nv li#mn_portal{border-left:0px solid #ccc;}
+#nv li a{ color: #FFFFFF;
+    display: block;
+    font-family: "Hiragino Sans GB","WenQuanYi Micro Hei","微软雅黑",Arial;
+    font-size: 15px;
+    font-weight: bold;
+    height: 48px;
+    line-height: 48px;
+    overflow: hidden;
+    padding-left: 22px;
+    padding-right: 22px;
+    text-decoration: none;
+    width: auto; background:none; }
+#nv li a:hover, #nv li.a:hover,  #nv li.hover a:hover{ background: url(menubar-hover.gif) repeat scroll 0 0 #63baea;text-decoration:none; color:#FFFFFF; margin-left:0px; }
+#qmenu{ background:none repeat scroll 0 0 #0086f8;line-height: 28px;text-align: center;width: 100px; margin:0px; height:28px; color:#FFFFFF; font-weight:normal; font-size:14px; padding-right:0px;border-radius:3px; margin:12px;}
+
+
+/* 按钮  */
+.pgs #newspecial, .pgs #newspecialtmp { float: left; background: url({STYLEIMGDIR}/pn_post.png) no-repeat 0 0;  width: 100px; height: 35px;}
+#post_reply, #post_replytmp { float: left; background: url({STYLEIMGDIR}/pn_reply.png) no-repeat 0 0;  width: 70px; height: 35px;}
+#newspecial img, #newspecialtmp img, #post_reply img, #post_replytmp img { opacity: 0; filter: alpha(opacity=0); }
+#newspecial:active { background-position: 0 -35px; }
+
+/* 底部  */
+#mybottom{background-image: url({STYLEIMGDIR}/bottom-bg.gif);
+    margin-top: 30px;
+    padding-bottom: 20px;
+    padding-top: 15px;
+    text-align: center;}
+.xinyun_footer{ background-color: #ffffff;}
+.footer_bar{ height:25px;background: url({STYLEIMGDIR}/jianshen_footer.gif) no-repeat center 0 #f7f7f7;}
+#ft{ border:0px; padding:20px 0 50px; text-align:center;}
+#ft a{ color:#333333}
