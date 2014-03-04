@@ -28,18 +28,7 @@
 			<input type="hidden" name="fId" id="srchFId" value="$_G[fid]" />
 			<input type="hidden" name="q" id="cloudsearchquery" value="" />
 
-			<style>
-			#scbar { overflow: visible; position: relative; }
-			#sg{ background: #FFF; width:456px; border: 1px solid #B2C7DA; }
-			.scbar_narrow #sg { width: 316px; }
-			#sg li { padding:0 8px; line-height:30px; font-size:14px; }
-			#sg li span { color:#999; }
-			.sml { background:#FFF; cursor:default; }
-			.smo { background:#E5EDF2; cursor:default; }
-            </style>
-            <div style="display: none; position: absolute; top:37px; left:44px;" id="sg">
-                <div id="st_box" cellpadding="2" cellspacing="0"></div>
-            </div>
+
 		<!--{/if}-->
 		<table cellspacing="0" cellpadding="0">
 			<tr>

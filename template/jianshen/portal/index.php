@@ -57,29 +57,10 @@
     <div class="zxzx">
       <span class="title"></span>
       <div class="left1_1">
-        <div class="cover">
-        <img src="template/jianshen/images/cover/cover_1.png">
-        <span>一些简介在这里一些简介在这里一些简介在这里一些简介在这里</span>
-      </div>
-      <div class="article_list">
-      <!--[diy=jianshen_door_010_103]--><div id="jianshen_door_010_103" class="area"></div><!--[/diy]-->
-      </div>
-
-        <a>
-          <img src="template/jianshen/images/test1.jpg"/>
-          <span>健康瘦身，美体又健康！健康瘦身，美体又健康！</span>
-          <div class="clear"></div>
-        </a>
+        <!--[diy=jianshen_door_010_114]--><div id="jianshen_door_010_114" class="area"></div><!--[/diy]-->
       </div>
       <div class="right1_1">
-        <p class="title1"><a>中国十大健身品牌</a></p>
-        <p class="title2">
-          <a>[ 运动前来杯咖啡效果 ]</a>
-          <a>[ 大杏仁可增加运动能力 ]</a>
-        </p>
-        <ul>
-          <!--[diy=jianshen_door_010_103]--><div id="jianshen_door_010_103" class="area"></div><!--[/diy]-->
-        </ul>
+        <!--[diy=jianshen_door_010_103]--><div id="jianshen_door_010_103" class="area"></div><!--[/diy]-->
       </div>
     </div>
     <!-- 板块二 -->
