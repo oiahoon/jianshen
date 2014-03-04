@@ -1,16 +1,188 @@
 <?php echo 'Oiahoon www.oiahoon.com';exit;?>
 <!--{template common/header}-->
-<script type="text/javascript" src="template/jianshen/images/jquery.slides.min.js" ></script>
-<script type="text/javascript" src="template/jianshen/images/jianshen.js" ></script>
-<script type="text/javascript" src="template/jianshen/images/jianshen_gundong.js" ></script>
-<!--{if $_GET['diy'] == 'yes' && check_diy_perm($topic)}-->
-<style>
-.hotmain_l .slides_container, .hotmain_r .slides_container li{ width:630px;}
-</style>
-<!--{else}-->
 
-<!--{/if}-->
+
+<!-- 左侧编号 jianshen_door_010_1XX -->
+<!-- 右侧编号 jianshen_door_010_2XX -->
+
+<div class="contentbox">
+  <!-- 轮播 S 1420-->
+  <div class="banner">
+    <a class="lbt"></a>
+    <a class="rbt"></a> 
+    <div class="imgbox"><img src="template/jianshen/images/banner1.jpg"/></div>
+    <div class="num">
+      <a>1</a>
+      <a>2</a>
+      <a>3</a>
+      <a>4</a>
+    </div>           
+  </div>
+  <!-- 轮播 E -->
+  <!-- 登录模块  -->
+  <div class="denglubox">
+    <input type="text" class="name_input" value="请输入用户名">
+    <input type="text" class="password_input" value="请输入密码">
+    <a class="denglu"></a>
+    <div class="quickico1">
+      <a class="misscode">忘记密码</a>
+      <a class="zc">注册</a>
+    </div>
+     <div class="quickico2">
+      <a>会友微博</a>
+      <a>会友微信</a>
+      <a>会友信息</a>
+      <div class="clear"></div>
+    </div>
+    <span>咨询热线：028-88888888</span>
+  </div>
+  <div class="clear"></div>
+  <!-- eof 登录模块  -->
+
+  <!-- 三个大图 -->
+  <ul class="content2">
+    <!--[diy=jianshen_door_010_101]-->
+      <div id="jianshen_door_010_101" class="area"></div>
+    <!--[/diy]-->
+  </ul>
+  <!-- eof 三个大图 -->
+
+  <!-- left -->
+  <div class="left1">
+    <!-- 公告 -->
+      <!--[diy=jianshen_door_010_102]--><div id="jianshen_door_010_102" class="area"></div><!--[/diy]-->
+    <!-- .公告 -->
+    
+    <!-- 板块一 -->
+    <div class="zxzx">
+      <span class="title"></span>
+      <div class="left1_1">
+        <div class="cover">
+        <img src="template/jianshen/images/cover/cover_1.png">
+        <span>一些简介在这里一些简介在这里一些简介在这里一些简介在这里</span>
+      </div>
+      <div class="article_list">
+      <!--[diy=jianshen_door_010_103]--><div id="jianshen_door_010_103" class="area"></div><!--[/diy]-->
+      </div>
+
+        <a>
+          <img src="template/jianshen/images/test1.jpg"/>
+          <span>健康瘦身，美体又健康！健康瘦身，美体又健康！</span>
+          <div class="clear"></div>
+        </a>
+      </div>
+      <div class="right1_1">
+        <p class="title1"><a>中国十大健身品牌</a></p>
+        <p class="title2">
+          <a>[ 运动前来杯咖啡效果 ]</a>
+          <a>[ 大杏仁可增加运动能力 ]</a>
+        </p>
+        <ul>
+          <!--[diy=jianshen_door_010_103]--><div id="jianshen_door_010_103" class="area"></div><!--[/diy]-->
+        </ul>
+      </div>
+    </div>
+    <!-- 板块二 -->
+    <div class="jszs">
+      <span class="title"><span><a>四季健身 |</a><a>白领健身 |</a><a>运动损伤</a></span></span>
+      <div class="left1_1">
+        <a>
+          <img src="images/test1.jpg"/>
+          <span>健康瘦身，美体又健康！健康瘦身，美体又健康！</span>
+          <div class="clear"></div>
+        </a>
+      </div>
+      <div class="right1_1">
+        <p class="title1"><a>中国十大健身品牌</a></p>
+        <p class="title2">
+          <a>[ 运动前来杯咖啡效果 ]</a>
+          <a>[ 大杏仁可增加运动能力 ]</a>
+        </p>
+        <ul>
+          <li><a><span class="text">蔡振华出任中国足协主席 就职宣言：文字测试内容文字...</span><span class="time">2014-02-09</span><div class="clear"></div></a></li>
+          <li><a><span class="text">蔡振华出任中国足协主席 就职宣言：文字测试内容文字...</span><span class="time">2014-02-09</span><div class="clear"></div></a></li>
+          <li><a><span class="text">蔡振华出任中国足协主席 就职宣言：文字测试内容文字...</span><span class="time">2014-02-09</span><div class="clear"></div></a></li>
+          <li><a><span class="text">蔡振华出任中国足协主席 就职宣言：文字测试内容文字...</span><span class="time">2014-02-09</span><div class="clear"></div></a></li>
+          <li><a><span class="text">蔡振华出任中国足协主席 就职宣言：文字测试内容文字...</span><span class="time">2014-02-09</span><div class="clear"></div></a></li>
+        </ul>
+      </div>
+    </div> 
+    <div class="mtss">
+      <span class="title"><span><a>减肥减脂 |</a><a>增肌宝典 |</a><a>健康饮食</a></span></span>
+      <div class="left1_1">
+        <a>
+          <img src="images/test1.jpg"/>
+          <span>健康瘦身，美体又健康！健康瘦身，美体又健康！</span>
+          <div class="clear"></div>
+        </a>
+      </div>
+      <div class="right1_1">
+        <p class="title1"><a>中国十大健身品牌</a></p>
+        <p class="title2">
+          <a>[ 运动前来杯咖啡效果 ]</a>
+          <a>[ 大杏仁可增加运动能力 ]</a>
+        </p>
+        <ul>
+          <li><a><span class="text">蔡振华出任中国足协主席 就职宣言：文字测试内容文字...</span><span class="time">2014-02-09</span><div class="clear"></div></a></li>
+          <li><a><span class="text">蔡振华出任中国足协主席 就职宣言：文字测试内容文字...</span><span class="time">2014-02-09</span><div class="clear"></div></a></li>
+          <li><a><span class="text">蔡振华出任中国足协主席 就职宣言：文字测试内容文字...</span><span class="time">2014-02-09</span><div class="clear"></div></a></li>
+          <li><a><span class="text">蔡振华出任中国足协主席 就职宣言：文字测试内容文字...</span><span class="time">2014-02-09</span><div class="clear"></div></a></li>
+          <li><a><span class="text">蔡振华出任中国足协主席 就职宣言：文字测试内容文字...</span><span class="time">2014-02-09</span><div class="clear"></div></a></li>
+        </ul>
+      </div>
+    </div> 
+    <div class="ydjs">
+      <span class="title"><span><a>舞蹈 |</a><a>瑜伽 |</a><a>动感单车 |</a><a>普拉提 |</a><a>器械健身 </a></span></span>
+      <div class="left1_1">
+        <a>
+          <img src="images/test1.jpg"/>
+          <span>健康瘦身，美体又健康！健康瘦身，美体又健康！</span>
+          <div class="clear"></div>
+        </a>
+      </div>
+      <div class="right1_1">
+        <p class="title1"><a>中国十大健身品牌</a></p>
+        <p class="title2">
+          <a>[ 运动前来杯咖啡效果 ]</a>
+          <a>[ 大杏仁可增加运动能力 ]</a>
+        </p>
+        <ul>
+          <li><a><span class="text">蔡振华出任中国足协主席 就职宣言：文字测试内容文字...</span><span class="time">2014-02-09</span><div class="clear"></div></a></li>
+          <li><a><span class="text">蔡振华出任中国足协主席 就职宣言：文字测试内容文字...</span><span class="time">2014-02-09</span><div class="clear"></div></a></li>
+          <li><a><span class="text">蔡振华出任中国足协主席 就职宣言：文字测试内容文字...</span><span class="time">2014-02-09</span><div class="clear"></div></a></li>
+          <li><a><span class="text">蔡振华出任中国足协主席 就职宣言：文字测试内容文字...</span><span class="time">2014-02-09</span><div class="clear"></div></a></li>
+          <li><a><span class="text">蔡振华出任中国足协主席 就职宣言：文字测试内容文字...</span><span class="time">2014-02-09</span><div class="clear"></div></a></li>
+        </ul>
+      </div>
+    </div>  
+    <div class="hwyd">
+      <span class="title"><span><a>攀岩 |</a><a>骑马 |</a><a>漂流 |</a><a>野外拓展 |</a><a>真人CS |</a><a>滑雪</a></span></span>
+      <div class="left1_1">
+        <a>
+          <img src="images/test1.jpg"/>
+          <span>健康瘦身，美体又健康！健康瘦身，美体又健康！</span>
+          <div class="clear"></div>
+        </a>
+      </div>
+      <div class="right1_1">
+        <p class="title1"><a>中国十大健身品牌</a></p>
+        <p class="title2">
+          <a>[ 运动前来杯咖啡效果 ]</a>
+          <a>[ 大杏仁可增加运动能力 ]</a>
+        </p>
+        <ul>
+          <li><a><span class="text">蔡振华出任中国足协主席 就职宣言：文字测试内容文字...</span><span class="time">2014-02-09</span><div class="clear"></div></a></li>
+          <li><a><span class="text">蔡振华出任中国足协主席 就职宣言：文字测试内容文字...</span><span class="time">2014-02-09</span><div class="clear"></div></a></li>
+          <li><a><span class="text">蔡振华出任中国足协主席 就职宣言：文字测试内容文字...</span><span class="time">2014-02-09</span><div class="clear"></div></a></li>
+          <li><a><span class="text">蔡振华出任中国足协主席 就职宣言：文字测试内容文字...</span><span class="time">2014-02-09</span><div class="clear"></div></a></li>
+          <li><a><span class="text">蔡振华出任中国足协主席 就职宣言：文字测试内容文字...</span><span class="time">2014-02-09</span><div class="clear"></div></a></li>
+        </ul>
+      </div>
+    </div>        
+  </div>
+  <!-- eof left -->
 </div>
+
 <div class="hdbg">
   <div class="w_950">
     <!-- 轮播 S 1420-->
@@ -42,9 +214,6 @@
 </div>
 <!-- .三个大图 -->
 
-
-<!-- 左侧编号 jianshen_door_010_1XX -->
-<!-- 右侧编号 jianshen_door_010_2XX -->
 
 <div class="left_block">
   <!-- 公告 -->

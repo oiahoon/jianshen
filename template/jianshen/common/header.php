@@ -143,67 +143,40 @@ window.onerror=function(){return true;}
 
     <!--{ad/headerbanner/wp a_h}-->
     <div class="header">
-        <div class="header_top">
-          <img src="images/logo.png"/>
-          <div class="top_rightbg">
-            <div class="top_denglu">
-              <span class="l_denglu"></span>
-              <div class="m_denglu">
-                <!--{template common/header_userstatus}-->
-              </div>
-              <span class="r_denglu"></span>
+      <div class="header_top">
+        <img src="images/logo.png"/>
+        <div class="top_rightbg">
+          <div class="top_denglu">
+            <span class="l_denglu"></span>
+            <div class="m_denglu">
+              <!--{template common/header_userstatus}-->
             </div>
+            <span class="r_denglu"></span>
           </div>
         </div>
-        <div class="navbox">
-          <div class="nav">
-            <a><span>首页</span></a>
-            <a><span>个人主页</span></a>
-            <a><span>社区</span></a>
-            <a><span>结交好友</span></a>
-            <a><span>寻找场馆</span></a>
-            <a><span>咨询教练</span></a>
-            <a><span>健身应用软件</span></a>
-            <a><span>特卖商城</span></a>
-            <div class="clear"></div>
-          </div>
-        </div>
-         <div class="nav_sec">
+      </div>
+      <div class="navbox">
+        <div class="nav">
+          <!--{eval $mnid = getcurrentnav();}-->
           <ul>
-            <!--{loop $_G['setting']['navs'] $nav}-->
-              <!--{if $nav['available'] && (!$nav['level'] || ($nav['level'] == 1 && $_G['uid']) || ($nav['level'] == 2 && $_G['adminid'] > 0) || ($nav['level'] == 3 && $_G['adminid'] == 1))}--><li {if $mnid == $nav[navid]}class="a" {/if}$nav[nav]></li><!--{/if}-->
-            <!--{/loop}-->
+          <!--{loop $_G['setting']['navs'] $nav}-->
+            <!--{if $nav['available'] && (!$nav['level'] || ($nav['level'] == 1 && $_G['uid']) || ($nav['level'] == 2 && $_G['adminid'] > 0) || ($nav['level'] == 3 && $_G['adminid'] == 1))}--><li {if $mnid == $nav[navid]}class="a" {/if}$nav[nav]></li><!--{/if}-->
+          <!--{/loop}-->
           </ul>
           <!--{hook/global_nav_extra}-->
-
-          <div class="searchbox">                                                                                                                                                     
-              <!--{subtemplate common/pubsearchtop}-->                                                                                                                                 
-          </div>
           <div class="clear"></div>
         </div>
+      </div>
+       <div class="nav_sec">
+        <a class="nav_sec">最新资讯</a>
+        <a class="nav_sec">健身百科</a>
+        <a class="nav_sec">营养补剂</a>
+        <a class="nav_sec">全民健身</a>
+        <!--{ad/subnavbanner/a_mu}-->
+        <div class="searchbox">                                                                                                                                                     
+          <!--{subtemplate common/pubsearchtop}-->                                                                                                                                 
         </div>
-    <div id="hd">
-      <div class="wp">
-        <div class="hdc cl">
-          <!--{eval $mnid = getcurrentnav();}-->
-          <h2><!--{if !isset($_G['setting']['navlogos'][$mnid])}--><a href="{if $_G['setting']['domain']['app']['default']}http://{$_G['setting']['domain']['app']['default']}/{else}./{/if}" title="$_G['setting']['bbname']">{$_G['style']['boardlogo']}</a><!--{else}-->$_G['setting']['navlogos'][$mnid]<!--{/if}--></h2>
-                    <!--{subtemplate common/pubsearchtop}-->
-          
-        </div>
-         </div>
-         <div class="xinyun_nav">
-         
-        <div id="nv">
-          
-          <ul>
-            <!--{loop $_G['setting']['navs'] $nav}-->
-              <!--{if $nav['available'] && (!$nav['level'] || ($nav['level'] == 1 && $_G['uid']) || ($nav['level'] == 2 && $_G['adminid'] > 0) || ($nav['level'] == 3 && $_G['adminid'] == 1))}--><li {if $mnid == $nav[navid]}class="a" {/if}$nav[nav]></li><!--{/if}-->
-            <!--{/loop}-->
-          </ul>
-          <!--{hook/global_nav_extra}-->
-        </div>
-                
-                 </div>
+        <div class="clear"></div>
         <!--{if !empty($_G['setting']['plugins']['jsmenu'])}-->
           <ul class="p_pop h_pop" id="plugin_menu" style="display: none">
           <!--{loop $_G['setting']['plugins']['jsmenu'] $module}-->
@@ -225,13 +198,10 @@ window.onerror=function(){return true;}
           <!--{/loop}-->
         <!--{/if}-->
         </div>
-               
-        <!--{ad/subnavbanner/a_mu}-->
-        
       </div>
     </div>
 
     <!--{hook/global_header}-->
   <!--{/if}-->
 
-  <div id="wp" class="wp">
+
