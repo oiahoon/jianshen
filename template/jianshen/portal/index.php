@@ -67,25 +67,10 @@
     <div class="jszs">
       <span class="title"><span><a>四季健身 |</a><a>白领健身 |</a><a>运动损伤</a></span></span>
       <div class="left1_1">
-        <a>
-          <img src="images/test1.jpg"/>
-          <span>健康瘦身，美体又健康！健康瘦身，美体又健康！</span>
-          <div class="clear"></div>
-        </a>
+        <!--[diy=jianshen_door_010_115]--><div id="jianshen_door_010_115" class="area"></div><!--[/diy]-->
       </div>
       <div class="right1_1">
-        <p class="title1"><a>中国十大健身品牌</a></p>
-        <p class="title2">
-          <a>[ 运动前来杯咖啡效果 ]</a>
-          <a>[ 大杏仁可增加运动能力 ]</a>
-        </p>
-        <ul>
-          <li><a><span class="text">蔡振华出任中国足协主席 就职宣言：文字测试内容文字...</span><span class="time">2014-02-09</span><div class="clear"></div></a></li>
-          <li><a><span class="text">蔡振华出任中国足协主席 就职宣言：文字测试内容文字...</span><span class="time">2014-02-09</span><div class="clear"></div></a></li>
-          <li><a><span class="text">蔡振华出任中国足协主席 就职宣言：文字测试内容文字...</span><span class="time">2014-02-09</span><div class="clear"></div></a></li>
-          <li><a><span class="text">蔡振华出任中国足协主席 就职宣言：文字测试内容文字...</span><span class="time">2014-02-09</span><div class="clear"></div></a></li>
-          <li><a><span class="text">蔡振华出任中国足协主席 就职宣言：文字测试内容文字...</span><span class="time">2014-02-09</span><div class="clear"></div></a></li>
-        </ul>
+        <!--[diy=jianshen_door_010_105]--><div id="jianshen_door_010_105" class="area"></div><!--[/diy]-->
       </div>
     </div> 
     <div class="mtss">
@@ -195,93 +180,6 @@
 </div>
 <!-- .三个大图 -->
 
-
-<div class="left_block">
-  <!-- 公告 -->
-  <div id="notice" class="column">
-    <div class="column_c">
-      <div class="notice">
-        <!--[diy=jianshen_door_010_102]--><div id="jianshen_door_010_102" class="area"></div><!--[/diy]-->
-      </div>
-    </div>
-  </div>
-  <!-- .公告 -->
-
-  <!-- 版块1 -->
-  <div id="forum1" class="column">
-    <!-- 标题 -->
-    <div class="topbg2"></div>
-    <h2>
-      <!--[diy=jianshen_door_010_106]--><div id="jianshen_door_010_106" class="area"></div><!--[/diy]-->
-      
-      <em class="h2l"></em>
-    </h2>
-    <span class="menu_r">
-      <!--[diy=jianshen_door_010_113]--><div id="jianshen_door_010_113" class="area"></div><!--[/diy]-->
-    </span>
-    <!-- 列表 -->
-    <div class="column_c">
-      <div class="cover">
-        <img src="template/jianshen/images/cover/cover_1.png">
-        <span>一些简介在这里一些简介在这里一些简介在这里一些简介在这里</span>
-      </div>
-      <div class="article_list">
-      <!--[diy=jianshen_door_010_103]--><div id="jianshen_door_010_103" class="area"></div><!--[/diy]-->
-      </div>
-    </div>
-  </div> <!-- .版块1 -->
-
-  <!-- 版块2 -->
-  <div id="forum2" class="column columnbug left_block">
-    <div class="topbg2"></div>
-    <h2>
-      <!--[diy=jianshen_door_010_104]--><div id="jianshen_door_010_104" class="area"></div><!--[/diy]-->
-      <em class="h2l"></em>
-    </h2>
-    <div class="column_c">
-      <!--[diy=jianshen_door_010_105]--><div id="jianshen_door_010_105" class="area"></div><!--[/diy]-->
-    </div>
-  </div> <!-- .版块2 -->
-
-  <!-- 版块3 -->
-  <div id="forum2" class="column columnbug left_block">
-    <div class="topbg2"></div>
-    <h2>
-      <!--[diy=jianshen_door_010_107]--><div id="jianshen_door_010_107" class="area"></div><!--[/diy]-->
-      <em class="h2l"></em>
-    </h2>
-    <div class="column_c">
-      <!--[diy=jianshen_door_010_108]--><div id="jianshen_door_010_108" class="area"></div><!--[/diy]-->
-    </div>
-  </div> <!-- .版块3 -->
-
-  <!-- 版块4 -->
-  <div id="forum2" class="column columnbug left_block">
-    <div class="topbg2"></div>
-    <h2>
-      <!--[diy=jianshen_door_010_109]--><div id="jianshen_door_010_109" class="area"></div><!--[/diy]-->
-      <em class="h2l"></em>
-    </h2>
-    <div class="column_c">
-      <!--[diy=jianshen_door_010_110]--><div id="jianshen_door_010_110" class="area"></div><!--[/diy]-->
-    </div>
-  </div> <!-- .版块4 -->
-
-  <!-- 版块5 -->
-  <div id="forum2" class="column columnbug left_block">
-    <div class="topbg2"></div>
-    <h2>
-      <!--[diy=jianshen_door_010_111]--><div id="jianshen_door_010_111" class="area"></div><!--[/diy]-->
-      <em class="h2l"></em>
-    </h2>
-    <div class="column_c">
-      <!--[diy=jianshen_door_010_112]--><div id="jianshen_door_010_112" class="area"></div><!--[/diy]-->
-    </div>
-  </div> <!-- .版块5 -->
-
-
-
-</div>
 
 
 <div class="right_block">
