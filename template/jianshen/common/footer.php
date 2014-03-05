@@ -1,9 +1,8 @@
 <?php echo 'Oiahoon www.oiahoon.com';exit;?>
-	</div>
-    </div>
+
     
     <div style="height:2px; clear:both;"></div>
-    <!--{template common/kefu}-->
+    
 <!--{if empty($topic) || ($topic[usefooter])}-->
 	<!--{eval $focusid = getfocus_rand($_G[basescript]);}-->
 	<!--{if $focusid !== null}-->

@@ -88,7 +88,7 @@ body{ background:none repeat scroll 0 0 #f7f7f7;}
     color: #333333;
     display: inline-block;
     height: 25px;
-	padding-left:18px;
+    padding-left:18px;
 }
 
 #nv{  height:48px;line-height:48px; margin:0 auto; background-image:none; background-repeat:repeat-x; height:48px;background-color:#39a7e4;width:960px;}
@@ -151,23 +151,25 @@ body{width:100%;margin:0 auto;padding:0px;height:100%;background:url({STYLEIMGDI
 
 div.header{border-top:1px solid #de4a2d;}
 div.header div.header_top{width:960px;height:102px;margin:0 auto;}
-div.header_top img{float:left;}
+div.header_top img{float:left;margin-top:10px;}
 div.header_top div.top_rightbg{width:425px;height:102px;background:url({STYLEIMGDIR}/topbg.png) no-repeat right;float:right;}
 div.top_rightbg div.top_denglu{float:right;}
 div.top_denglu  span.l_denglu{display:block;float:left;width:25px;height:21px;background:url({STYLEIMGDIR}/login_top_l.png) no-repeat;}
-div.top_denglu  div.m_denglu{float:left;min-width:198px;height:21px;background-color:#de4a2d;text-align:center;}
-div.top_denglu  span.r_denglu{display:block;float:left;width:25px;height:21px;background:url({STYLEIMGDIR}/login_top_r.png) no-repeat;}
-div.top_denglu  div.m_denglu a{font:12px "宋体";color:#fff;}
+div.top_denglu div.m_denglu{float:left;height:21px;background-color:#de4a2d;text-align:center;}
+
+div.top_denglu span.r_denglu{display:block;float:left;width:25px;height:21px;background:url({STYLEIMGDIR}/login_top_r.png) no-repeat;}
+div.top_denglu div.m_denglu a{font:12px "宋体";color:#fff;}
 div.navbox{height:43px;width:100%;background:url({STYLEIMGDIR}/nav_bg.jpg);}
 div.navbox div.nav{width:960px;margin:0 auto;}
 div.navbox div.nav a{float:left;font:16px "微软雅黑";display:block;color:#fff;padding:11px 0;}
 div.navbox div.nav a span{padding:11px 30px;}
-div.navbox div.nav a:hover{background:url({STYLEIMGDIR}/navonbg.jpg);}
-div.navbox div.nav a:hover span{background:url({STYLEIMGDIR}/banner_onbg.png) center no-repeat;}
+div.navbox div.nav a:hover,div.navbox div.nav a.on{background:url({STYLEIMGDIR}/navonbg.jpg);}
+div.navbox div.nav a:hover span,div.navbox div.nav a.on span{background:url({STYLEIMGDIR}/banner_onbg.png) center no-repeat;}
+
 div.contentbox{width:960px;margin:0 auto;}
-div.nav_sec{background-color:#8b8b8b;width:960px;height:26px;margin:0 auto;}
+div.nav_sec{background-color:#8b8b8b;width:960px;height:30px;margin:0 auto;}
 div.nav_sec a.nav_sec{float:left;display:block;padding:3px 10px 3px 40px;font:14px "微软雅黑";margin-right:30px;}
-div.nav_sec div.searchbox{float:right;width:240px;height:24px;border:1px solid #de4a2d;}
+div.nav_sec div.searchbox{float:right;width:299px;height:28px;border:1px solid #de4a2d;}
 div.nav_sec div.searchbox input.search_input{float:left;background:url({STYLEIMGDIR}/ico1.jpg) no-repeat #fff 1px;padding:0 0 0 16px;border:none;width:163px;height:24px;color:#a3a3a3;font:12px "宋体";}
 div.nav_sec div.searchbox a.search{float:left;display:block;width:61px;height:24px;background-color:#de4a2d;font:14px "微软雅黑";color:#fff;text-align:center;}
 div.contentbox div.banner{float:left;width:641px;height:316px;margin-top:15px;position:relative;}
@@ -345,3 +347,9 @@ div.foot div.youqinglj{margin-top:15px;width:855px;height:71px;background:url({S
 div.foot div.youqinglj a{font:12px "宋体";color:#3c3c3c;line-height:18px;padding: 0 8px;line-height:23px;}
 div.foot p.footnav{font:12px "宋体";color:#666;text-align:center;margin-top: 20px;}
 div.foot p.last{font:12px "宋体";color:#666;text-align:center;margin: 20px 0 20px 0;}
+
+
+
+div.top_denglu div.m_denglu li{float:left;padding-right:10px;}
+.lianxiqq{background-position:0px 0px;height:18px;}
+.scbar_txt_td_my1{height:28px;}

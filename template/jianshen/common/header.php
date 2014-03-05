@@ -38,6 +38,14 @@ oiahoon(function(){});
 window.onerror=function(){return true;}
 // -->
 </SCRIPT> 
+<script type="text/javascript">
+  oiahoon(function(){
+      oiahoon("div.navbox div.nav a").wrapInner("<span></span>");
+     // oiahoon("div.navbox div.nav a[hidefocus=true]").addClass("on");
+     oiahoon("a.nav_sec:even").css({"color":"#fdd000","background":"url(template/jianshen/images/ico2.jpg) no-repeat 7px"});
+     oiahoon("a.nav_sec:odd").css({"color":"#b4b528","background":"url(template/jianshen/images/ico3.jpg) no-repeat 7px"});
+    }) 
+</script>
  <!--[if IE 6]>
 <script src="template/jianshen/images/iepng.js" type="text/javascript"></script> 
 <script type="text/javascript">
@@ -144,12 +152,13 @@ window.onerror=function(){return true;}
     <!--{ad/headerbanner/wp a_h}-->
     <div class="header">
       <div class="header_top">
-        <img src="images/logo.png"/>
+        <img src="template/jianshen/images/logo.png"/>
         <div class="top_rightbg">
           <div class="top_denglu">
             <span class="l_denglu"></span>
             <div class="m_denglu">
               <!--{template common/header_userstatus}-->
+              <div class="clear"></div> 
             </div>
             <span class="r_denglu"></span>
           </div>

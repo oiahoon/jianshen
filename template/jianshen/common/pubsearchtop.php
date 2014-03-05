@@ -12,7 +12,7 @@
 	<!--{block slist[user]}--><li><a href="javascript:;" rel="user">{lang users}</a></li><!--{/block}-->
 <!--{/if}-->
 <!--{if $_G['setting']['search'] && $slist}-->
-<div class="searchbox">
+
 	<form id="scbar_form" method="{if $_G[fid] && !empty($searchparams[url])}get{else}post{/if}" autocomplete="off" onsubmit="searchFocus($('scbar_txt'))" action="{if $_G[fid] && !empty($searchparams[url])}$searchparams[url]{else}search.php?searchsubmit=yes{/if}" target="_blank">
 		<input type="hidden" name="mod" id="scbar_mod" value="search" />
 		<input type="hidden" name="formhash" value="{FORMHASH}" />
@@ -28,19 +28,31 @@
 			<input type="hidden" name="fId" id="srchFId" value="$_G[fid]" />
 			<input type="hidden" name="q" id="cloudsearchquery" value="" />
 
-
+			<style>
+				#scbar { overflow: visible; position: relative; }
+				#sg{ background: #FFF; width:456px; border: 1px solid #B2C7DA; }
+				.scbar_narrow #sg { width: 316px; }
+				#sg li { padding:0 8px; line-height:30px; font-size:14px; }
+				#sg li span { color:#999; }
+				.sml { background:#FFF; cursor:default; }
+				.smo { background:#E5EDF2; cursor:default; }
+	      		.input_txt_1{width:230px;}
+            </style>
+            <div style="display: none; position: absolute; top:37px; left:44px;" id="sg">
+                <div id="st_box" cellpadding="2" cellspacing="0"></div>
+            </div>
 		<!--{/if}-->
 		<table cellspacing="0" cellpadding="0">
 			<tr>
-				<td class="scbar_type_td"><a href="javascript:;" id="scbar_type" class="xg1" onclick="showMenu(this.id)" hidefocus="true">{lang search}</a></td>
-				<td class="scbar_txt_td"><input type="text" name="srchtxt" id="scbar_txt" value="{lang enter_content}" autocomplete="off" x-webkit-speech speech /></td>
+				<td class="scbar_type_td" style="height:28px;width:68px;background-position:0px 0px;"><a href="javascript:;" id="scbar_type" class="xg1" onclick="showMenu(this.id)" hidefocus="true">{lang search}</a></td>
+				<td class="scbar_txt_td" style="height:28px;"><input style="width:170px;height:28px;padding:0px;border:none;" type="text" name="srchtxt" id="scbar_txt" class="input_txt_1" value="{lang enter_content}" autocomplete="off" x-webkit-speech speech /></td>
 				
-				<td class="scbar_btn_td"><button type="submit" name="searchsubmit" id="scbar_btn" sc="1" class="pn pnc" value="true"><strong class="xi2">{lang search}</strong></button></td>
+				<td class="scbar_btn_td"><button style="width:61px;height:28px;background:url(template/jianshen/images/search_my.jpg) no-repeat;" type="submit" name="searchsubmit" id="scbar_btn" sc="1" class="pn pnc" value="true"><strong class="xi2">{lang search}</strong></button></td>
 				
 			</tr>
 		</table>
 	</form>
-</div>
+
 <ul id="scbar_type_menu" class="p_pop" style="display: none;"><!--{echo implode('', $slist);}--></ul>
 <script type="text/javascript">
 	initSearchmenu('scbar', '$searchparams[url]');
