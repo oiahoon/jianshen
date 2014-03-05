@@ -16,7 +16,7 @@
       <a>2</a>
       <a>3</a>
       <a>4</a>
-    </div>           
+    </div>
   </div>
   <!-- 轮播 E -->
   <!-- 登录模块  -->
@@ -67,37 +67,37 @@
     <div class="jszs">
       <span class="title"><span><a>四季健身 |</a><a>白领健身 |</a><a>运动损伤</a></span></span>
       <div class="left1_1">
-        <!--[diy=jianshen_door_010_115]--><div id="jianshen_door_010_115" class="area"></div><!--[/diy]-->
+        <!--[diy=jianshen_door_011_101]--><div id="jianshen_door_011_101" class="area"></div><!--[/diy]-->
       </div>
       <div class="right1_1">
-        <!--[diy=jianshen_door_010_105]--><div id="jianshen_door_010_105" class="area"></div><!--[/diy]-->
+        <!--[diy=jianshen_door_011_102]--><div id="jianshen_door_011_102" class="area"></div><!--[/diy]-->
       </div>
     </div> 
     <div class="mtss">
       <span class="title"><span><a>减肥减脂 |</a><a>增肌宝典 |</a><a>健康饮食</a></span></span>
       <div class="left1_1">
-        <!--[diy=jianshen_door_010_115]--><div id="jianshen_door_010_115" class="area"></div><!--[/diy]-->
+        <!--[diy=jianshen_door_011_103]--><div id="jianshen_door_011_103" class="area"></div><!--[/diy]-->
       </div>
       <div class="right1_1">
-        <!--[diy=jianshen_door_010_105]--><div id="jianshen_door_010_105" class="area"></div><!--[/diy]-->
+        <!--[diy=jianshen_door_011_104]--><div id="jianshen_door_011_104" class="area"></div><!--[/diy]-->
       </div>
     </div> 
     <div class="ydjs">
       <span class="title"><span><a>舞蹈 |</a><a>瑜伽 |</a><a>动感单车 |</a><a>普拉提 |</a><a>器械健身 </a></span></span>
       <div class="left1_1">
-        <!--[diy=jianshen_door_010_115]--><div id="jianshen_door_010_115" class="area"></div><!--[/diy]-->
+        <!--[diy=jianshen_door_011_105]--><div id="jianshen_door_011_105" class="area"></div><!--[/diy]-->
       </div>
       <div class="right1_1">
-        <!--[diy=jianshen_door_010_105]--><div id="jianshen_door_010_105" class="area"></div><!--[/diy]-->
+        <!--[diy=jianshen_door_011_106]--><div id="jianshen_door_011_106" class="area"></div><!--[/diy]-->
       </div>
     </div>
     <div class="hwyd">
       <span class="title"><span><a>攀岩 |</a><a>骑马 |</a><a>漂流 |</a><a>野外拓展 |</a><a>真人CS |</a><a>滑雪</a></span></span>
       <div class="left1_1">
-        <!--[diy=jianshen_door_010_115]--><div id="jianshen_door_010_115" class="area"></div><!--[/diy]-->
+        <!--[diy=jianshen_door_011_107]--><div id="jianshen_door_011_107" class="area"></div><!--[/diy]-->
       </div>
       <div class="right1_1">
-        <!--[diy=jianshen_door_010_105]--><div id="jianshen_door_010_105" class="area"></div><!--[/diy]-->
+        <!--[diy=jianshen_door_011_108]--><div id="jianshen_door_011_108" class="area"></div><!--[/diy]-->
       </div>
     </div>        
   </div>
@@ -117,66 +117,40 @@
       </ul>
     </div>
     <div class="pk">
-      <div class="pk1"><img src="images/test1.jpg"/><span>健身前</span></div>
+      <div class="pk1">
+        <!--[diy=jianshen_door_011_109]--><div id="jianshen_door_011_109" class="area"></div><!--[/diy]-->
+        <span>健身前</span>
+      </div>
       <span class="pk"></span>
-      <div class="pk2"><img src="images/test1.jpg"/><span>健身前</span></div>
+      <div class="pk2">
+        <!--[diy=jianshen_door_011_110]--><div id="jianshen_door_011_110" class="area"></div><!--[/diy]-->
+        <span>健身后</span>
+        </div>
     </div>
     <div class="rmlt">
         <p class="title">热门论坛</p>
-        <img src="images/test1.jpg"/>
-        <div class="des">
-          <p class="title">活动标题活动标题</p>
-          <p>内容描述内容描述内容描述内容描述内容描述内容描述..</p>
-        </div>
+        <!--[diy=jianshen_door_011_111]--><div id="jianshen_door_011_111" class="area"></div><!--[/diy]-->
         <div class="clear"></div>
-        <ul>
-          <li><a>蔡振华出任中国足协主席 就职宣言就职宣言就..</a></li>
-          <li><a>蔡振华出任中国足协主席 就职宣言就职宣言就..</a></li>
-          <li><a>蔡振华出任中国足协主席 就职宣言就职宣言就..</a></li>
-          <li><a>蔡振华出任中国足协主席 就职宣言就职宣言就..</a></li>
-        </ul>
+        <!--[diy=jianshen_door_011_112]--><div id="jianshen_door_011_112" class="area"></div><!--[/diy]-->
     </div>
     <div class="rmhd">
         <p class="title">热门活动</p>
         <span class="title">最新活动</span><span class="line"></span>   <div class="clear"></div>
-        <img src="images/test1.jpg"/>
-        <div class="des">
-          <p class="title">活动标题活动标题</p>
-          <p>内容描述内容描述内容描述内容描述内容描述内容描述..</p>
-        </div>
+        <!--[diy=jianshen_door_011_113]--><div id="jianshen_door_011_113" class="area"></div><!--[/diy]-->
         <div class="clear"></div>
-        <ul>
-          <li><a>蔡振华出任中国足协主席 就职宣言就职宣言就..</a></li>
-          <li><a>蔡振华出任中国足协主席 就职宣言就职宣言就..</a></li>
-          <li><a>蔡振华出任中国足协主席 就职宣言就职宣言就..</a></li>
-          <li><a>蔡振华出任中国足协主席 就职宣言就职宣言就..</a></li>
-        </ul>
-        <span class="title">我来召集</span><span class="line"></span>   <div class="clear"></div>
-        <img src="images/test1.jpg"/>
-        <div class="des">
-          <p class="title">活动标题活动标题</p>
-          <p>内容描述内容描述内容描述内容描述内容描述内容描述..</p>
-        </div>
+        <!--[diy=jianshen_door_011_114]--><div id="jianshen_door_011_114" class="area"></div><!--[/diy]-->
+        
+        <span class="title">我来召集</span><span class="line"></span>
         <div class="clear"></div>
-        <ul>
-          <li><a>蔡振华出任中国足协主席 就职宣言就职宣言就..</a></li>
-          <li><a>蔡振华出任中国足协主席 就职宣言就职宣言就..</a></li>
-          <li><a>蔡振华出任中国足协主席 就职宣言就职宣言就..</a></li>
-          <li><a>蔡振华出任中国足协主席 就职宣言就职宣言就..</a></li>
-        </ul>
-        <span class="title">官方推荐</span><span class="line"></span>   <div class="clear"></div>
-        <img src="images/test1.jpg"/>
-        <div class="des">
-          <p class="title">活动标题活动标题</p>
-          <p>内容描述内容描述内容描述内容描述内容描述内容描述..</p>
-        </div>
+        <!--[diy=jianshen_door_011_115]--><div id="jianshen_door_011_115" class="area"></div><!--[/diy]-->
         <div class="clear"></div>
-        <ul>
-          <li><a>蔡振华出任中国足协主席 就职宣言就职宣言就..</a></li>
-          <li><a>蔡振华出任中国足协主席 就职宣言就职宣言就..</a></li>
-          <li><a>蔡振华出任中国足协主席 就职宣言就职宣言就..</a></li>
-          <li><a>蔡振华出任中国足协主席 就职宣言就职宣言就..</a></li>
-        </ul>
+        <!--[diy=jianshen_door_011_116]--><div id="jianshen_door_011_116" class="area"></div><!--[/diy]-->
+        
+        <span class="title">官方推荐</span><span class="line"></span>
+        <div class="clear"></div>
+        <!--[diy=jianshen_door_011_117]--><div id="jianshen_door_011_117" class="area"></div><!--[/diy]-->
+        <div class="clear"></div>
+        <!--[diy=jianshen_door_011_118]--><div id="jianshen_door_011_118" class="area"></div><!--[/diy]-->
     </div>
   </div>
   <!-- eof right -->
@@ -186,40 +160,30 @@
   <div class="qm_fc">
     <div class="qm">
       <p class="title">热门活动</p>
-      <div class="left"><img src="images/test1.jpg"/><a>[ 成都健身 ]</a><a>[ 北京健身 ]</a><a>[ 上海健身 ]</a><a>[ 武汉健身 ]</a></div>
-      <ul  class="right">
-          <li><a>蔡振华出任中国足协主席 就职宣言..</a></li>
-          <li><a>蔡振华出任中国足协主席 就职宣言..</a></li>
-          <li><a>蔡振华出任中国足协主席 就职宣言..</a></li>
-          <li><a>蔡振华出任中国足协主席 就职宣言..</a></li>
-          <li><a>蔡振华出任中国足协主席 就职宣言..</a></li>
-        </ul>
-        <div class="clear"></div>
+      <div class="left">
+        <!--[diy=jianshen_door_011_120]--><div id="jianshen_door_011_120" class="area"></div><!--[/diy]-->
+        <!--[diy=jianshen_door_011_119]--><div id="jianshen_door_011_119" class="area"></div><!--[/diy]-->
+      </div>
+      <ul class="right">
+        <!--[diy=jianshen_door_011_121]--><div id="jianshen_door_011_121" class="area"></div><!--[/diy]-->
+      </ul>
+      <div class="clear"></div>
     </div>
     <div class="fc">
       <div class="title">
         <span>会员风采</span>
-        <a>+更多<<</a>
+        <a href="plugin.php?id=xhuaian_makefriends:main">+更多<<</a>
         <div class="clear"></div>
       </div>
-      <div class="hyfc">                                                                                                                                                        
+      <div class="hyfc">
         <a class="more1_l"></a>
-        <div class="hyfcbox">                                                                                                                                                        
-        <ul>                                                                                                                                                                          
-          <li><a><img src="images/test2.jpg"/><p>昵称：小猫咪</p><p>擅长运动：器械健身</p><p>运动宣言：坚持就是胜利！</p></a>                                                                                                                                                       
-          </li>                                                                                                                                                                          
-          <li><a><img src="images/test2.jpg"/><p>昵称：小猫咪</p><p>擅长运动：器械健身</p><p>运动宣言：坚持就是胜利！</p></a>                                                                                                                                                       
-          </li>                                                                                                                                                                        
-          <li><a><img src="images/test2.jpg"/><p>昵称：小猫咪</p><p>擅长运动：器械健身</p><p>运动宣言：坚持就是胜利！</p></a>                                                                                                                                                       
-          </li>                                                                                                                                                                         
-          <li><a><img src="images/test2.jpg"/><p>昵称：小猫咪</p><p>擅长运动：器械健身</p><p>运动宣言：坚持就是胜利！</p></a>                                                                                                                                                       
-          </li>                                                                                                                                                      
-        </ul> 
-        </div>                                                                                                                                                      
-        <a class="more1_r"></a>                                                                                                                                                        
-        <div class="clear">                                                                                                                                       
+        <div class="hyfcbox">
+        <!--[diy=jianshen_door_011_122]--><div id="jianshen_door_011_122" class="area"></div><!--[/diy]-->
+        </div>
+        <a class="more1_r"></a>
+        <div class="clear">    
         </div> 
-                                                                                                                                             
+   
       </div>  
     </div>
   </div>
@@ -237,5 +201,4 @@
   </div>
 </div>
 
-<div style="height:1px; clear:both"></div>
 <!--{template common/footer}-->
