@@ -65,7 +65,9 @@
     </div>
     <!-- 板块二 -->
     <div class="jszs">
-      <span class="title"><span><a>四季健身 |</a><a>白领健身 |</a><a>运动损伤</a></span></span>
+      <span class="title"><span>
+        <!--[diy=jianshen_door_010_105]--><div id="jianshen_door_010_105" class="area"></div><!--[/diy]-->
+      </span></span>
       <div class="left1_1">
         <!--[diy=jianshen_door_011_101]--><div id="jianshen_door_011_101" class="area"></div><!--[/diy]-->
       </div>
@@ -74,7 +76,9 @@
       </div>
     </div> 
     <div class="mtss">
-      <span class="title"><span><a>减肥减脂 |</a><a>增肌宝典 |</a><a>健康饮食</a></span></span>
+      <span class="title"><span>
+        <!--[diy=jianshen_door_010_106]--><div id="jianshen_door_010_106" class="area"></div><!--[/diy]-->
+      </span></span>
       <div class="left1_1">
         <!--[diy=jianshen_door_011_103]--><div id="jianshen_door_011_103" class="area"></div><!--[/diy]-->
       </div>
@@ -83,7 +87,9 @@
       </div>
     </div> 
     <div class="ydjs">
-      <span class="title"><span><a>舞蹈 |</a><a>瑜伽 |</a><a>动感单车 |</a><a>普拉提 |</a><a>器械健身 </a></span></span>
+      <span class="title"><span>
+          <!--[diy=jianshen_door_010_107]--><div id="jianshen_door_010_107" class="area"></div><!--[/diy]-->
+      </span></span>
       <div class="left1_1">
         <!--[diy=jianshen_door_011_105]--><div id="jianshen_door_011_105" class="area"></div><!--[/diy]-->
       </div>
@@ -92,7 +98,9 @@
       </div>
     </div>
     <div class="hwyd">
-      <span class="title"><span><a>攀岩 |</a><a>骑马 |</a><a>漂流 |</a><a>野外拓展 |</a><a>真人CS |</a><a>滑雪</a></span></span>
+      <span class="title"><span>
+        <!--[diy=jianshen_door_010_108]--><div id="jianshen_door_010_108" class="area"></div><!--[/diy]-->
+      </span></span>
       <div class="left1_1">
         <!--[diy=jianshen_door_011_107]--><div id="jianshen_door_011_107" class="area"></div><!--[/diy]-->
       </div>
@@ -108,12 +116,16 @@
     <div class="yybj">
       <div class="title">
         <span>营养补剂</span>
-        <a>+更多<<</a>
+        <!--[diy=jianshen_door_010_109]--><div id="jianshen_door_010_109" class="area"></div><!--[/diy]-->
         <div class="clear"></div>
       </div>
       <ul>
-        <li><a>乳清蛋白粉</a></li>
-        <li><a>肌酸</a></li>
+        <li>
+          <!--[diy=jianshen_door_010_110]--><div id="jianshen_door_010_110" class="area"></div><!--[/diy]-->
+        </li>
+        <li>
+          <!--[diy=jianshen_door_010_111]--><div id="jianshen_door_010_111" class="area"></div><!--[/diy]-->
+        </li>
       </ul>
     </div>
     <div class="pk">
