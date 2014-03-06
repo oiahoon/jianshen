@@ -192,11 +192,13 @@
 </div>
 
 <div class="foot">
-  <div class="pinpai"><img src="images/test3.jpg"/><img src="images/test3.jpg"/><img src="images/test3.jpg"/><img src="images/test3.jpg"/><img src="images/test3.jpg"/><img src="images/test3.jpg"/><img src="images/test3.jpg"/><img src="images/test3.jpg"/></div>
+  <div class="pinpai">
+    <!--[diy=jianshen_door_011_123]--><div id="jianshen_door_011_123" class="area"></div><!--[/diy]-->
+  </div>
   <div class="youqinglj">
     <!--友情链接 -->
-    <!--[diy=jianshen_door_010_37]--><div id="jianshen_door_010_37" class="area"></div><!--[/diy]-->
-    <!--[diy=jianshen_door_010_37]--><div id="jianshen_door_010_37" class="area"></div><!--[/diy]-->
+    
+    <!--[diy=jianshen_door_011_124]--><div id="jianshen_door_011_124" class="area"></div><!--[/diy]-->
     <!--友情链接 -->
   </div>
 </div>
