@@ -108,6 +108,31 @@ window.onerror=function(){return true;}
      
      });
     /* banner end*/
+   /*huiyuan zhanshi*/
+    var m=0;
+    var len=$("div.hyfcbox ul li").length-4;
+    oiahoon("div.hyfc a.more1_r").bind("click",function(){ 
+      if(m==len){     
+          
+          } 
+       else{ m++;
+      oiahoon("div.hyfcbox ul").css("position","absolute").animate({"left":-128*m+"px"},900);
+           } 
+
+
+        }); 
+        
+       oiahoon("div.hyfc a.more1_l").bind("click",function(){ 
+      if(m==0){     
+          
+          } 
+       else{ m--;
+      oiahoon("div.hyfcbox ul").css("position","absolute").animate({"left":-128*m+"px"},900);
+           } 
+
+
+        });  
+     /*huiyuan zhanshi end*/
     }) 
 </script>
  <!--[if IE 6]>

@@ -22,13 +22,34 @@
   <!-- 轮播 E -->
   <!-- 登录模块  -->
   <div class="denglubox">
-    <input type="text" class="name_input" value="请输入用户名">
-    <input type="text" class="password_input" value="请输入密码">
-    <a class="denglu"></a>
-    <div class="quickico1">
-      <a class="misscode">忘记密码</a>
-      <a class="zc">注册</a>
-    </div>
+    <!--{if $_G['uid']}-->
+      <input type="text" name="username" id="ls_username" autocomplete="off" class="name_input" {if $_G['setting']['autoidselect']} value="{lang username}" onfocus="if(this.value == '{lang username}'){this.value = '';}" onblur="if(this.value == ''){this.value = '{lang username}';}"{/if} tabindex="901" />
+      <input type="password" name="password" id="ls_password" autocomplete="off" tabindex="902" class="password_input" value="请输入密码">
+      <img src="uc_server/avatar.php?uid=$_G['uid']&size=middle" />
+      uc_server/avatar.php?uid=1&size=middle
+      <div class="quickico1">
+        <a class="misscode">已经登陆</a>
+        <a class="zc">注册</a>
+      </div>
+    <!--{else}-->
+    
+      <form method="post" autocomplete="off" id="lsform" action="member.php?mod=logging&action=login&loginsubmit=yes&infloat=yes&lssubmit=yes" onsubmit="{if $_G['setting']['pwdsafety']}pwmd5('ls_password');{/if}return lsSubmit();">
+        <input type="hidden" name="formhash" value="{FORMHASH}" />
+        <input type="hidden" name="referer" value="{echo dreferer()}" />
+        <!--{if $auth}-->
+          <input type="hidden" name="auth" value="$auth" />
+        <!--{/if}-->
+        <input type="text" name="username" id="ls_username" autocomplete="off" class="name_input" {if $_G['setting']['autoidselect']} value="{lang username}" onfocus="if(this.value == '{lang username}'){this.value = '';}" onblur="if(this.value == ''){this.value = '{lang username}';}"{/if} tabindex="901" />
+        <input type="password" name="password" id="ls_password" autocomplete="off" tabindex="902" class="password_input" value="请输入密码">
+        <button class="denglu"></button>
+        <input type="hidden" name="quickforward" value="yes" />
+        <input type="hidden" name="handlekey" value="ls" />
+      </form>
+      <div class="quickico1">
+        <a class="misscode">忘记密码</a>
+        <a class="zc">注册</a>
+      </div>
+    <!--{/if}-->
      <div class="quickico2">
       <a>会友微博</a>
       <a>会友微信</a>
