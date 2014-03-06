@@ -44,6 +44,70 @@ window.onerror=function(){return true;}
      // oiahoon("div.navbox div.nav a[hidefocus=true]").addClass("on");
      oiahoon("a.nav_sec:even").css({"color":"#fdd000","background":"url(template/jianshen/images/ico2.jpg) no-repeat 7px"});
      oiahoon("a.nav_sec:odd").css({"color":"#b4b528","background":"url(template/jianshen/images/ico3.jpg) no-repeat 7px"});
+    /* banner */
+    var n=0;
+    oiahoon("div.num a").eq(0).addClass("on");
+      
+   setInterval(function(){
+       oiahoon("div.banner div.num a").removeClass("on"); 
+       if(n==3){
+          n=0;
+          oiahoon(".middle_img_box").css("position","absolute").animate({"left":"0px"},900);
+          oiahoon("div.num a").eq(0).addClass("on");
+          } 
+       else{ n++;
+      oiahoon(".middle_img_box").css("position","absolute").animate({"left":-641*n+"px"},900);
+      oiahoon("div.num a").eq(n).addClass("on");
+           }
+        
+      },5000); 
+
+    
+     
+  oiahoon("div.banner div.num a").bind("click",function(){
+      oiahoon(".middle_img_box").stop();
+      n=oiahoon(this).index();
+      oiahoon("div.banner div.num a").removeClass("on");
+      oiahoon(this).addClass("on");
+      oiahoon(".middle_img_box").css("position","absolute").animate({"left":-641*n+"px"},900)
+     
+     
+
+    });
+     
+     oiahoon("div.banner a.rbt").bind("click",function(){
+      oiahoon(".middle_img_box").stop();
+      n=oiahoon("div.banner div.num a.on").index();
+      oiahoon("div.banner div.num a").removeClass("on"); 
+      if(n==3){     
+          n=0;
+          oiahoon(".middle_img_box").css("position","absolute").animate({"left":-641*n+"px"},900);
+          oiahoon("div.num a").eq(n).addClass("on");
+          } 
+       else{ n++;
+      oiahoon(".middle_img_box").css("position","absolute").animate({"left":-641*n+"px"},900);
+      oiahoon("div.num a").eq(n).addClass("on");
+           } 
+      
+     
+     });
+     
+     oiahoon("div.banner a.lbt").bind("click",function(){
+     oiahoon(".middle_img_box").stop();
+      n=oiahoon("div.banner div.num a.on").index();
+      oiahoon("div.banner div.num a").removeClass("on");
+      if(n==0){ n=3 ;
+      oiahoon(".middle_img_box").css("position","absolute").animate({"left":-641*n+"px"},900);
+      oiahoon("div.num a").eq(n).addClass("on");
+          } 
+       else{ n--;
+      oiahoon(".middle_img_box").css("position","absolute").animate({"left":-641*n+"px"},900);
+      oiahoon("div.num a").eq(n).addClass("on");
+           } 
+      
+     
+     });
+    /* banner end*/
     }) 
 </script>
  <!--[if IE 6]>
@@ -177,10 +241,9 @@ window.onerror=function(){return true;}
         </div>
       </div>
        <div class="nav_sec">
-        <a class="nav_sec">最新资讯</a>
-        <a class="nav_sec">健身百科</a>
-        <a class="nav_sec">营养补剂</a>
-        <a class="nav_sec">全民健身</a>
+        <!--[diy=jianshen_door_010_099]-->
+          <div id="jianshen_door_010_099" class="area"></div>
+        <!--[/diy]-->
         <!--{ad/subnavbanner/a_mu}-->
         <div class="searchbox">                                                                                                                                                     
           <!--{subtemplate common/pubsearchtop}-->                                                                                                                                 

@@ -2,21 +2,24 @@
 <!--{template common/header}-->
 
 
-<!-- 左侧编号 jianshen_door_010_1XX -->
-<!-- 右侧编号 jianshen_door_010_2XX -->
 
 <div class="contentbox">
   <!-- 轮播 S 1420-->
   <div class="banner">
     <a class="lbt"></a>
     <a class="rbt"></a> 
-    <div class="imgbox"><img src="template/jianshen/images/banner1.jpg"/></div>
-    <div class="num">
-      <a>1</a>
-      <a>2</a>
-      <a>3</a>
-      <a>4</a>
+    <div class="middle_img_box">
+      <!--[diy=jianshen_door_010_100]-->
+        <div id="jianshen_door_010_100" class="area"></div>
+      <!--[/diy]-->
     </div>
+   
+    <div class="num">
+       <a>1</a>
+       <a>2</a>
+       <a>3</a>
+       <a>4</a>
+     </div>
   </div>
   <!-- 轮播 E -->
   <!-- 登录模块  -->
@@ -120,12 +123,7 @@
         <div class="clear"></div>
       </div>
       <ul>
-        <li>
-          <!--[diy=jianshen_door_010_110]--><div id="jianshen_door_010_110" class="area"></div><!--[/diy]-->
-        </li>
-        <li>
-          <!--[diy=jianshen_door_010_111]--><div id="jianshen_door_010_111" class="area"></div><!--[/diy]-->
-        </li>
+        <!--[diy=jianshen_door_010_110]--><div id="jianshen_door_010_110" class="area"></div><!--[/diy]-->
       </ul>
     </div>
     <div class="pk">

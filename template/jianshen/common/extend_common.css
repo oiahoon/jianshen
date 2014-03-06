@@ -161,7 +161,7 @@ div.top_denglu span.r_denglu{display:block;float:left;width:25px;height:21px;bac
 div.top_denglu div.m_denglu a{font:12px "宋体";color:#fff;}
 div.navbox{height:43px;width:100%;background:url({STYLEIMGDIR}/nav_bg.jpg);}
 div.navbox div.nav{width:960px;margin:0 auto;}
-div.navbox div.nav a{float:left;font:16px "微软雅黑";display:block;color:#fff;padding:11px 0;}
+div.navbox div.nav a{float:left;font:16px "微软雅黑";display:block;color:#fff;padding:11px 0;text-decoration:none;}
 div.navbox div.nav a span{padding:11px 30px;}
 div.navbox div.nav a:hover,div.navbox div.nav a.on{background:url({STYLEIMGDIR}/navonbg.jpg);}
 div.navbox div.nav a:hover span,div.navbox div.nav a.on span{background:url({STYLEIMGDIR}/banner_onbg.png) center no-repeat;}
@@ -172,14 +172,21 @@ div.nav_sec a.nav_sec{float:left;display:block;padding:3px 10px 3px 40px;font:14
 div.nav_sec div.searchbox{float:right;width:299px;height:28px;border:1px solid #de4a2d;}
 div.nav_sec div.searchbox input.search_input{float:left;background:url({STYLEIMGDIR}/ico1.jpg) no-repeat #fff 1px;padding:0 0 0 16px;border:none;width:163px;height:24px;color:#a3a3a3;font:12px "宋体";}
 div.nav_sec div.searchbox a.search{float:left;display:block;width:61px;height:24px;background-color:#de4a2d;font:14px "微软雅黑";color:#fff;text-align:center;}
-div.contentbox div.banner{float:left;width:641px;height:316px;margin-top:15px;position:relative;}
-div.contentbox div.banner a.lbt{position:absolute;top:128px;left:0px;width:60px;height:60px;background:url({STYLEIMGDIR}/bannerbt_l.png) no-repeat;}
-div.contentbox div.banner a.rbt{position:absolute;top:128px;right:0px;width:60px;height:60px;background:url({STYLEIMGDIR}/bannnerbt_r.png) no-repeat;}
+div.contentbox div.banner{float:left;width:641px;height:316px;margin-top:15px;position:relative;overflow:hidden;}
+div.contentbox div.banner a.lbt{position:absolute;z-index:10;top:128px;left:0px;width:60px;height:60px;background:url({STYLEIMGDIR}/bannerbt_l.png) no-repeat;}
+div.contentbox div.banner a.rbt{position:absolute;z-index:10;top:128px;right:0px;width:60px;height:60px;background:url({STYLEIMGDIR}/bannnerbt_r.png) no-repeat;}
 div.contentbox div.banner a.lbt:hover{background:url({STYLEIMGDIR}/bannerbt_lon.png) no-repeat;}
 div.contentbox div.banner a.rbt:hover{background:url({STYLEIMGDIR}/bannnerbt_ron.png) no-repeat;}
+
+/*test*/
+div.contentbox div.banner div.middle_img_box img{width:641px;height:316px;}
+div.contentbox div.banner div.middle_img_box{width:3000px;height:316px}
+div.contentbox div.banner div.middle_img_box a{display:block;float:left;}
+/*test*/
+
 div.contentbox div.banner div.num{position:absolute;bottom:10px;right:10px;width:96px;}
 div.contentbox div.banner div.num a{float:left;display:block;background-color:#fafafa;border:1px solid #ececec;font:12px "宋体";padding:4px 8px;color:#de4a2d}
-div.contentbox div.banner div.num a:hover{background-color:#de4a2d;color:#fff;}
+div.contentbox div.banner div.num a:hover,div.contentbox div.banner div.num a.on{background-color:#de4a2d;color:#fff;}
 div.contentbox div.denglubox{float:right;width:304px;height:316px;margin-top:15px;background:url({STYLEIMGDIR}/load.jpg) no-repeat;}
 div.contentbox div.denglubox input.name_input{width:205px;height:32px;font:12px "微软雅黑";color:#999;line-height:0px;border:0px;padding:0px;margin:30px 0 0 60px;background:none;outline:none;}
 div.contentbox div.denglubox input.password_input{width:205px;height:32px;font:12px "微软雅黑";color:#999;line-height:0px;border:0px;padding:0px;margin:22px 0 0 60px;background:none;outline:none;}
@@ -193,11 +200,12 @@ div.contentbox div.denglubox span{font:12px "微软雅黑";color:#333;text-align
 div.contentbox ul.content2{margin-top:15px;width:958px;height:250px;border:1px solid #dfdfdf;background:url({STYLEIMGDIR}/titlebg1.jpg) repeat-x #fff;}
 div.contentbox ul.content2 li{float:left;margin-left:29px;}
 div.contentbox ul.content2 li span{display:block;color:#de4a2d;font:bold 14px "微软雅黑";padding-top:12px;}
-div.contentbox ul.content2 li div{border:1px solid #ebebeb;width:280px;height:190px;background-color:#fafafa;margin-top:15px;}
+div.contentbox ul.content2 li div{border:1px solid #ebebeb;width:280px;height:190px;background-color:#fafafa;margin-top:15px;text-align:center;}
+div.contentbox ul.content2 li div img{width:267px;height:auto;margin-top:7px;}
 div.contentbox div.left1{margin-top:15px;float:left;width:645px}
 div.contentbox div.left1 img.gonggao1{width:645px;height:109px;background-color:red;}
 div.contentbox div.left1 div.zxzx{margin-top:15px;width:619px;height:304px;background:url({STYLEIMGDIR}/bg2.jpg);padding:11px 13px;}
-div.contentbox div.left1 div.zxzx span.title{display:block;width:622px;height:30px;background:url({STYLEIMGDIR}/title1.jpg);}
+div.contentbox div.left1 div.zxzx span.title{display:block;padding:0px;width:622px;height:30px;background:url({STYLEIMGDIR}/title1.jpg);}
 div.contentbox div.left1 div.zxzx div.left1_1{float:left;width:182px;margin-top:10px;}
 div.contentbox div.left1 div.zxzx div.left1_1 img{float:left;width:180px;height:210px;background:red;border:1px solid #dfdfdf;border-bottom:none;}
 div.contentbox div.left1 div.zxzx div.left1_1 span{float:left;display:block;padding:5px 10px;font:12px "微软雅黑";color:#fff;width:162px;height:36px;background-color:#f18e2c;}    
@@ -205,6 +213,7 @@ div.contentbox div.left1 div.zxzx div.right1_1{float:right;margin-top:10px;width
 div.contentbox div.left1 div.zxzx div.right1_1 p.title1,div.contentbox div.left1 div.zxzx div.right1_1 p.title2{text-align:center;padding-top:10px;}
 div.contentbox div.left1 div.zxzx div.right1_1 p.title1 a{font:bold 14px "微软雅黑";color:#de4a2d;}
 div.contentbox div.left1 div.zxzx div.right1_1 p.title2 a{font:12px "微软雅黑";color:#535ca8;}
+div.contentbox div.left1 div.zxzx div.right1_1 p.title2 a span{width: 120px;height:17px;margin: -4px 5px;white-space: nowrap;overflow: hidden;text-overflow: clip;display: inline-block;}
 div.contentbox div.left1 div.zxzx div.right1_1 ul{margin-top:10px;padding:0 10px;}
 div.contentbox div.left1 div.zxzx div.right1_1 ul a{font:12px "宋体";color:#3c3c3c;}
 div.contentbox div.left1 div.zxzx div.right1_1 ul li{padding-top:20px;}
@@ -212,7 +221,7 @@ div.contentbox div.left1 div.zxzx div.right1_1 ul li span.text{float:left;}
 div.contentbox div.left1 div.zxzx div.right1_1 ul li span.time{float:right;color:#999;}
 
 div.contentbox div.left1 div.jszs{margin-top:15px;width:619px;height:304px;background:url({STYLEIMGDIR}/bg2.jpg);padding:11px 13px;}
-div.contentbox div.left1 div.jszs span.title{display:block;width:622px;height:30px;background:url({STYLEIMGDIR}/title2.jpg) no-repeat;}
+div.contentbox div.left1 div.jszs span.title{display:block;width:622px;height:30px;background:url({STYLEIMGDIR}/title2.jpg) no-repeat;padding:0px;}
 div.contentbox div.left1 div.jszs span.title span{float: right;}
 div.contentbox div.left1 div.jszs span.title a{font:12px "宋体";color:red;}
 div.contentbox div.left1 div.jszs div.left1_1{float:left;width:182px;margin-top:10px;}
@@ -229,7 +238,7 @@ div.contentbox div.left1 div.jszs div.right1_1 ul li span.text{float:left;}
 div.contentbox div.left1 div.jszs div.right1_1 ul li span.time{float:right;color:#999;}
 
 div.contentbox div.left1 div.mtss{margin-top:15px;width:619px;height:304px;background:url({STYLEIMGDIR}/bg2.jpg);padding:11px 13px;}
-div.contentbox div.left1 div.mtss span.title{display:block;width:622px;height:30px;background:url({STYLEIMGDIR}/title3.jpg) no-repeat;}
+div.contentbox div.left1 div.mtss span.title{display:block;width:622px;padding:0px;height:30px;background:url({STYLEIMGDIR}/title3.jpg) no-repeat;}
 div.contentbox div.left1 div.mtss span.title span{float: right;}
 div.contentbox div.left1 div.mtss span.title a{font:12px "宋体";color:red;}
 div.contentbox div.left1 div.mtss div.left1_1{float:left;width:182px;margin-top:10px;}
@@ -246,7 +255,7 @@ div.contentbox div.left1 div.mtss div.right1_1 ul li span.text{float:left;}
 div.contentbox div.left1 div.mtss div.right1_1 ul li span.time{float:right;color:#999;}
 
 div.contentbox div.left1 div.ydjs{margin-top:15px;width:619px;height:304px;background:url({STYLEIMGDIR}/bg2.jpg);padding:11px 13px;}
-div.contentbox div.left1 div.ydjs span.title{display:block;width:622px;height:30px;background:url({STYLEIMGDIR}/title4.jpg) no-repeat;}
+div.contentbox div.left1 div.ydjs span.title{display:block;width:622px;padding:0px;height:30px;background:url({STYLEIMGDIR}/title4.jpg) no-repeat;}
 div.contentbox div.left1 div.ydjs span.title span{float: right;}
 div.contentbox div.left1 div.ydjs span.title a{font:12px "宋体";color:red;}
 div.contentbox div.left1 div.ydjs div.left1_1{float:left;width:182px;margin-top:10px;}
@@ -263,7 +272,7 @@ div.contentbox div.left1 div.ydjs div.right1_1 ul li span.text{float:left;}
 div.contentbox div.left1 div.ydjs div.right1_1 ul li span.time{float:right;color:#999;}
 
 div.contentbox div.left1 div.hwyd{margin-top:15px;width:619px;height:304px;background:url({STYLEIMGDIR}/bg2.jpg);padding:11px 13px;}
-div.contentbox div.left1 div.hwyd span.title{display:block;width:622px;height:30px;background:url({STYLEIMGDIR}/title5.jpg) no-repeat;}
+div.contentbox div.left1 div.hwyd span.title{display:block;width:622px;padding:0px;height:30px;background:url({STYLEIMGDIR}/title5.jpg) no-repeat;}
 div.contentbox div.left1 div.hwyd span.title span{float: right;}
 div.contentbox div.left1 div.hwyd span.title a{font:12px "宋体";color:red;}
 div.contentbox div.left1 div.hwyd div.left1_1{float:left;width:182px;margin-top:10px;}
