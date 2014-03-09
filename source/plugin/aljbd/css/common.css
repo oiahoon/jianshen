@@ -367,7 +367,7 @@ http://www.comsenz.com
 .hotvip .sidetitle{padding:8px 0 0;height:21px;overflow: hidden;}
 .hotvip h2{font-size:14px;}
 .hotvip .more{color:#568C10}
-.hotvip ul{height:470px;overflow: hidden;}
+.hotvip ul{/*height:470px;*/overflow: hidden;}
 .hotvip ul li{margin-top:10px;width:205px;height:30px;float: left;overflow: hidden;}
 .hotvip ul li.active{height:140px;position: relative;}
 .hotvip ul li a{display:block;}

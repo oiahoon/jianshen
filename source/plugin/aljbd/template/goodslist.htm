@@ -7,7 +7,7 @@ var jq=jQuery.noConflict();
 <div class="bm cl" id="pt">
 <div class="z">
 <a title="$_G['setting']['bbname']" class="nvhm" href="./">{$_G['setting']['bbname']}</a> <em>&rsquot;</em>
-        <a href="plugin.php?id=aljbd">{lang aljbd:s74}</a>
+        <a href="{if $config['isrewrite']}brand.html{else}plugin.php?id=aljbd{/if}">{lang aljbd:s74}</a>
 </div>
 </div>
 <div class="ct2_a wp cl" id="ct">

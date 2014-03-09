@@ -16,6 +16,8 @@
 {/if}
 <form id="addbc" method="post" action="admin.php?action=plugins&operation=config&do={$_GET['do']}&identifier=aljbd&pmod=admin&act=edit&bid={$bd['id']}"  enctype="multipart/form-data">
 <input name="formhash" type="hidden" value="{FORMHASH}" />
+<input name="username" type="hidden" value="{$bd['username']}" />
+<input name="uid" type="hidden" value="{$bd['uid']}" />
 		<div class="c">
         
         

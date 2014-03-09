@@ -64,6 +64,9 @@ class table_aljbd_goods extends discuz_table{
 	public function update_view_by_gid($gid){
 		return DB::query('update %t set view=view+1 where id=%d',array($this->_table,$gid));
 	}
+	public function fetch_thread_all_block($con,$sc,$items){
+		return DB::fetch_all("select * from %t $con $sc limit 0,%d",array($this->_table,$items));
+	}
 }
 
 

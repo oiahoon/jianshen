@@ -53,8 +53,8 @@ if($_GET['act']=='yes'){
 			}
 		}
 		$updatearray=array(
-			'username'=>$_G['username'],
-			'uid'=>$_G['uid'],
+			'username'=>$_GET['username'],
+			'uid'=>$_GET['uid'],
 			'name'=>$_GET['name'],
 			'tel'=>$_GET['tel'],
 			'addr'=>$_GET['addr'],

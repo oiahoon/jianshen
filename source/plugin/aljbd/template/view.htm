@@ -1,58 +1,5 @@
-{template common/header}
 {template aljbd:view_header}
-<script type="text/javascript">
-jq(function() {
-jq('#for_mod_sshop').click(function(){
-jq('#mod_sshop').attr("checked","checked");
-jq('#mod_sgood').removeAttr("checked");
-jq('#form_search').submit();
-});
-jq('#for_mod_sgood').click(function(){
-jq('#mod_sgood').attr("checked","checked");
-jq('#mod_sshop').removeAttr("checked");
-jq('#form_search').submit();
-});
-jq('#myshopmenu,#navmsg').parent().hover(function(){
-jq(this).addClass('h');
-jq(this).find('ul').show();
-},function(){
-jq(this).removeClass('h');
-jq(this).find('ul').hide();
-});
-jq('#shop_info .siteurl').hover(function(){
-jq(this).addClass('h');
-},function(){
-jq(this).removeClass('h');
-});
-jq('#slider_wrap .slidenum li').mouseover(function(){
-if(!jq(this).hasClass('active')){
-jq(this).addClass('active').siblings().removeClass('active');
-var i=jq(this).index();
-jq('#slider_wrap .slideimg li:eq('+i+')').addClass('active').siblings().removeClass('active');
-}
-clearInterval(slideloop);
-}).mouseout(function(){
-autoactive();
-});
-var slideloop;
-function autoactive(){
-slideloop = setInterval(function(){
-var index = jq('#slider_wrap .slidenum li.active').index();
-index = index<(jq('#slider_wrap .slidenum li').length-1)?(index+1):0;
-jq('#slider_wrap .slidenum li:eq('+index+')').trigger('mouseover').trigger('mouseout');
-},3000);
-}
-autoactive();
-jq('#messages .message_tab h3').click(function(){
-jq(this).addClass('c').siblings().removeClass('c');
-var i = jq(this).index();
-jq('#messages>div:not(.message_tab)').removeClass('c').eq(i).addClass('c');
-});
-jq('#messages .replylink').click(function(){
-jq(this).closest('.commentli').find('.replies_wp').toggle().end().find('#commentmessage_r').focus();
-})
-});
-</script>
+
     <script language="javascript">
     jq(function(){
         jQuery.fn.extend({
@@ -70,13 +17,13 @@ jq(this).closest('.commentli').find('.replies_wp').toggle().end().find('#comment
             jq(this).showWordCount();
         });
         }else{
-          jq('textarea').bind('keyup mouseup', function() {
+        	jq('textarea').bind('keyup mouseup', function() {
             jq(this).showWordCount();
         });
         }
         jq('textarea').each(function(){
-          if(jq(this).val().length>0)
-            jq(this).showWordCount();
+        	if(jq(this).val().length>0)
+        		jq(this).showWordCount();
         })
     });
     </script><div class="wp cl" id="bdw">
@@ -139,10 +86,10 @@ announcementScroll();
 <h2>{lang aljbd:s124}</h2>
 </div>
 <div class="content cl">
-<p><span>{lang aljbd:s256}</span><a href="plugin.php?id=aljbd&type=&subtype=&region=$bd['region']&subregion=" target="_blank">{$rlist[$bd['region']]['name']}</a>{if $bd['subregion']} > <a href="plugin.php?id=aljbd&type=&subtype=&region=$bd['region']&subregion=$bd['subregion']" target="_blank">{$rlist[$bd['subregion']]['name']}</a>{/if}</p>
+<p><span>{lang aljbd:s256}</span><a href="{if $config['isrewrite']}brand_{eval echo intval($_GET['type'])}_{eval echo intval($_GET['subtype'])}_{eval echo intval($bd['region'])}_{eval echo intval($_GET['subregion'])}_{if $_GET['order']=='dateline'}2{elseif $_GET['order']=='view'}1{else}{eval echo intval($_GET['order'])}{/if}_{if $_GET['view']=='pic'}3{elseif $_GET['view']=='list'}4{else}{eval echo intval($_GET['view'])}{/if}.html{else}plugin.php?id=aljbd&type=&subtype=&region=$bd['region']&subregion={/if}" target="_blank">{$rlist[$bd['region']]['name']}</a>{if $bd['subregion']} > <a href="{if $config['isrewrite']}brand_{eval echo intval($_GET['type'])}_{eval echo intval($_GET['subtype'])}_{eval echo intval($bd['region'])}_{eval echo intval($bd['subregion'])}_{if $_GET['order']=='dateline'}2{elseif $_GET['order']=='view'}1{else}{eval echo intval($_GET['order'])}{/if}_{if $_GET['view']=='pic'}3{elseif $_GET['view']=='list'}4{else}{eval echo intval($_GET['view'])}{/if}.html{else}plugin.php?id=aljbd&type=&subtype=&region=$bd['region']&subregion=$bd['subregion']{/if}" target="_blank">{$rlist[$bd['subregion']]['name']}</a>{/if}</p>
 <p><span>{lang aljbd:s125}</span>{$bd['addr']}</p>
 <p class="tel"><span>{lang aljbd:s126}</span>{$bd['tel']}</p>
-<p><span>{lang aljbd:s127}</span><a href="plugin.php?id=aljbd&type=$bd['type']&subtype=&region=&subregion=" target="_blank">{$typelist[$bd['type']]['subject']}</a>{if $bd['subtype']} > <a target="_blank" href="plugin.php?id=aljbd&type={$bd['type']}&subtype={$bd['subtype']}&region=&subregion=">{$typelist[$bd['subtype']]['subject']}</a> {/if}</p>
+<p><span>{lang aljbd:s127}</span><a href="{if $config['isrewrite']}brand_{$bd['type']}_{eval echo intval($_GET['subtype'])}_{eval echo intval($_GET['region'])}_{eval echo intval($_GET['subregion'])}_{if $_GET['order']=='dateline'}2{elseif $_GET['order']=='view'}1{else}{eval echo intval($_GET['order'])}{/if}_{if $_GET['view']=='pic'}3{elseif $_GET['view']=='list'}4{else}{eval echo intval($_GET['view'])}{/if}.html{else}plugin.php?id=aljbd&type=$bd['type']&subtype=&region=&subregion={/if}" target="_blank">{$typelist[$bd['type']]['subject']}</a>{if $bd['subtype']} > <a target="_blank" href="{if $config['isrewrite']}brand_{$bd['type']}_{eval echo intval($bd['subtype'])}_{eval echo intval($_GET['region'])}_{eval echo intval($_GET['subregion'])}_{if $_GET['order']=='dateline'}2{elseif $_GET['order']=='view'}1{else}{eval echo intval($_GET['order'])}{/if}_{if $_GET['view']=='pic'}3{elseif $_GET['view']=='list'}4{else}{eval echo intval($_GET['view'])}{/if}.html{else}plugin.php?id=aljbd&type={$bd['type']}&subtype={$bd['subtype']}&region=&subregion={/if}">{$typelist[$bd['subtype']]['subject']}</a> {/if}</p>
 <div class="shop_opt cl">
 {if file_exists('source/plugin/aljbd/com/winfo.php')}
 <span onclick="showWindow('winfo', 'plugin.php?id=aljbd&act=winfo&bid={$_GET['bid']}');" id="iwantcorrect" class="btn_nomal z">{lang aljbd:s128}</span>
@@ -168,22 +115,6 @@ announcementScroll();
 </tr>
 </tbody></table>
 </div>
-
-<div class="intro_info mtm">
-    <h2 class="viewtitle">商家活动:</h2>
-
-
-  <table class="other_info">
-    <tbody>
-      {loop $acitivities $activity}
-      <tr>
-        <th><em>&nbsp;</em><a href="forum.php?mod=viewthread&tid=$activity[tid]">$activity['subject']</a><span>{eval echo gmdate('Y-m-d H:i:s',$activity['dateline']+8*3600)}</span></th>
-      </tr>
-      {/loop}
-    </tbody>
-  </table>
-</div>
-
 
 <div id="messages" style="margin-top:15px;">
 <div class="message_tab cl">
@@ -263,6 +194,7 @@ star_hover(rewardid,parseInt(oldscore[1]));
 }
 </script>
 {loop $commentlist $comment}
+{if $comment['uid']}
 <div id="comment{$comment['id']}">
 <dl class="commentli cl" id="commentdl{$comment['id']}">
 <dt>
@@ -331,10 +263,11 @@ $bd['name']&nbsp;&nbsp;&nbsp;<a href="javascript:;" class="replylink">{lang aljb
 </dd>
 </dl>
 </div>
+{/if}
 {/loop}
 </div>
 <script charset="gbk" type="text/javascript">
-//  bindform('msgForm');
+//	bindform('msgForm');
 </script>
 <div class="comment"><!--comment form-->
 <script charset="gbk" type="text/javascript">
@@ -460,7 +393,7 @@ star_hover(rewardid,parseInt(oldscore[1]));
 </div>
 
 <script charset="gbk" type="text/javascript">
-//  bindform('msgForm');
+//	bindform('msgForm');
 </script></div>
 </div>
 {template aljbd:side}

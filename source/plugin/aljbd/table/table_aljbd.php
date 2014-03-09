@@ -10,14 +10,14 @@ class table_aljbd extends discuz_table{
 
 			parent::__construct();
 	}
-	public function count_by_status($status,$uid,$type,$subtype,$region,$subregion){
+	public function count_by_status($status,$uid,$type,$subtype,$region,$subregion,$search){
 		$con[]=$this->_table;
 		$where='where 1 ';
 		if($uid){
 			$con[]=$uid;
 			$where.='and uid=%d';
 		}
-		if($status){
+		if($status||$status=='0'){
 			$con[]=$status;
 			$where.=' and status=%d';
 		}
@@ -37,12 +37,18 @@ class table_aljbd extends discuz_table{
 			$con[]=$subregion;
 			$where.=' and subregion=%d';
 		}
+		
+		if($search){
+			$con[]='%'.addcslashes($search, '%_').'%';
+			
+			$where.=" and name like %s";
+		}//debug('select count(*) from %t '.$where);
 		return DB::result_first('select count(*) from %t '.$where,$con);
 	}
 	public function fetch_all_by_recommend($recommend,$start,$perpage){
 		return DB::fetch_all('select * from %t where recommend=%d limit %d,%d',array($this->_table,$recommend,$start,$perpage));
 	}
-	public function fetch_all_by_status($status,$start,$perpage,$uid,$type,$subtype,$region,$subregion,$order){
+	public function fetch_all_by_status($status,$start,$perpage,$uid,$type,$subtype,$region,$subregion,$order,$search){
 		$con[]=$this->_table;
 		$where='where 1 ';
 		if(isset($status)){
@@ -69,12 +75,17 @@ class table_aljbd extends discuz_table{
 			$con[]=$subregion;
 			$where.=' and subregion=%d';
 		}
+		if($search){
+			$con[]='%'.addcslashes($search, '%_').'%';
+			
+			$where.=" and name like %s";
+		}
 		if($order){
 			$where.=' order by '.addslashes($order).' desc';
 		}else{
 			$where.=' order by comment desc';
 		}
-		if(!empty($start)&&!empty($perpage)){
+		if(!empty($perpage)){
 			$con[]=$start;
 			$con[]=$perpage;
 			$where.=' limit %d,%d';
@@ -105,8 +116,11 @@ class table_aljbd extends discuz_table{
 	public function count_by_region(){
 		return DB::fetch_all('select region,count(*) num from %t where status=1 group by region',array($this->_table));
 	}
-	public function update_activities_by_bid($bid, $activities){
-		return DB::query('update %t set activities=%a where id=%d',array($this->_table, $activities, $bid));
+	public function search_by_subject($subject){
+		return DB::fetch_all('select region,count(*) num from %t where status=1 group by region',array($this->_table));
+	}
+	public function fetch_thread_all_block($con,$sc,$items){
+		return DB::fetch_all("select * from %t $con $sc limit 0,%d",array($this->_table,$items));
 	}
 }
 
