@@ -122,6 +122,11 @@ class table_aljbd extends discuz_table{
   public function fetch_thread_all_block($con,$sc,$items){
     return DB::fetch_all("select * from %t $con $sc limit 0,%d",array($this->_table,$items));
   }
+
+  // 更新活动
+  public function update_activities_by_bid($bid, $activities){
+    return DB::query('update %t set activities=%a where id=%d',array($this->_table, $activities, $bid));
+  }
 }
 
 

@@ -30,7 +30,8 @@ if($_GET['act']=='attend'){
     }else{
       showerror(lang('plugin/aljbd','logo'));
     }
-
+    $actids = explode(',', preg_replace('#\s#', ',', $_POST['activities']));
+    $actids = array_slice(array_filter($actids, 'is_numeric'), 0, 5);
     $insertarray=array(
       'username'    =>$_G['username'],
       'uid'         =>$_G['uid'],
@@ -45,9 +46,10 @@ if($_GET['act']=='attend'){
       'region'      =>$_GET['region'],
       'subregion'   =>$_GET['subregion'],
       'dateline'    =>TIMESTAMP,
+      'activities'  =>implode(',', $actids), 
       );
 
-      // ########### 增加扩展信息 
+    // ########### 增加扩展信息 
     $extesions = array(
       // 咨询联系人
       'contactuser' => $_GET['contactuser'],
@@ -57,20 +59,21 @@ if($_GET['act']=='attend'){
       // 商家网址
       'url'         => $_GET['url'],
       // 价格区间
-      'pricerange'  => $_GET['pricerange'],
+      'price_from'  => $_GET['price_from'],
+      'price_to'    => $_GET['price_to'],
       // 配套服务
-      'bus'         => $_GET['bus'], // 公交
-      'metro'       => $_GET['metro'], //地铁
-      'parking'     => $_GET['parking'], //停车信息
-      'shopping'    => $_GET['shopping'], //购物
-      'hospital'    => $_GET['hospital'], //医院
-      'bank'        => $_GET['bank'],
-      'eatting'     => $_GET['eatting'],
+      'bus'         => $_GET['bus'],        // 公交
+      'metro'       => $_GET['metro'],      // 地铁
+      'parking'     => $_GET['parking'],    // 停车信息
+      'shopping'    => $_GET['shopping'],   // 购物
+      'hospital'    => $_GET['hospital'],   // 医院
+      'bank'        => $_GET['bank'],       // 银行
+      'eatting'     => $_GET['eatting'],    // 吃饭
     );
 
-    $shop_id = C::t('#aljbd#aljbd')->insert($insertarray);
+    $shop_id = C::t('#aljbd#aljbd')->insert($insertarray,true);
     $extesions['bid'] = $shop_id;
-    C::t('#aljbd#aljbdextensions')->insert($extesions);
+    C::t('#aljbd#aljbd_extensions')->insert($extesions);
     showmsg(lang('plugin/aljbd','s20'));
   }else{
     if(empty($_G['uid'])){
@@ -106,7 +109,22 @@ if($_GET['act']=='attend'){
   $bdlist=C::t('#aljbd#aljbd')->fetch_all_by_status(0,$start,$perpage,$_G['uid']);
   $paging = helper_page :: multi($num, $perpage, $currpage, 'plugin.php?id=aljbd&act=member', 0, 11, false, false);
   include template('aljbd:member');
-}else if($_GET['act']=='gg'){
+}
+else if($_GET['act']=='reject'){
+  if(empty($_G['uid'])){
+    showmessage(lang('plugin/aljbd','s23'));
+  }
+  $typelist=C::t('#aljbd#aljbd_type')->range();
+  $rlist=C::t('#aljbd#aljbd_region')->range();
+  $currpage=$_GET['page']?$_GET['page']:1;
+  $perpage=$config['page'];
+  $num=C::t('#aljbd#aljbd')->count_by_status(2,$_G['uid']);
+  $start=($currpage-1)*$perpage;
+  $bdlist=C::t('#aljbd#aljbd')->fetch_all_by_status(2,$start,$perpage,$_G['uid']);
+  $paging = helper_page :: multi($num, $perpage, $currpage, 'plugin.php?id=aljbd&act=member', 0, 11, false, false);
+  include template('aljbd:member');
+}
+else if($_GET['act']=='gg'){
   if(file_exists('source/plugin/aljbd/com/gg.php')){
     include_once 'source/plugin/aljbd/com/gg.php';
   }
@@ -116,8 +134,7 @@ if($_GET['act']=='attend'){
   }
 }else if($_GET['act']=='adv'){
   if(submitcheck('formhash')){
-    // 改为上传 3 个
-    // for($i=1;$i<=3;$i++){
+    // 改为上传 5 个
     for($i=1;$i<=5;$i++){
       if($_FILES['adv']['tmp_name'][$i]) {
         $picname = $_FILES['adv']['name'][$i];
@@ -206,7 +223,10 @@ if($_GET['act']=='attend'){
         }
       }
     }
+    $actids = explode(',', preg_replace('#\s#', ',', $_POST['activities']));
+    $actids = array_slice(array_filter($actids, 'is_numeric'), 0, 5);
     $updatearray=array(
+      'status'      => 0,
       // 店铺名称
       'name'        =>$_GET['name'],
       // 联系电话
@@ -227,19 +247,20 @@ if($_GET['act']=='attend'){
       'subregion'   =>$_GET['subregion'],
       // ######### 增加字段 
       // 最新活动帖子id
-      'activities'  => $_GET['activities'],
+      'activities'  => implode(',', $actids), 
       );
     // ######### 增加扩展信息 
     $extesions = array(
       // 咨询联系人
       'contactuser' => $_GET['contactuser'],
       // 营业时间
-      'timenomal'   => $_GET['timenomal'],
-      'timezhoumo'  => $_GET['timezhoumo'],
+      'timenormal'   => $_GET['timenormal'],
+      'timeweekend'  => $_GET['timeweekend'],
       // 商家网址
       'url'         => $_GET['url'],
       // 价格区间
-      'pricerange'  => $_GET['pricerange'],
+      'price_from'  => $_GET['price_from'],
+      'price_to'    => $_GET['price_to'],
       // 配套服务
       'bus'         => $_GET['bus'],      // 公交
       'metro'       => $_GET['metro'],    //地铁
@@ -254,16 +275,36 @@ if($_GET['act']=='attend'){
     }
     C::t('#aljbd#aljbd')->update($_GET['bid'],$updatearray);
     $bd=C::t('#aljbd#aljbd')->fetch($_GET['bid']);
-    C::t('#aljbd#aljbdextensions')->update($bd['id'], $extesions);
+    $extesion=C::t('#aljbd#aljbd_extensions')->fetch_by_bid($bd['id']);
+    if(!empty($extesion)){
+      C::t('#aljbd#aljbd_extensions')->update($extesion['id'],$extesions);
+    }
+    else{
+      $extesions['bid'] = $bd['id'];
+      C::t('#aljbd#aljbd_extensions')->insert($extesions);
+    }
     showmsg(lang('plugin/aljbd','s30'));
   }else{
     $bd=C::t('#aljbd#aljbd')->fetch($_GET['bid']);
-    $extesions=C::t('#aljbd#aljbd')->fetch($bd['id']);
+    $extesions=C::t('#aljbd#aljbd_extensions')->fetch_by_bid($bd['id']);
     $typelist=C::t('#aljbd#aljbd_type')->fetch_all_by_upid(0);
     $rlist=C::t('#aljbd#aljbd_region')->fetch_all_by_upid();
     include template('aljbd:edit');
   }
-}else if($_GET['act']=='gettype'){
+}
+else if ($_GET['act']=='editacitivity') {
+   if(submitcheck('submit')){
+       $actids = explode(',', preg_replace('#\s#', ',', $_POST['activities']));
+       $actids = array_slice(array_filter($actids, 'is_numeric'), 0, 5);    // 只取五个
+       C::t('#aljbd#aljbd')->update_activities_by_bid($_GET['bid'],implode(',', $actids));
+       showmsg(lang('plugin/aljbd','s30'));
+   }
+   else{
+       $bd=C::t('#aljbd#aljbd')->fetch($_GET['bid']);
+       include template('aljbd:editacitivity');
+   }
+}
+else if($_GET['act']=='gettype'){
   if($_GET['upid']){
     $typelist=C::t('#aljbd#aljbd_type')->fetch_all_by_upid($_GET['upid']);
   }
