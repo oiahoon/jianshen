@@ -32,21 +32,45 @@ if($_GET['act']=='attend'){
     }
 
     $insertarray=array(
-      'username'=>$_G['username'],
-      'uid'=>$_G['uid'],
-      'name'=>$_GET['name'],
-      'tel'=>$_GET['tel'],
-      'logo'=>$logo,
-      'addr'=>$_GET['addr'],
-      'intro'=>$_GET['intro'],
-      'other'=>$_GET['other'],
-      'type'=>$_GET['type'],
-      'subtype'=>$_GET['subtype'],
-      'region'=>$_GET['region'],
-      'subregion'=>$_GET['subregion'],
-      'dateline'=>TIMESTAMP
+      'username'    =>$_G['username'],
+      'uid'         =>$_G['uid'],
+      'name'        =>$_GET['name'],
+      'tel'         =>$_GET['tel'],
+      'logo'        =>$logo,
+      'addr'        =>$_GET['addr'],
+      'intro'       =>$_GET['intro'],
+      'other'       =>$_GET['other'],
+      'type'        =>$_GET['type'],
+      'subtype'     =>$_GET['subtype'],
+      'region'      =>$_GET['region'],
+      'subregion'   =>$_GET['subregion'],
+      'dateline'    =>TIMESTAMP,
+      );
+
+      // ########### 增加扩展信息 
+    $extesions = array(
+      // 咨询联系人
+      'contactuser' => $_GET['contactuser'],
+      // 营业时间
+      'timenormal'  => $_GET['timenormal'],
+      'timeweekend' => $_GET['timeweekend'],
+      // 商家网址
+      'url'         => $_GET['url'],
+      // 价格区间
+      'pricerange'  => $_GET['pricerange'],
+      // 配套服务
+      'bus'         => $_GET['bus'], // 公交
+      'metro'       => $_GET['metro'], //地铁
+      'parking'     => $_GET['parking'], //停车信息
+      'shopping'    => $_GET['shopping'], //购物
+      'hospital'    => $_GET['hospital'], //医院
+      'bank'        => $_GET['bank'],
+      'eatting'     => $_GET['eatting'],
     );
-    C::t('#aljbd#aljbd')->insert($insertarray);
+
+    $shop_id = C::t('#aljbd#aljbd')->insert($insertarray);
+    $extesions['bid'] = $shop_id;
+    C::t('#aljbd#aljbdextensions')->insert($extesions);
     showmsg(lang('plugin/aljbd','s20'));
   }else{
     if(empty($_G['uid'])){
@@ -184,52 +208,57 @@ if($_GET['act']=='attend'){
     }
     $updatearray=array(
       // 店铺名称
-      'name'      =>$_GET['name'],
+      'name'        =>$_GET['name'],
       // 联系电话
-      'tel'       =>$_GET['tel'],
+      'tel'         =>$_GET['tel'],
       // 店铺地址
-      'addr'      =>$_GET['addr'],
+      'addr'        =>$_GET['addr'],
       // 店铺介绍
-      'intro'     =>$_GET['intro'],
+      'intro'       =>$_GET['intro'],
       // 关键词
-      'other'     =>$_GET['other'],
+      'other'       =>$_GET['other'],
       // 分类
-      'type'      =>$_GET['type'],
+      'type'        =>$_GET['type'],
       // 子分类
-      'subtype'   =>$_GET['subtype'],
+      'subtype'     =>$_GET['subtype'],
       // 所属地区
-      'region'    =>$_GET['region'],
+      'region'      =>$_GET['region'],
       // 子地区
-      'subregion' =>$_GET['subregion'],
-      // ######### 增加字段
+      'subregion'   =>$_GET['subregion'],
+      // ######### 增加字段 
       // 最新活动帖子id
-      'activities' => $_GET['activities'],
+      'activities'  => $_GET['activities'],
+      );
+    // ######### 增加扩展信息 
+    $extesions = array(
       // 咨询联系人
       'contactuser' => $_GET['contactuser'],
       // 营业时间
-      'timenomal' => $_GET['timenomal'],
-      'timezhoumo' => $_GET['timezhoumo'],
+      'timenomal'   => $_GET['timenomal'],
+      'timezhoumo'  => $_GET['timezhoumo'],
       // 商家网址
-      'url' => $_GET['url'],
+      'url'         => $_GET['url'],
       // 价格区间
-      'pricerange' => $_GET['pricerange'],
+      'pricerange'  => $_GET['pricerange'],
       // 配套服务
-      'bus' => $_GET['bus'], // 公交
-      'metro' => $_GET['metro'], //地铁
-      'stop' => $_GET['stop'], //停车信息
-      'shopping' => $_GET['shopping'], //购物
-      'hospital' => $_GET['hospital'], //医院
-      'bank' => $_GET['bank'],
-      'eatting' => $_GET['eatting'],
-
+      'bus'         => $_GET['bus'],      // 公交
+      'metro'       => $_GET['metro'],    //地铁
+      'parking'     => $_GET['parking'],  //停车信息
+      'shopping'    => $_GET['shopping'], //购物
+      'hospital'    => $_GET['hospital'], //医院
+      'bank'        => $_GET['bank'],
+      'eatting'     => $_GET['eatting'],
     );
     if($logo){
       $updatearray['logo']=$logo;
     }
     C::t('#aljbd#aljbd')->update($_GET['bid'],$updatearray);
+    $bd=C::t('#aljbd#aljbd')->fetch($_GET['bid']);
+    C::t('#aljbd#aljbdextensions')->update($bd['id'], $extesions);
     showmsg(lang('plugin/aljbd','s30'));
   }else{
     $bd=C::t('#aljbd#aljbd')->fetch($_GET['bid']);
+    $extesions=C::t('#aljbd#aljbd')->fetch($bd['id']);
     $typelist=C::t('#aljbd#aljbd_type')->fetch_all_by_upid(0);
     $rlist=C::t('#aljbd#aljbd_region')->fetch_all_by_upid();
     include template('aljbd:edit');
