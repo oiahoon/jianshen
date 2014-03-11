@@ -42,8 +42,10 @@ window.onerror=function(){return true;}
   oiahoon(function(){
       oiahoon("div.navbox div.nav a").wrapInner("<span></span>");
      // oiahoon("div.navbox div.nav a[hidefocus=true]").addClass("on");
-     oiahoon("a.nav_sec:even").css({"color":"#fdd000","background":"url(template/jianshen/images/ico2.jpg) no-repeat 7px"});
-     oiahoon("a.nav_sec:odd").css({"color":"#b4b528","background":"url(template/jianshen/images/ico3.jpg) no-repeat 7px"});
+     oiahoon("div.nav_sec li.nav_sec:even").css({"color":"#fdd000","background":"url(template/jianshen/images/ico2.jpg) no-repeat 7px"});
+     oiahoon("div.nav_sec li.nav_sec:even a").css({"color":"#fdd000"});      
+     oiahoon("div.nav_sec li.nav_sec:odd").css({"color":"#b4b528","background":"url(template/jianshen/images/ico3.jpg) no-repeat 7px"});
+     oiahoon("div.nav_sec li.nav_sec:odd a").css({"color":"#b4b528"});
     /* banner */
     var n=0;
     oiahoon("div.num a").eq(0).addClass("on");
@@ -108,6 +110,14 @@ window.onerror=function(){return true;}
      
      });
     /* banner end*/
+    oiahoon(".left_list_zixun li.level1_li").bind("click",function(){
+        if(oiahoon(this).children("ul.level2_ul").is(":visible")){
+            oiahoon(this).children("ul.level2_ul").hide();
+            }
+        else{
+            oiahoon(this).children("ul.level2_ul").show();
+            }
+        });
    /*huiyuan zhanshi*/
     var m=0;
     var len=$("div.hyfcbox ul li").length-4;
@@ -266,9 +276,14 @@ window.onerror=function(){return true;}
         </div>
       </div>
        <div class="nav_sec">
-        <!--[diy=jianshen_door_010_099]-->
-          <div id="jianshen_door_010_099" class="area"></div>
-        <!--[/diy]-->
+        <ul>
+          <!--{loop $_G['setting']['mynavs'] $nav}-->
+            <!--{if $nav['available'] && (!$nav['level'] || ($nav['level'] == 1 && $_G['uid']) || ($nav['level'] == 2 && $_G['adminid'] > 0) || ($nav['level'] == 3 && $_G['adminid'] == 1))}-->
+              <li class="nav_sec">$nav[code]</li>
+            <!--{/if}-->
+          <!--{/loop}-->
+          <div class="clear"></div>
+        </ul>
         <!--{ad/subnavbanner/a_mu}-->
         <div class="searchbox">                                                                                                                                                     
           <!--{subtemplate common/pubsearchtop}-->                                                                                                                                 

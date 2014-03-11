@@ -78,7 +78,8 @@ body{ background:none repeat scroll 0 0 #f7f7f7;}
 #diy-tg_menu li a{ color:#333333}
 
 #hd{ background-color:#FFFFFF}
-#toptb{ border-bottom:1px solid #DCDCDC; background:url({STYLEIMGDIR}/bottom-bg.png) repeat scroll 0 0 #F1F1F1; height:32px; line-height:32px;}
+/*#toptb{ border-bottom:1px solid #DCDCDC; background:url({STYLEIMGDIR}/bottom-bg.png) repeat scroll 0 0 #F1F1F1; height:32px; line-height:32px;} */
+#toptb{}
 #toptb a{ color:#555555; padding:0px 5px; text-decoration:none;}
 #toptb a:hover{ color:#0086F8;}
 #toptb li{ float:left; list-style:none;}
@@ -159,6 +160,7 @@ div.top_denglu div.m_denglu{float:left;height:21px;background-color:#de4a2d;text
 
 div.top_denglu span.r_denglu{display:block;float:left;width:25px;height:21px;background:url({STYLEIMGDIR}/login_top_r.png) no-repeat;}
 div.top_denglu div.m_denglu a{font:12px "宋体";color:#fff;}
+div.top_denglu div.m_denglu a.qq2{background:url({STYLEIMGDIR}/qq-weibo.png) no-repeat scroll 0px 0px transparent}
 div.navbox{height:43px;width:100%;background:url({STYLEIMGDIR}/nav_bg.jpg);}
 div.navbox div.nav{width:960px;margin:0 auto;}
 div.navbox div.nav li{float:left;}
@@ -167,9 +169,13 @@ div.navbox div.nav a span{padding:11px 30px;}
 div.navbox div.nav a:hover,div.navbox div.nav a.on{background:url({STYLEIMGDIR}/navonbg.jpg);}
 div.navbox div.nav a:hover span,div.navbox div.nav a.on span{background:url({STYLEIMGDIR}/banner_onbg.png) center no-repeat;}
 
+
 div.contentbox{width:960px;margin:0 auto;}
 div.nav_sec{background-color:#8b8b8b;width:960px;height:30px;margin:0 auto;}
-div.nav_sec a.nav_sec{float:left;display:block;padding:3px 10px 3px 40px;font:14px "微软雅黑";margin-right:30px;}
+div.nav_sec ul{width:550px;float:left;}
+div.nav_sec li.nav_sec{float:left;display:block;padding:3px 10px 3px 40px;font:14px "微软雅黑";margin-right:30px;}
+div.nav_sec li.nav_sec a,div.nav_sec li.nav_sec a:hover{text-decoration:none;}
+div.nav_sec li.nav_sec a:hover{font-weight:bold;}
 div.nav_sec div.searchbox{float:right;width:299px;height:28px;border:1px solid #de4a2d;}
 div.nav_sec div.searchbox input.search_input{float:left;background:url({STYLEIMGDIR}/ico1.jpg) no-repeat #fff 1px;padding:0 0 0 16px;border:none;width:163px;height:24px;color:#a3a3a3;font:12px "宋体";}
 div.nav_sec div.searchbox a.search{float:left;display:block;width:61px;height:24px;background-color:#de4a2d;font:14px "微软雅黑";color:#fff;text-align:center;}
@@ -188,10 +194,12 @@ div.contentbox div.banner div.middle_img_box a{display:block;float:left;}
 div.contentbox div.banner div.num{position:absolute;bottom:10px;right:10px;width:96px;}
 div.contentbox div.banner div.num a{float:left;display:block;background-color:#fafafa;border:1px solid #ececec;font:12px "宋体";padding:4px 8px;color:#de4a2d}
 div.contentbox div.banner div.num a:hover,div.contentbox div.banner div.num a.on{background-color:#de4a2d;color:#fff;}
-div.contentbox div.denglubox{float:right;width:304px;height:316px;margin-top:15px;background:url({STYLEIMGDIR}/load.jpg) no-repeat;}
-div.contentbox div.denglubox input.name_input{width:205px;height:32px;font:12px "微软雅黑";color:#999;line-height:0px;border:0px;padding:0px;margin:30px 0 0 60px;background:none;outline:none;}
-div.contentbox div.denglubox input.password_input{width:205px;height:32px;font:12px "微软雅黑";color:#999;line-height:0px;border:0px;padding:0px;margin:22px 0 0 60px;background:none;outline:none;}
-div.contentbox div.denglubox a.denglu{display:block;margin:22px auto 0 auto;width:241px;height:32px;background:url({STYLEIMGDIR}/bt1.jpg) no-repeat;}
+div.contentbox div.denglubox{float:right;width:304px;height:316px;margin-top:15px;background:url({STYLEIMGDIR}/load.png) no-repeat;}
+div.contentbox div.denglubox div.denglubox_1{width:304px;height:202px;}
+div.contentbox div.denglubox div.denglubox_1 img{padding:20px;display:block;margin:0 auto;}
+div.contentbox div.denglubox input.name_input{width:241px;height:33px;background:url({STYLEIMGDIR}/name_input_bg.png) no-repeat;font:12px "微软雅黑";color:#999;line-height:0px;border:0px;padding-left:30px;margin:30px 0 0 32px;outline:none;}
+div.contentbox div.denglubox input.password_input{width:241px;height:33px;background:url({STYLEIMGDIR}/password_input_bg.png) no-repeat;font:12px "微软雅黑";color:#999;line-height:0px;border:0px;padding-left:30px;margin:22px 0 0 32px;outline:none;}
+div.contentbox div.denglubox button.denglu{display:block;margin:22px auto 0 auto;width:241px;height:32px;background:url({STYLEIMGDIR}/bt1.jpg) no-repeat;}
 div.contentbox div.denglubox div.quickico1{text-align:center;margin-top:17px;}
 div.contentbox div.denglubox div.quickico1 a.misscode{font:12px "微软雅黑";color:#000;}
 div.contentbox div.denglubox div.quickico1 a.zc{font:12px "微软雅黑";color:#cd4626;}
@@ -204,7 +212,7 @@ div.contentbox ul.content2 li span{display:block;color:#de4a2d;font:bold 14px "�
 div.contentbox ul.content2 li div{border:1px solid #ebebeb;width:280px;height:190px;background-color:#fafafa;margin-top:15px;text-align:center;}
 div.contentbox ul.content2 li div img{width:267px;height:auto;margin-top:7px;}
 div.contentbox div.left1{margin-top:15px;float:left;width:645px}
-div.contentbox div.left1 img.gonggao1{width:645px;height:109px;background-color:red;}
+div.contentbox div.left1 img.gonggao1{width:645px;height:109px;background-color:red;display:block;}
 div.contentbox div.left1 div.zxzx{margin-top:15px;width:619px;height:304px;background:url({STYLEIMGDIR}/bg2.jpg);padding:11px 13px;}
 div.contentbox div.left1 div.zxzx span.title{display:block;padding:0px;width:622px;height:30px;background:url({STYLEIMGDIR}/title1.jpg);}
 div.contentbox div.left1 div.zxzx div.left1_1{float:left;width:182px;margin-top:10px;}
@@ -223,8 +231,8 @@ div.contentbox div.left1 div.zxzx div.right1_1 ul li span.time{float:right;color
 
 div.contentbox div.left1 div.jszs{margin-top:15px;width:619px;height:304px;background:url({STYLEIMGDIR}/bg2.jpg);padding:11px 13px;}
 div.contentbox div.left1 div.jszs span.title{display:block;width:622px;height:30px;background:url({STYLEIMGDIR}/title2.jpg) no-repeat;padding:0px;}
-div.contentbox div.left1 div.jszs span.title span{float: right;}
-div.contentbox div.left1 div.jszs span.title a{font:12px "宋体";color:red;}
+div.contentbox div.left1 div.jszs span.title span{float: right;font:12px "宋体";color:#de4a2d;}
+div.contentbox div.left1 div.jszs span.title span a{font:12px "宋体";color:#de4a2d;margin-left:10px;}
 div.contentbox div.left1 div.jszs div.left1_1{float:left;width:182px;margin-top:10px;}
 div.contentbox div.left1 div.jszs div.left1_1 img{float:left;width:180px;height:210px;background:red;border:1px solid #dfdfdf;border-bottom:none;}
 div.contentbox div.left1 div.jszs div.left1_1 span{float:left;display:block;padding:5px 10px;font:12px "微软雅黑";color:#fff;width:162px;height:36px;background-color:#de4a2d;}    
@@ -240,8 +248,8 @@ div.contentbox div.left1 div.jszs div.right1_1 ul li span.time{float:right;color
 
 div.contentbox div.left1 div.mtss{margin-top:15px;width:619px;height:304px;background:url({STYLEIMGDIR}/bg2.jpg);padding:11px 13px;}
 div.contentbox div.left1 div.mtss span.title{display:block;width:622px;padding:0px;height:30px;background:url({STYLEIMGDIR}/title3.jpg) no-repeat;}
-div.contentbox div.left1 div.mtss span.title span{float: right;}
-div.contentbox div.left1 div.mtss span.title a{font:12px "宋体";color:red;}
+div.contentbox div.left1 div.mtss span.title span{float: right;font:12px "宋体";color:#de4a2d;}
+div.contentbox div.left1 div.mtss span.title span a{font:12px "宋体";color:#de4a2d;margin-left:10px;}
 div.contentbox div.left1 div.mtss div.left1_1{float:left;width:182px;margin-top:10px;}
 div.contentbox div.left1 div.mtss div.left1_1 img{float:left;width:180px;height:210px;background:red;border:1px solid #dfdfdf;border-bottom:none;}
 div.contentbox div.left1 div.mtss div.left1_1 span{float:left;display:block;padding:5px 10px;font:12px "微软雅黑";color:#fff;width:162px;height:36px;background-color:#f18e2c;}    
@@ -257,8 +265,8 @@ div.contentbox div.left1 div.mtss div.right1_1 ul li span.time{float:right;color
 
 div.contentbox div.left1 div.ydjs{margin-top:15px;width:619px;height:304px;background:url({STYLEIMGDIR}/bg2.jpg);padding:11px 13px;}
 div.contentbox div.left1 div.ydjs span.title{display:block;width:622px;padding:0px;height:30px;background:url({STYLEIMGDIR}/title4.jpg) no-repeat;}
-div.contentbox div.left1 div.ydjs span.title span{float: right;}
-div.contentbox div.left1 div.ydjs span.title a{font:12px "宋体";color:red;}
+div.contentbox div.left1 div.ydjs span.title span{float: right;font:12px "宋体";color:#de4a2d;}
+div.contentbox div.left1 div.ydjs span.title span a{font:12px "宋体";color:#de4a2d;margin-left:10px;}
 div.contentbox div.left1 div.ydjs div.left1_1{float:left;width:182px;margin-top:10px;}
 div.contentbox div.left1 div.ydjs div.left1_1 img{float:left;width:180px;height:210px;background:red;border:1px solid #dfdfdf;border-bottom:none;}
 div.contentbox div.left1 div.ydjs div.left1_1 span{float:left;display:block;padding:5px 10px;font:12px "微软雅黑";color:#fff;width:162px;height:36px;background-color:#b4b528;}    
@@ -274,8 +282,8 @@ div.contentbox div.left1 div.ydjs div.right1_1 ul li span.time{float:right;color
 
 div.contentbox div.left1 div.hwyd{margin-top:15px;width:619px;height:304px;background:url({STYLEIMGDIR}/bg2.jpg);padding:11px 13px;}
 div.contentbox div.left1 div.hwyd span.title{display:block;width:622px;padding:0px;height:30px;background:url({STYLEIMGDIR}/title5.jpg) no-repeat;}
-div.contentbox div.left1 div.hwyd span.title span{float: right;}
-div.contentbox div.left1 div.hwyd span.title a{font:12px "宋体";color:red;}
+div.contentbox div.left1 div.hwyd span.title span{float: right;font:12px "宋体";color:#de4a2d;}
+div.contentbox div.left1 div.hwyd span.title span a{font:12px "宋体";color:#de4a2d;margin-left:10px;}
 div.contentbox div.left1 div.hwyd div.left1_1{float:left;width:182px;margin-top:10px;}
 div.contentbox div.left1 div.hwyd div.left1_1 img{float:left;width:180px;height:210px;background:red;border:1px solid #dfdfdf;border-bottom:none;}
 div.contentbox div.left1 div.hwyd div.left1_1 span{float:left;display:block;padding:5px 10px;font:12px "微软雅黑";color:#fff;width:162px;height:36px;background-color:#fdd000;}    
@@ -328,7 +336,7 @@ div.contentbox div.right1 div.rmhd ul li{line-height:35px;border-bottom:1px dash
 div.contentbox div.right1 div.rmhd ul li a{font:12px "宋体";color:#333;line-height:35px;}
 div.contentbox div.right1 div.rmhd ul li a:hover{color:#de4a2d;}
 div.contentbox div.qm_fc{margin-top:15px;width:960px;height:285px;background:url({STYLEIMGDIR}/bg3.jpg) no-repeat;}
-div.contentbox div.qm_fc div.qm{float:left;background:url({STYLEIMGDIR}/qmjd.jpg) no-repeat 77px 10px ;padding:11px 13px;}
+div.contentbox div.qm_fc div.qm{float:left;background:url({STYLEIMGDIR}/qmjd.jpg) no-repeat 77px 15px ;padding:11px 13px;}
 div.contentbox div.qm_fc div.qm p.title{font:bold 14px "微软雅黑";color:#3c3c3c;padding:0 0 20px 0;} 
 div.contentbox div.qm_fc div.qm div.left{float:left;width:155px;}
 div.contentbox div.qm_fc div.qm div.left img{width:153px;height:100px;border:1px solid #3c3c3c;}
@@ -337,7 +345,7 @@ div.contentbox div.qm_fc div.qm ul.right{float:left;margin-left:15px;}
 div.contentbox div.qm_fc div.qm ul.right li{width:198px;line-height:35px;border-bottom:1px dashed #dfdfdf;}
 div.contentbox div.qm_fc div.qm ul.right li a{font:12px "宋体";color:#333;}
 div.contentbox div.qm_fc div.qm ul.right li a:hover{color:#de4a2d;}  
-div.contentbox div.qm_fc div.fc{height:263px;float:left;width:540px;background:url({STYLEIMGDIR}/qmjd.jpg) no-repeat 77px 10px ;padding:11px 13px;}
+div.contentbox div.qm_fc div.fc{height:263px;float:left;width:540px;background:url({STYLEIMGDIR}/hyfc.jpg) no-repeat 77px 15px ;padding:11px 13px;}
 div.contentbox div.qm_fc div.fc div.title{padding:0px;}
 div.contentbox div.qm_fc div.fc div.title span{float:left;font:bold 14px "微软雅黑";color:#3c3c3c;}
 div.contentbox div.qm_fc div.fc div.title a{float:right;text-align:right;font:12px "宋体";color:#de4a2d;}
@@ -366,4 +374,48 @@ div.top_denglu div.m_denglu li{float:left;padding-right:10px;}
 .lianxiqq{background-position:0px 0px;height:18px;}
 .scbar_txt_td_my1{height:28px;}
 .footer_bar{height:0px;background:none;}
-.xinyun_footer{background:none;}
+.xinyun_footer{background:none;}    
+
+/*zixun*/
+#pt{width:960px;margin:0 auto;}
+.ct2 .sc_jianshen{float:left;}
+.ct2 .mn_jianshen{float:right;}
+.neirong_weizi{width:960px;margin:0 auto;font: 12px "宋体";color:#000;}
+.neirong_weizi span.title{font: 12px "宋体";color:#000;}
+.neirong_weizi a,.neirong_weizi span{color:#de4a2d;line-height:35px;}
+.left_list_zixun,.left_page_zixun{float:left;width:170px;}
+.right_list_zixun,.right_page_zixun{float:right;width:728px;border:1px solid #d2d2d2;background-color:#f5f5f5;padding:25px;}
+.left_list_zixun a:hover,.left_page_zixun a:hover,.right_list_zixun a:hover,.right_page_zixun a:hover{text-decoration:none;}
+.left_list_zixun span.bgname,.left_page_zixun span.bgname{width:170px;height:25px;display:block;text-align:center;padding:8px 0;font:18px "微软雅黑";color:#fff;background:url({STYLEIMGDIR}/bg_title.jpg) no-repeat;}
+ul.list_ul_zixun li{border-bottom: 1px ridge #dcdcdc;padding: 10px 0;}
+ul.list_ul_zixun li img{float:left;width:180px;height:120px;}
+ul.list_ul_zixun div.list_zixun_box{float:right;width:525px;}
+div.list_zixun_box p.title{font:14px "微软雅黑";color:#de4a2d;padding:0px;line-height:28px;}
+div.list_zixun_box p.lever_1{font:12px "微软雅黑";color:#999;padding-bottom:10px;}
+div.list_zixun_box p.lever_1 span{padding-right:5px;}  
+div.list_zixun_box p.lever_2{font:12px "微软雅黑";color:#666;line-height:22px;}
+div.pgs{width:728px;margin:0 auto;}
+.pg{width:728px;text-align:center;padding-top:40px;}
+.pg a, .pg strong, .pgb a, .pg label{float:none;padding:5px 9px;border-color:#afafaf;}
+.pg strong,.pg a:hover{background-color:#de4a2d;color:#fff;border-color:#de4a2d;}
+.pg a.nxt{padding:5px 25px 5px 0;}
+.right_page_zixun img{display:block;margin:0 auto;padding:5px;background-color:#fff;max-width:530px;border:1px solid #d2d2d2;margin-bottom:25px;}
+.right_page_zixun p.xg1{margin:20px 0;}
+.right_page_zixun div.h{padding-bottom:10px;border-bottom:1px solid #dadada;}
+.right_page_zixun div.d{margin-top:20px;font:12px "微软雅黑";color:#666666;line-height: 24px;}
+.right_page_zixun a:hover{color:#de4a2d;}
+.left_list_zixun li.level1_li{width:168px;border:1px solid #eaeaea;background-color: #fff;}
+.left_list_zixun li.level1_li span{display: block;height:34px;line-height:32px;padding-left:20px;background-color:#f5f5f5;border-bottom:1px solid #eaeaea;}
+.left_list_zixun li.level1_li span a{font:bold 14px "宋体";color:#de4a2d;line-height:34px;width:148px;display:block;background:url({STYLEIMGDIR}/up.jpg) no-repeat 120px 14px;}
+.left_list_zixun li.level1_li ul.level2_ul{display:none;}
+.left_list_zixun li.level1_li ul.level2_ul li.level2_li{padding:9px 0 9px 30px;background:url({STYLEIMGDIR}/dot2.jpg) no-repeat 20px 16px;}
+.left_list_zixun li.level1_li ul.level2_ul li.level2_li a{font:14px "宋体";color:#000;}
+
+
+
+
+
+
+
+
+

@@ -998,7 +998,7 @@ function showportalprimaltemplate($pritplname, $type) {
 		} else {
 			$selected = '';
 		}
-		$catetplselect .= '<option value="'.$k.'"'.$selected.'>'.$v.'</option>';
+		$catetplselect .= '<option value="'.$k.'"'.$selected.'>'.$v.'['.$k.']'.'</option>';
 	}
 	$pritplophide = !empty($pritplname) ? '' : ' style="display:none;"';
 	$catetplselect .= '</select> <a href="javascript:;"'.$pritplophide.' onclick="$(\''.$type.'select\').value=\''.$selectedvalue.'\';$(\''.$type.'select\').parentNode.style.display=\'none\';$(\''.$type.'value\').style.display=\'\';">'.cplang('cancel').'</a></span>';
