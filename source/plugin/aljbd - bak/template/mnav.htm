@@ -1,0 +1,14 @@
+<ul>
+<li {if $_GET['act']=='member'}class="a"{/if}><a href="plugin.php?id=aljbd&act=member">{lang aljbd:s76}</a></li>
+<li {if $_GET['act']=='yes'}class="a"{/if}><a href="plugin.php?id=aljbd&act=member&act=yes">{lang aljbd:s77}</a></li>
+<li {if $_GET['act']=='reject'}class="a"{/if}><a href="plugin.php?id=aljbd&act=member&act=reject">已拒绝店铺</a></li>
+{if file_exists('source/plugin/aljbd/com/mark.php')}
+<li {if $_GET['act']=='point'}class="a"{/if}><a href="plugin.php?id=aljbd&act=point">{lang aljbd:s78}</a></li>
+{/if}
+{if file_exists('source/plugin/aljbd/com/intro.php')}
+<li {if $_GET['act']=='intro'}class="a"{/if}><a href="plugin.php?id=aljbd&act=intro">{lang aljbd:s253}</a></li>
+{/if}
+{if file_exists('source/plugin/aljbd/com/good.php')}
+<li {if $_GET['act']=='goodslist'}class="a"{/if}><a href="plugin.php?id=aljbd&act=goodslist">{lang aljbd:s258}</a></li>
+{/if}
+</ul>

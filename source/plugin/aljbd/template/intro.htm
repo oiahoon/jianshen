@@ -1,4 +1,5 @@
 {template common/header}
+
 <script charset="$_G['charset']" src="source/plugin/aljbd/js/editor/kindeditor-min.js" reload="true"></script>
 <!--{if $_G['charset']=='gbk'}-->
 <script charset="gbk" src="source/plugin/aljbd/js/editor/lang/zh_CN.js" reload="true"></script>
@@ -8,7 +9,9 @@
 <script type="text/javascript" reload="true">
         KindEditor.ready(function(K) {
               window.editor = KindEditor.create('#intro');
+			  
         });
+		KindEditor.options.cssData = 'img { max-width:400px; }';
 </script>
 <div class="bm cl" id="pt">
 <div class="z">
@@ -41,6 +44,7 @@
 <tbody>
 <tr>
 <td style="padding:0;border:none;">
+
 <textarea name="intro"  id="intro" style="height:500px;width:800px;">$bd['intro']</textarea>
 <p style="margin-top:3px;">
 <button type="submit" name="submit" value="true" class="pn pnc"><strong>{lang aljbd:s35}</strong></button>	

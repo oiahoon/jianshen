@@ -22,13 +22,13 @@
   <!-- 轮播 E -->
   <!-- 登录模块  -->
   <div class="denglubox">
+    <div class="denglubox_1">
     <!--{if $_G['uid']}-->
-      <input type="text" name="username" id="ls_username" autocomplete="off" class="name_input" {if $_G['setting']['autoidselect']} value="{lang username}" onfocus="if(this.value == '{lang username}'){this.value = '';}" onblur="if(this.value == ''){this.value = '{lang username}';}"{/if} tabindex="901" />
-      <input type="password" name="password" id="ls_password" autocomplete="off" tabindex="902" class="password_input" value="请输入密码">
+
+
       <img src="uc_server/avatar.php?uid=$_G['uid']&size=middle" />
       <div class="quickico1">
-        <a class="misscode">已经登陆</a>
-        <a class="zc">注册</a>
+        <p>欢迎您，您已经登陆！</p>
       </div>
     <!--{else}-->
     
@@ -49,6 +49,7 @@
         <a class="zc">注册</a>
       </div>
     <!--{/if}-->
+    </div>
      <div class="quickico2">
       <a>会友微博</a>
       <a>会友微信</a>

@@ -27,10 +27,18 @@
 			<ul class="level1_ul">
 				<!--{loop $cat[subs] $value}-->
         <li class="level1_li">
-          <span><a href="{$portalcategory[$value['catid']]['caturl']}" class="xi2">$value[catname]</a></span>
+          <span><a  class="xi2">$value[catname]</a></span>
+          <!--多级分类-->
+          <!--{if $value[children]}-->
           <ul class="level2_ul">
-            <li class="level2_li"><a>三级导航</a></li>
+              
+              <!--{loop $value[children] $v}-->
+              <li class="level2_li"><a href="{portalcategory[$v]['caturl']}">{$portalcategory[$v][catname]}</a></li>
+              <!--{/loop}-->
+              
+            
           </ul>
+          <!--{/if}-->
          </li>
 				<!--{/loop}--> 
 			</ul>

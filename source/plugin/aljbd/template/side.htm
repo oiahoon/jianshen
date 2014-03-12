@@ -40,9 +40,9 @@
 <p class="category">
 <span>{lang aljbd:s159}</span>{if $typelist[$bd['subtype']]['subject']}{$typelist[$bd['subtype']]['subject']}{else}$typelist[$bd['type']]['subject']{/if} </p><dl class="aboutus cl">
 <dt>
-<span>{lang aljbd:s160}</span>
+<span>{lang aljbd:s132}</span>
 </dt>
-<dd>&#12288;&#12288;{eval echo mb_substr($bd['intro'],0,20,$_G['charset']);}...<a href="{if $config['isrewrite']}brand_shop_{$bd['id']}.html{else}plugin.php?id=aljbd&act=view&bid={$bd['id']}{/if}">[{lang aljbd:s161}]</a>
+<dd>&#12288;&#12288;{eval echo mb_substr($bd['other'],0,20,$_G['charset']);}...<a href="{if $config['isrewrite']}brand_shop_{$bd['id']}.html{else}plugin.php?id=aljbd&act=view&bid={$bd['id']}{/if}">[{lang aljbd:s161}]</a>
 </dd>
 </dl><div class="view">
 {lang aljbd:s162}<b>$bd['view']</b>{lang aljbd:s163}

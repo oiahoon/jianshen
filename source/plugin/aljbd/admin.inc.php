@@ -22,9 +22,6 @@ if($_GET['act']=='yes'){
 }else if($_GET['act']=='refuse'){
 	C::t('#aljbd#aljbd')->update_status_by_id($_GET['bid'],0);
 	cpmsg(lang('plugin/aljbd','s11'), 'action=plugins&operation=config&do='.$_GET['do'].'&identifier=aljbd&pmod=admin&act=yes', 'succeed');
-}else if($_GET['act']=='reject'){
-  C::t('#aljbd#aljbd')->update_status_by_id($_GET['bid'],2);
-  cpmsg(lang('plugin/aljbd','s11'), 'action=plugins&operation=config&do='.$_GET['do'].'&identifier=aljbd&pmod=admin', 'succeed');
 }else if($_GET['act']=='recommend'){
 	C::t('#aljbd#aljbd')->update_recommend_by_id($_GET['bid'],1);
 	cpmsg(lang('plugin/aljbd','s11'), 'action=plugins&operation=config&do='.$_GET['do'].'&identifier=aljbd&pmod=admin&act=yes', 'succeed');
@@ -55,8 +52,6 @@ if($_GET['act']=='yes'){
 				}
 			}
 		}
-		$actids = explode(',', preg_replace('#\s#', ',', $_POST['activities']));
-    $actids = array_slice(array_filter($actids, 'is_numeric'), 0, 5);
 		$updatearray=array(
 			'username'=>$_GET['username'],
 			'uid'=>$_GET['uid'],
@@ -66,49 +61,17 @@ if($_GET['act']=='yes'){
 			'intro'=>$_GET['intro'],
 			'other'=>$_GET['other'],
 			'type'=>$_GET['type'],
+			'subtype'=>$_GET['subtype'],
 			'region'=>$_GET['region'],
 			'subregion'=>$_GET['subregion'],
-			'activities' =>implode(',', $actids), 
 		);
-
-    // ########### 增加扩展信息 
-    $extesions = array(
-      // 咨询联系人
-      'contactuser' => $_POST['contactuser'],
-      // 营业时间
-      'timenormal'  => $_POST['timenormal'],
-      'timeweekend' => $_POST['timeweekend'],
-      // 商家网址
-      'url'         => $_POST['url'],
-      // 价格区间
-      'price_from'  => $_POST['price_from'],
-      'price_to'    => $_POST['price_to'],
-      // 配套服务
-      'bus'         => $_POST['bus'],        // 公交
-      'metro'       => $_POST['metro'],      // 地铁
-      'parking'     => $_POST['parking'],    // 停车信息
-      'shopping'    => $_POST['shopping'],   // 购物
-      'hospital'    => $_POST['hospital'],   // 医院
-      'bank'        => $_POST['bank'],       // 银行
-      'eatting'     => $_POST['eatting'],    // 吃饭
-    );
 		if($logo){
 			$updatearray['logo']=$logo;
 		}
 		C::t('#aljbd#aljbd')->update($_GET['bid'],$updatearray);
-    $extesion=C::t('#aljbd#aljbd_extensions')->fetch_by_bid($_GET['bid']);
-    if(!empty($extesion)){
-      C::t('#aljbd#aljbd_extensions')->update($extesion['id'],$extesions);
-    }
-    else{
-      $extesions['bid'] = $_GET['bid'];
-      C::t('#aljbd#aljbd_extensions')->insert($extesions);
-    }
-    
 		cpmsg(lang('plugin/aljbd','s13'), 'action=plugins&operation=config&do='.$_GET['do'].'&identifier=aljbd&pmod=admin&act=edit&bid='.$_GET['bid'], 'succeed');
 	}else{
 		$bd=C::t('#aljbd#aljbd')->fetch($_GET['bid']);
-    $extesions=C::t('#aljbd#aljbd_extensions')->fetch_by_bid($_GET['bid']);
 		$typelist=C::t('#aljbd#aljbd_type')->fetch_all_by_upid(0);
 		$rlist=C::t('#aljbd#aljbd_region')->fetch_all_by_upid();
 		include template('aljbd:aedit');
@@ -183,6 +146,7 @@ if($_GET['act']=='yes'){
 	include template('aljbd:admingg');
 }else if($_GET['act']=='mark'){
 	$bd=C::t('#aljbd#aljbd')->fetch($_GET['bid']);
+	//debug();
 	if(submitcheck('formhash','get')){
 		if($bd['uid']!=$_G['uid']&&$_G['groupid']!=1){
 			C::t('#aljbd#aljbd_point')->insert(array('uid'=>$_G['uid'],'username'=>$_G['username'],'bid'=>$_GET['bid'],'name'=>$bd['name'],'x'=>$_GET['x'],'y'=>$_GET['y'],'dateline'=>TIMESTAMP));
@@ -192,7 +156,7 @@ if($_GET['act']=='yes'){
 			echo lang('plugin/aljbd','s17');
 		}
 	}else{
-		include template('aljbd:mark');
+		include template('aljbd:adminmark');
 	}
 }else if($_GET['act']=='iwantclaim'){
 	if(submitcheck('formhash')){

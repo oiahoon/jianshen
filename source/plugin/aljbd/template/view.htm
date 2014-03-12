@@ -1,11 +1,5 @@
-{template common/header}
-{template common/header_common}
-<script src="source/plugin/aljbd/js/jquery.js" type="text/javascript" charset="utf-8"></script>
-<script type="text/javascript">
-var jq=jQuery.noConflict();
-</script>
-<link href="source/plugin/aljbd/css/common_store.css" type="text/css" rel="stylesheet">
-<script type="text/javascript">var cookiepre = 'VOz_', cookiedomain = '', cookiepath = '/';</script>
+{template aljbd:view_header}
+
     <script language="javascript">
     jq(function(){
         jQuery.fn.extend({
@@ -109,11 +103,15 @@ announcementScroll();
 
 <div class="intro_info mtm">
 <h2 class="viewtitle">{lang aljbd:s130}</h2>
+<style type="text/css">
+	#intro_content img{
+		max-width:400px;
+	}
+</style>
 <div id="intro_content">
 {$bd['intro']}
 </div>
-</div>
-<div class="intro_other mtm">wwwwwwwwwwwwwwwwwwwwwww
+</div><div class="intro_other mtm">
 <h2 class="viewtitle">{lang aljbd:s131}</h2>
 <table class="other_info">
 <tbody><tr>

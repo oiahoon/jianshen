@@ -1,0 +1,42 @@
+{template common/header_ajax}
+<script src="static/js/seditor.js" type="text/javascript" reload="1"></script>
+<h3 class="flb">
+  <em>{lang aljbd:s8}</em>
+    <span><a href="javascript:;" class="flbc" onclick="hideWindow('$_GET['handlekey']');" title="{lang close}">{lang close}</a></span>
+  
+</h3>
+<iframe name="formsubmit" width="1" height="1" ></iframe>
+<form id="addbc" method="post" action="plugin.php?id=aljbd&act=editacitivity"  target="formsubmit" enctype="multipart/form-data">
+<input name="formhash" type="hidden" value="{FORMHASH}" />
+<input name="bid" type="hidden" value="{$_GET['bid']}" />
+    <div class="c">
+        
+        
+          <table cellspacing="0" cellpadding="0" border="0">
+                
+          <tbody>
+        
+        <tr>
+        <td width="80" height="30"><span style="color:red;">*</span>店铺活动</td>
+        <td colspan="4">
+          <div class="tedt" style="width:100%;">
+            <div class="area" style="background:#FFF;">
+            <div class="bar">
+              <span>输入活动对应的帖子id,用英文逗号或者空格分割,限5个.</span>
+            </div>
+            <textarea fwin="apply" rows="5" cols="122" name="activities" class="pt" id="replymessage" style="background:#FFF;"> {$bd['activities']}</textarea>
+
+            </div>
+          </div>
+        </td>
+        </tr>
+        
+                                
+            </tbody></table>
+  
+</div>
+<p class="o pns">
+  <button type="submit" name="submit" value="true" class="pn pnc"><strong>{lang aljbd:s28}</strong></button>
+</p>
+</form>
+{template common/footer_ajax}

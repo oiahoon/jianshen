@@ -49,6 +49,7 @@ window.onerror=function(){return true;}
     /* banner */
     var n=0;
     oiahoon("div.num a").eq(0).addClass("on");
+    
       
    setInterval(function(){
        oiahoon("div.banner div.num a").removeClass("on"); 
@@ -118,31 +119,33 @@ window.onerror=function(){return true;}
             oiahoon(this).children("ul.level2_ul").show();
             }
         });
+    
    /*huiyuan zhanshi*/
-    var m=0;
-    var len=$("div.hyfcbox ul li").length-4;
-    oiahoon("div.hyfc a.more1_r").bind("click",function(){ 
-      if(m==len){     
-          
-          } 
-       else{ m++;
-      oiahoon("div.hyfcbox ul").css("position","absolute").animate({"left":-128*m+"px"},900);
-           } 
-
-
-        }); 
+        var m=0;
+        var len=oiahoon("div.hyfcbox ul li").length-4;
+        oiahoon("div.hyfc a.more1_r").bind("click",function(){ 
+          if(m==len){     
+              
+              } 
+           else{ m++;
+          oiahoon("div.hyfcbox ul").css("position","absolute").animate({"left":-128*m+"px"},900);
+               } 
+    
+    
+            }); 
+            
+           oiahoon("div.hyfc a.more1_l").bind("click",function(){ 
+          if(m==0){     
+              
+              } 
+           else{ m--;
+          oiahoon("div.hyfcbox ul").css("position","absolute").animate({"left":-128*m+"px"},900);
+               } 
+    
+    
+            });  
+         /*huiyuan zhanshi end*/
         
-       oiahoon("div.hyfc a.more1_l").bind("click",function(){ 
-      if(m==0){     
-          
-          } 
-       else{ m--;
-      oiahoon("div.hyfcbox ul").css("position","absolute").animate({"left":-128*m+"px"},900);
-           } 
-
-
-        });  
-     /*huiyuan zhanshi end*/
     }) 
 </script>
  <!--[if IE 6]>
@@ -276,14 +279,13 @@ window.onerror=function(){return true;}
         </div>
       </div>
        <div class="nav_sec">
-        <ul>
-          <!--{loop $_G['setting']['mynavs'] $nav}-->
-            <!--{if $nav['available'] && (!$nav['level'] || ($nav['level'] == 1 && $_G['uid']) || ($nav['level'] == 2 && $_G['adminid'] > 0) || ($nav['level'] == 3 && $_G['adminid'] == 1))}-->
-              <li class="nav_sec">$nav[code]</li>
-            <!--{/if}-->
-          <!--{/loop}-->
-          <div class="clear"></div>
-        </ul>
+       <ul>
+        <!--{loop $_G['setting']['mynavs'] $nav}-->
+        <!--{if $nav['available'] && (!$nav['level'] || ($nav['level'] == 1 && $_G['uid']) || ($nav['level'] == 2 && $_G['adminid'] > 0) || ($nav['level'] == 3 && $_G['adminid'] == 1))}-->
+          <li class="nav_sec">$nav[code]</li>
+        <!--{/if}-->
+      <!--{/loop}-->
+          <div class="clear"></div></ul>
         <!--{ad/subnavbanner/a_mu}-->
         <div class="searchbox">                                                                                                                                                     
           <!--{subtemplate common/pubsearchtop}-->                                                                                                                                 
