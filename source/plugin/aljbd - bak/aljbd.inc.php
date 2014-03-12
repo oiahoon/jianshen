@@ -33,20 +33,20 @@ if($_GET['act']=='attend'){
     $actids = explode(',', preg_replace('#\s#', ',', $_POST['activities']));
     $actids = array_slice(array_filter($actids, 'is_numeric'), 0, 5);
     $insertarray=array(
-      'username'    =>$_G['username'],
-      'uid'         =>$_G['uid'],
-      'name'        =>$_GET['name'],
-      'tel'         =>$_GET['tel'],
-      'logo'        =>$logo,
-      'addr'        =>$_GET['addr'],
-      'intro'       =>$_GET['intro'],
-      'other'       =>$_GET['other'],
-      'type'        =>$_GET['type'],
-      'subtype'     =>$_GET['subtype'],
-      'region'      =>$_GET['region'],
-      'subregion'   =>$_GET['subregion'],
-      'dateline'    =>TIMESTAMP,
-      'activities'  =>implode(',', $actids), 
+      'username'   =>$_G['username'],
+      'uid'        =>$_G['uid'],
+      'name'       =>$_GET['name'],
+      'tel'        =>$_GET['tel'],
+      'logo'       =>$logo,
+      'addr'       =>$_GET['addr'],
+      'intro'      =>$_GET['intro'],
+      'other'      =>$_GET['other'],
+      'type'       =>$_GET['type'],
+      'subtype'    =>$_GET['subtype'],
+      'region'     =>$_GET['region'],
+      'subregion'  =>$_GET['subregion'],
+      'dateline'   =>TIMESTAMP,
+      'activities' =>implode(',', $actids),
       );
 
     // ########### 增加扩展信息 

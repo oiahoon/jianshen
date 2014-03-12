@@ -89,20 +89,74 @@
 				</td>
 				</tr>
 				{/if}
+				
 				<tr>
-				<td width="80" height="30"><span style="color:red;"></span>{lang aljbd:s23}</td>
-				<td colspan="4">
-					<div class="tedt" style="width:100%;">
-					<input  name="other" class="pt" id="replymessage" style="background:#FFF;" value="{$bd['other']}">
-					</div>
-				</td>
-				</tr>
+		            <td width="80" height="30"><span style="color:red;">*</span>店铺活动</td>
+		            <td colspan="4"><input type="text" name="activities" class="px" style="width:120px;" value="$bd['activities']">
+		            <span style="color:#c00;">请输入活动的id, 用逗号或者空格分割</span>
+		            </td> 
+		          </tr>
+
+		          <tr>
+		            <td width="80" height="30"><span style="color:red;">*</span>联系人</td>
+		            <td colspan="4"><input type="text" name="contactuser" class="px" style="width:150px;" value="$extesions['contactuser']" ></td>
+		          </tr>
+
+		          <tr>
+		            <td width="80" height="30"><span style="color:red;">*</span>营业时间</td>
+		            <td colspan="4"><input type="text" name="timenormal" class="px" style="width:120px;" value="$extesions['timenormal']" ><span style="color:red;">&nbsp;到&nbsp;</span><input type="text" name="timeweekend" class="px" style="width:120px;" value="$extesions['timeweekend']" ></td>
+		          </tr>
+
+		          <tr>
+		            <td width="80" height="30"><span style="color:red;">*</span>商家网址</td>
+		            <td colspan="4"><input type="text" name="url" class="px" style="width:350px;" value="$extesions['url']" ></td>
+		          </tr>
+
+		          <tr>
+		            <td width="80" height="30"><span style="color:red;">*</span>价格区间</td>
+		            <td colspan="4">&yen;<input type="text" name="price_from" class="px" style="width:120px;" value="$extesions['price_from']" ><span style="color:red;">&nbsp;-&nbsp;</span>&yen;<input type="text" name="price_to" class="px" style="width:120px;" value="$extesions['price_to']" ></td>
+		          </tr>
+
+		          <tr>
+		            <td width="80" height="30"><span style="color:red;">*</span>公交</td>
+		            <td colspan="4"><input type="text" name="bus" class="px" style="width:350px;" value="$extesions['bus']" ></td>
+		          </tr>
+
+		          <tr>
+		            <td width="80" height="30"><span style="color:red;">*</span>地铁</td>
+		            <td colspan="4"><input type="text" name="metro" class="px" style="width:350px;" value="$extesions['metro']" ></td>
+		          </tr>
+
+		          <tr>
+		            <td width="80" height="30"><span style="color:red;">*</span>停车信息</td>
+		            <td colspan="4"><input type="text" name="parking" class="px" style="width:350px;" value="$extesions['parking']" ></td>
+		          </tr>
+
+		          <tr>
+		            <td width="80" height="30"><span style="color:red;">*</span>购物</td>
+		            <td colspan="4"><input type="text" name="shopping" class="px" style="width:350px;" value="$extesions['shopping']" ></td>
+		          </tr>
+
+		          <tr>
+		            <td width="80" height="30"><span style="color:red;">*</span>医院</td>
+		            <td colspan="4"><input type="text" name="hospital" class="px" style="width:350px;" value="$extesions['hospital']" ></td>
+		          </tr>
+
+		          <tr>
+		            <td width="80" height="30"><span style="color:red;">*</span>银行</td>
+		            <td colspan="4"><input type="text" name="bank" class="px" style="width:350px;" value="$extesions['bank']" ></td>
+		          </tr>
+
+		          <tr>
+		            <td width="80" height="30"><span style="color:red;">*</span>吃饭</td>
+		            <td colspan="4"><input type="text" name="eatting" class="px" style="width:350px;" value="$extesions['eatting']" ></td>
+		          </tr>
                                 
             </tbody></table>
 	
 </div>
 <p class="o pns">
-	<button type="submit" name="submit" value="true" class="pn pnc"><strong>{lang aljbd:s28}</strong></button>
+	<button type="submit" name="submit" value="true" class="pn pnc"><strong>重新提交审核</strong></button>
 </p>
 </form>
 {template common/footer_ajax}

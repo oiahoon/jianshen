@@ -27,7 +27,7 @@ var jq=jQuery.noConflict();
 <th>{lang aljbd:s80}</th><th>{lang aljbd:s81}</th><th>{lang aljbd:s82}</th><th>{lang aljbd:s83}</th><th>{lang aljbd:s84}</th><th>{lang aljbd:s85}</th><th>{lang aljbd:s86}</th>
 </tr>
 {loop $bdlist $bd}
-<tr class="header"><td>{$bd['id']}</td><td>{$bd['username']}</td><td>{$bd['name']}</td><td>{$typelist[$bd['type']]['subject']}</td><td>{$rlist[$bd['region']]['name']}</td><td>{eval echo gmdate('Y-m-d H:i:s',$bd['dateline']+8*3600);}</td><td><a href="plugin.php?id=aljbd&act=edit&bid={$bd['id']}" onclick="showWindow('edit',this.href)">{lang aljbd:s87}</a>
+<tr class="header"><td>{$bd['id']}</td><td>{$bd['username']}</td><td>{$bd['name']}</td><td>{$typelist[$bd['type']]['subject']}</td><td>{$rlist[$bd['region']]['name']}</td><td>{eval echo gmdate('Y-m-d H:i:s',$bd['dateline']+8*3600);}</td><td><a href="plugin.php?id=aljbd&act={if $_GET['act']!=reject }editacitivity{else}edit{/if}&bid={$bd['id']}" onclick="showWindow('edit',this.href)">{lang aljbd:s87}</a>
 {if file_exists('source/plugin/aljbd/com/mark.php')}
 <a href="plugin.php?id=aljbd&act=mark&bid={$bd['id']}" onclick="showWindow('edit',this.href)"><font color="red">{lang aljbd:s88}</font></a>
 {/if}

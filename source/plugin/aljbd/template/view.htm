@@ -1,3 +1,4 @@
+{template common/header}
 {template aljbd:view_header}
 
     <script language="javascript">
@@ -17,13 +18,13 @@
             jq(this).showWordCount();
         });
         }else{
-        	jq('textarea').bind('keyup mouseup', function() {
+          jq('textarea').bind('keyup mouseup', function() {
             jq(this).showWordCount();
         });
         }
         jq('textarea').each(function(){
-        	if(jq(this).val().length>0)
-        		jq(this).showWordCount();
+          if(jq(this).val().length>0)
+            jq(this).showWordCount();
         })
     });
     </script><div class="wp cl" id="bdw">
@@ -104,14 +105,16 @@ announcementScroll();
 <div class="intro_info mtm">
 <h2 class="viewtitle">{lang aljbd:s130}</h2>
 <style type="text/css">
-	#intro_content img{
-		max-width:400px;
-	}
+  #intro_content img{
+    max-width:400px;
+  }
 </style>
 <div id="intro_content">
 {$bd['intro']}
 </div>
-</div><div class="intro_other mtm">
+</div>
+
+<div class="intro_other mtm">
 <h2 class="viewtitle">{lang aljbd:s131}</h2>
 <table class="other_info">
 <tbody><tr>
@@ -120,6 +123,47 @@ announcementScroll();
 </tr>
 </tbody></table>
 </div>
+
+<!-- 新增字段 -->
+<div class="intro_base">
+  <div class="viewtitle cl">
+    <h2>扩展信息</h2>
+  </div>
+  <div class="content cl">
+    <p><span>联系人</span>{$extesion['contactuser']}</p>
+    <p><span>营业时间</span>平时:{$extesion['timenormal']}周末:{$extesion['timeweekend']}</p>
+    <p><span>商家网址</span>{$extesion['url']}</p>
+    <p><span>价格区间</span>{$extesion['price_from']}-{$extesion['price_to']}</p>
+    <p><span>公交车</span>{$extesion['bus']}</p>
+    <p><span>地铁</span>{$extesion['metro']}</p>
+    <p><span>停车信息</span>{$extesion['parking']}</p>
+    <p><span>购物</span>{$extesion['shopping']}</p>
+    <p><span>医院</span>{$extesion['hospital']}</p>
+    <p><span>银行</span>{$extesion['bank']}</p>
+    <p><span>吃饭</span>{$extesion['eatting']}</p>
+
+    
+
+    <p><span>活动</span>
+      <UL>
+        <!--{loop $articles $value}-->
+           <!--{eval $article_url = 'portal.php?mod=view&aid='.$value['aid'];}-->
+           <!--{eval $value['dateline'] = dgmdate($value['dateline']);}-->
+          <li><a href="$article_url">$value[title]</a>$value[dateline]</li>
+        <!--{/loop}-->
+      </UL>
+    </p>
+    <div class="shop_opt cl">
+    {if file_exists('source/plugin/aljbd/com/winfo.php')}
+    <span onclick="showWindow('winfo', 'plugin.php?id=aljbd&act=winfo&bid={$_GET['bid']}');" id="iwantcorrect" class="btn_nomal z">{lang aljbd:s128}</span>
+    {/if}
+    {if file_exists('source/plugin/aljbd/template/com/iwantclaim.htm')}
+    {template aljbd:com/iwantclaim}
+    {/if}
+    </div>
+</div>
+</div>
+<!-- .新增字段 -->
 
 <div id="messages" style="margin-top:15px;">
 <div class="message_tab cl">
@@ -272,7 +316,7 @@ $bd['name']&nbsp;&nbsp;&nbsp;<a href="javascript:;" class="replylink">{lang aljb
 {/loop}
 </div>
 <script charset="gbk" type="text/javascript">
-//	bindform('msgForm');
+//  bindform('msgForm');
 </script>
 <div class="comment"><!--comment form-->
 <script charset="gbk" type="text/javascript">
@@ -398,7 +442,7 @@ star_hover(rewardid,parseInt(oldscore[1]));
 </div>
 
 <script charset="gbk" type="text/javascript">
-//	bindform('msgForm');
+//  bindform('msgForm');
 </script></div>
 </div>
 {template aljbd:side}

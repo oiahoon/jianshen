@@ -8,32 +8,7 @@ var jq=jQuery.noConflict();
 </head>
 
 <body>
-<div class="topnav">
-<div class="navbg">
-<div class="wp">
-<a href="{if $config['isrewrite']}brand.html{else}plugin.php?id=aljbd{/if}" class="back"></a>
-<h1>
-<a href="{if $config['isrewrite']}brand.html{else}plugin.php?id=aljbd{/if}">{$bd['name']}</a>
-</h1>
-<div class="nav_wrap">
-<ul class="cl y">
-<li class="navlogo"><a href="./">{$_G['setting']['bbname']}</a></li>
-{if $_G['uid']}
-<li class="navname">
-<img width="20" height="20" src="{eval echo avatar($bd['uid'],'small',true)}" alt="avatar"><span>{$_G['username']}</span><a href="member.php?mod=logging&action=logout&formhash={FORMHASH}" rel="nofollow">[{lang aljbd:s116}]</a>
-</li>
-{else}
-<li class="navlogin">
-<a onclick="return showWindow('bdlogin', 'member.php?mod=logging&action=login&infloat=yes', 'get', 1);" href="javascript:;">{lang aljbd:s117}</a>
-</li>
-<li><a href="{$config['register']}" target="_blank">{lang aljbd:s118}</a></li>
-{/if}
-</ul>
-</div>
-</div>
-</div>
-<div class="shadow"></div>
-</div>
+
 <div class="wp" id="hdw">
 <div id="shop_info">
 <div class="thumb"><img width="120" height="120" alt="" src="{if file_exists($bd['logo'])}$bd['logo']{else}source/plugin/aljbd/images/zz.jpg{/if}">
