@@ -342,8 +342,6 @@ else if($_GET['act']=='gettype'){
   $aids = explode(',', $bd['activities']);
   $articles = C::t('portal_article_title')->fetch_all($aids);
 
-  print_r($aids);
-  print_r($articles);
   $tell=str_replace('{tel}',$bd['tel'],$config['tel']);
   require_once libfile('function/discuzcode');
   if(!file_exists('source/plugin/aljbd/com/intro.php')){

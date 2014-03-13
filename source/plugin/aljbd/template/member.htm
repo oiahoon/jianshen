@@ -34,7 +34,7 @@ var jq=jQuery.noConflict();
 {if file_exists('source/plugin/aljbd/com/gg.php')}
 <a href="plugin.php?id=aljbd&act=gg&bid={$bd['id']}" onclick="showWindow('edit',this.href)">{lang aljbd:s89}</a>
 {/if}
-<a href="plugin.php?id=aljbd&act=adv&bid={$bd['id']}" onclick="showWindow('edit',this.href)">{lang aljbd:s90}</a>
+<a href="plugin.php?id=aljbd&act=adv&bid={$bd['id']}" onclick="showWindow('edit',this.href)">轮播图</a>
 {if file_exists('source/plugin/aljbd/com/winfo.php')}
 <a href="plugin.php?id=aljbd&act=winfolist&bid={$bd['id']}" onclick="showWindow('edit',this.href)">{lang aljbd:s91}</a>
 {/if}
@@ -42,11 +42,15 @@ var jq=jQuery.noConflict();
 <a href="plugin.php?id=aljbd&act=iwantclaim&bid={$bd['id']}" onclick="showWindow('edit',this.href)"><font style="color:green">{lang aljbd:s245}</font></a>
 {/if}
 {if file_exists('source/plugin/aljbd/template/com/commentlist.htm')}
-{template aljbd:com/commentlist}
+  {template aljbd:com/commentlist}
 {/if}
-{if file_exists('source/plugin/aljbd/com/intro.php')}
-<a href="plugin.php?id=aljbd&act=intro&bid={$bd['id']}">{lang aljbd:s253}</a>
+
+{if $_GET['act']==reject }
+  {if file_exists('source/plugin/aljbd/com/intro.php')}
+  <a href="plugin.php?id=aljbd&act=intro&bid={$bd['id']}">{lang aljbd:s253}</a>
+  {/if}
 {/if}
+
 <a href="#"  onclick="showDialog('{lang aljbd:s249}','confirm','',function(){location.href='plugin.php?id=aljbd&act=delete&bid={$bd['id']}'});return false;">{lang aljbd:s7}</a>
 </td></tr>
 {/loop}
