@@ -51,12 +51,12 @@
     <!--{/if}-->
     </div>
      <div class="quickico2">
-      <a>会友微博</a>
-      <a>会友微信</a>
-      <a>会友信息</a>
+      <a href="$_G['setting']['site_weibo']">会友微博</a>
+      <a href="$_G['setting']['site_weixin']">会友微信</a>
+      <a href="$_G['setting']['site_xinxi']">会友信息</a>
       <div class="clear"></div>
     </div>
-    <span>咨询热线：028-88888888</span>
+    <span>咨询热线：<!--{if $_G['setting']['site_phone']}-->$_G['setting']['site_phone']<!--{/if}--></span>
   </div>
   <div class="clear"></div>
   <!-- eof 登录模块  -->
