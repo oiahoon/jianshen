@@ -1,5 +1,7 @@
 /* 重定义浏览器默认样式 */
 
+a:hover{text-decoration:none;}
+
 /* 文本分割线 */
 .pipe { margin:0 5px; color:#CCC; }
 /* 外边距样式，作用于元素的上下外边距，上下各具有 n, m, w 三个级别 */
@@ -193,7 +195,7 @@ text-shadow:-1px 0 0 #fff, 0 1px 0 #fff, 1px 0 0 #fff, 0 -1px 0 #fff;}
 #bdw{margin-top:10px;}
 /*main*/
 .main{float:left;width:715px;}
-.shop_notice{height:30px;background: #fff;border:1px solid #EEF0EB;line-height:30px;padding-left:10px;position: relative;z-index: 1;}
+.shop_notice{height:30px;background: #fff;border:1px solid #EEF0EB;line-height:30px;padding-left:10px;position: relative;z-index: 1;margin-top:10px;}
 .shop_notice span { background: url("../images/icon_s.gif") no-repeat -4px -97px;float: left;height: 0; margin:7px 5px 0 0; overflow: hidden; padding-top: 14px; width: 16px;}
 #shop_notice {float: left;font-family: "宋体";height: 30px;overflow: hidden;position: relative; width: 600px;}
 .notice_bt{float:right;margin:6px 10px 0 0;_margin-right:5px;}
@@ -242,8 +244,8 @@ text-shadow:-1px 0 0 #fff, 0 1px 0 #fff, 1px 0 0 #fff, 0 -1px 0 #fff;}
 #messages{position: relative;*margin-top:20px;_margin-top:0;}
 #messages .message_tab{background:#f7f7f7;position: relative;z-index: 10;}
 #messages .message_tab h3{line-height:30px;*line-height:34px;_line-height:30px;height:28px;overflow:hidden;font-size:12px;font-weight:400;color:#333;border-color: #dedede;border-style:solid;border-width: 1px 1px 0;position: relative;margin:0 -1px 0 0;background: #fff;border:1px solid #EEF0EB;float: left;padding:1px 20px 0;cursor:pointer;}
-#messages .message_tab .c{line-height:28px;*line-height:32px;_line-height:30px;font-size:14px;font-weight:700;border-color: #588C0E;border-width: 2px 1px 0;padding:0 20px 1px;left: 0px;bottom: -2px;margin-top:-1px;margin-right:-1px;z-index: 11;}
-#messages .details,#messages .remark,#messages .comment{background: #fff;border:1px solid #EEF0EB;border-top:1px solid #588c0e;position: relative;padding:20px;display:none;}
+#messages .message_tab .c{line-height:28px;*line-height:32px;_line-height:30px;font-size:14px;font-weight:700;border-color: #ff2a00;border-width: 2px 1px 0;padding:0 20px 1px;left: 0px;bottom: -2px;margin-top:-1px;margin-right:-1px;z-index: 11;}
+#messages .details,#messages .remark,#messages .comment{background: #fff;border:1px solid #ff2a00;border-top:1px solid #ff2a00;position: relative;padding:20px;display:none;}
 #messages .details.c,#messages .remark.c,#messages .comment.c{display: block;}
 .remark .viewtitle,.comment .viewtitle{line-height:30px;font-size: 14px;color:#666;padding-left:9px;background: #e9e9e9}
 .remark .viewtitle b,.comment .viewtitle b{color:#568c10;margin-left:9px;font-weight: 400;}
@@ -445,3 +447,43 @@ text-shadow:-1px 0 0 #fff, 0 1px 0 #fff, 1px 0 0 #fff, 0 -1px 0 #fff;}
 .originimg{position: relative;bottom: -1px;font-weight:400;background: url(../images/openoriginimg.gif) no-repeat 3px 3px ;padding-left:15px;margin-left:10px;}
 
 .xi1 s{color:#666;!important;}
+/*view*/
+.mainbox_view{width:908px;margin:0 auto;border:1px solid #d2d2d2;background-color:#fff;padding:25px 25px;}
+.mainbox_view div.top_des div.left_imgbox{float:left;width:290px;height:205px;margin-left:15px;padding:15px;border:1px solid #d2d2d2;background-color:#fff;}
+.mainbox_view div.top_des div.left_imgbox img{width:290px;height:205px;margin:0 auto}
+.mainbox_view div.top_des div.right_desbox{font:12px "微软雅黑";float:left;margin-left:30px;width:540px;}
+.mainbox_view div.top_des div.right_desbox span.title{float:left;font:bold 18px "微软雅黑";color:#de4a2d;padding:0px;}
+.mainbox_view div.top_des div.right_desbox span.clicktimes{float:right;font:12px "微软雅黑";color:#fff;background: url(../images/clicktimes.jpg) no-repeat 0 0;padding: 4px 27px 5px 35px;display:block;}
+.mainbox_view div.top_des div.right_desbox  p{line-height:30px;}
+.mainbox_view div.top_des div.right_desbox  p span.price{font:bold 18px "微软雅黑";color:#e4393c;}
+.mainbox_view div.top_des div.right_desbox div.time span.time1{float:left;}
+.mainbox_view div.top_des div.right_desbox div.time div.time2{float:left;font:12px "微软雅黑";color:#de4a2d;}
+.mainbox_view div.top_des div.right_desbox div.time div.time2 span.timebg_1{font:12px "微软雅黑";color:#fff;background-color:#de4a2d;padding:2px;margin:0 5px;}
+.mainbox_view div.top_des div.right_desbox  p a.website,.mainbox_view div.top_des div.right_desbox  p span.con_per,.mainbox_view div.top_des div.right_desbox  p span.address{font:12px "微软雅黑";color:#de4a2d;}
+.mainbox_view div.top_des div.right_desbox  p span.tel_bg{font:12px "微软雅黑";color:#3e3e3e;background: url(../images/tel_ico.jpg) no-repeat 0 0;padding-left:20px;margin-left:100px;}
+.product-detail{margin-top:20px;}
+.pro_tabbox{height: 31px;background: url(../images/tab_bg.gif) repeat-x;border-left:1px solid #e3e3e3;border-right:1px solid #e3e3e3;}
+.pro_tabbox ul.tab li{float:left;text-align:center;}
+.pro_tabbox ul.tab li a{padding: 0 13px;line-height: 28px;height:30px;}
+.pro_tabbox ul.tab li.on{padding: 0 13px;height:34px;margin-top:-6px;margin-left:-1px;background-color:#fff;border-top:3px solid #de4a2d;border-left:1px solid #e3e3e3;border-right:1px solid #e3e3e3;}
+.jianjie{padding:20px 10px;line-height:24px;}
+.active span.title,#messages span.title{font:bold 14px "微软雅黑";color:#ff2a00;padding:0;height:28px;border-bottom:1px solid #ff2a00;margin-bottom:30px;display:block;}
+.active ul{margin-top:15px;font:12px "宋体";color:#3e3e3e;}
+.active ul li{padding:12px 0;border-bottom: 1px dashed #e3e3e3;}
+.active ul li span{color:#999;margin-left:15px;}
+div.service{width:908px;margin-top:20px;}
+div.service ul.transportation{width:908px;padding-bottom:20px;background: url(../images/transportation.jpg) no-repeat 10px 5px #f9f9f9;}
+div.service ul.transportation li{margin-left:65px;width:843px;line-height:30px;padding-top:15px;}
+div.service ul.transportation li span{}
+div.service ul.transportation li span.title{font:12px "微软雅黑";color:#3e3e3e;background: url(../images/ico_list.jpg) no-repeat;padding-left:35px;}
+div.service ul.transportation li span.gongjiao{background-position:0px 0px;}
+div.service ul.transportation li span.ditie{background-position:0px -72px;}
+div.service ul.transportation li span.tingche{background-position:0px -114px;}
+div.service ul.message_my{margin-top:5px;width:908px;padding-bottom:20px;background: url(../images/message.jpg) no-repeat 10px 5px #f9f9f9;}
+div.service ul.message_my li{margin-left:65px;width:843px;line-height:30px;padding-top:15px;}
+div.service ul.message_my li span{}
+div.service ul.message_my li span.title{font:12px "微软雅黑";color:#3e3e3e;background: url(../images/ico_list.jpg) no-repeat;padding-left:35px;}
+div.service ul.message_my li span.shopping_my{background-position:0px -178px;}
+div.service ul.message_my li span.hospital_my{background-position:0px -240px;}
+div.service ul.message_my li span.bank_my{background-position:0px -305px;}
+div.service ul.message_my li span.food_my{background-position:0px -345px;}

@@ -10,18 +10,7 @@ var jq=jQuery.noConflict();
 <body>
 
 <div class="wp" id="hdw">
-<div id="shop_info">
-<div class="thumb"><img width="120" height="120" alt="" src="{if file_exists($bd['logo'])}$bd['logo']{else}source/plugin/aljbd/images/zz.jpg{/if}">
-</div>
-<div class="viewtitle cl">
-<div class="cl">
-<h2>{$bd['name']}</h2>
-</div>
-{if file_exists('source/plugin/aljbd/template/com/siteurl.htm')}
-{template aljbd:com/siteurl}
-{/if}
-</div>
-</div>
+
 <div id="slider_wrap">
 <div class="slideblock">
 <ul class="slideimg">
@@ -58,14 +47,7 @@ var jq=jQuery.noConflict();
 <div class="slidebar"></div>
 </div>
 </div>
-<div class="cl" id="main_menu">
-<ul>
-<li {if $_GET['act']=='view'}class="mouseover"{/if}><a title="{lang aljbd:s124}" href="{if $config['isrewrite']}brand_shop_{$bd['id']}.html{else}plugin.php?id=aljbd&act=view&bid={$bd['id']}{/if}"><span>{lang aljbd:s124}</span></a></li>
-{if file_exists('source/plugin/aljbd/com/good.php')}
-<li {if $_GET['act']=='good'||$_GET['act']=='goodview'}class="mouseover"{/if}><a title="{lang aljbd:s124}" href="{if $config['isrewrite']}brand_good_{$bd['id']}.html{else}plugin.php?id=aljbd&act=good&bid={$bd['id']}{/if}"><span>{lang aljbd:s257}</span></a></li>
-{/if}
-</ul>
-</div>
+
 </div>
 <div id="append_parent"></div>
 <script type="text/javascript">
