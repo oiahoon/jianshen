@@ -1,7 +1,7 @@
 {if $_GET['mod']=='admin'}
 {template common/header}
 {/if}
-{if file_exists('source/plugin/aljbd/com/intro.php')}
+
 <script charset="$_G['charset']" src="source/plugin/aljbd/js/editor/kindeditor-min.js" reload="true"></script>
 <!--{if $_G['charset']=='gbk'}-->
 <script charset="gbk" src="source/plugin/aljbd/js/editor/lang/zh_CN.js" reload="true"></script>
@@ -12,8 +12,9 @@
         KindEditor.ready(function(K) {
               window.editor = KindEditor.create('#intro');
         });
+        KindEditor.options.cssData = 'img { max-width:400px; }';
 </script>
-{/if}
+
 <form id="addbc" method="post" action="admin.php?action=plugins&operation=config&do={$_GET['do']}&identifier=aljbd&pmod=admin&act=edit&bid={$bd['id']}"  enctype="multipart/form-data">
 <input name="formhash" type="hidden" value="{FORMHASH}" />
 <input name="username" type="hidden" value="{$bd['username']}" />
@@ -82,7 +83,7 @@
         <tr>
         <td width="80" height="30"><span style="color:red;">*</span>{lang aljbd:s227}</td>
         <td colspan="4">
-          <textarea name="intro"  id="intro" style="height:500px;width:800px;">$bd['intro']</textarea>
+          <textarea name="intro" id="intro" style="height:500px;width:800px;">$bd['intro']</textarea>
         </td>
         </tr>
         

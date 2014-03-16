@@ -26,8 +26,6 @@
   <div class="denglubox">
     <div class="denglubox_1">
     <!--{if $_G['uid']}-->
-
-
       <img src="uc_server/avatar.php?uid=$_G['uid']&size=middle" />
       <div class="quickico1">
         <p>欢迎您，您已经登陆！</p>
@@ -190,7 +188,7 @@
   <div class="clear"></div>
   <div class="qm_fc">
     <div class="qm">
-      <p class="title">热门活动</p>
+      <p class="title">全民健身</p>
       <div class="left">
         <!--[diy=jianshen_door_011_120]--><div id="jianshen_door_011_120" class="area"></div><!--[/diy]-->
         <!--[diy=jianshen_door_011_119]--><div id="jianshen_door_011_119" class="area"></div><!--[/diy]-->

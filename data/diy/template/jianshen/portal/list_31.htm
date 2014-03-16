@@ -1,0 +1,97 @@
+<!--{template common/header}-->
+
+<!--{eval $list = array();}-->
+<!--{eval $wheresql = category_get_wheresql($cat);}-->
+<!--{eval $list = category_get_list($cat, $wheresql, $page);}-->
+<div class="neirong_weizi">
+    <span class="title">你当前所在位置：</span>
+    <a href="$_G[setting][navs][1][filename]">{lang nav_index}</a><span> > </span>
+    <!--{loop $cat[ups] $value}-->
+      <a href="{echo getportalcategoryurl($value[catid])}">$value[catname]</a><span> > </span>
+    <!--{/loop}-->
+    <a href="{echo getportalcategoryurl($cat[catid])}">$cat[catname]</a><span> > </span>
+    {lang view_content} 
+</div>
+
+<!--{ad/text/wp a_t}-->
+<style id="diy_style" type="text/css"></style>
+<div class="wp">
+  <!--[diy=diy1]--><div id="diy1" class="area"></div><!--[/diy]-->
+</div>
+
+
+<div id="ct" class="ct2 wp cl">
+  <div class="left_list_zixun">
+<!--{#// 发布按钮}-->
+<!--{if ($_G['group']['allowpostarticle'] || $_G['group']['allowmanagearticle'] || $categoryperm[$catid]['allowmanage'] || $categoryperm[$catid]['allowpublish']) && empty($cat['disallowpublish'])}-->
+  <a href="portal.php?mod=portalcp&ac=article&catid=$cat[catid]" class="y xi2 addnew">{lang article_publish}</a>
+<!--{/if}-->
+
+     <a href="{echo getportalcategoryurl($cat[catid])}"><span class="bgname">$cat[catname]</span></a>
+     <!--{if $cat[subs]}-->
+      <ul class="level1_ul">
+        <!--{loop $cat[subs] $value}-->
+        <li class="level1_li">
+          <span><a  class="xi2">$value[catname]</a></span>
+          
+          <!--多级分类-->
+          <!--{if $value[children]}-->
+          <ul class="level2_ul">
+              
+              <!--{loop $value[children] $v}-->
+              <li class="level2_li"><a href="{$portalcategory[$v]['caturl']}">{$portalcategory[$v][catname]}</a></li>
+              <!--{/loop}-->
+          </ul>
+          <!--{/if}-->
+
+         </li>
+        <!--{/loop}--> 
+      </ul>
+      <!--{/if}-->
+
+  </div>
+  <div class="right_list_zixun">
+    <!--{ad/articlelist/mbm hm/1}--><!--{ad/articlelist/mbm hm/2}-->
+    <!--[diy=listcontenttop]--><div id="listcontenttop" class="area"></div><!--[/diy]-->
+      
+      
+      <!--test-->
+      
+      <ul class="list_ul_zixun">
+        <!--{loop $list['list'] $value}-->
+        <!--{eval $highlight = article_title_style($value);}-->
+        <!--{eval $article_url = fetch_article_url($value);}-->
+        <li>
+          <a href="$article_url" target="_blank">
+            <!--{if $value[pic]}-->
+            <img src="$value[pic]"/>
+            <!--{/if}-->
+            <div class="list_zixun_box">
+              <p class="title">$value[title]</p>
+              <p class="lever_1"><span>admin</span>发表于<span>$value[dateline]</span></p>
+              <p class="lever_2">$value[summary]</p>
+            </div>
+            <div class="clear"></div>
+          </a>
+        </li>
+        <!--{/loop}-->
+      </ul>
+     <!--test-->
+     
+      
+      <!--[diy=listloopbottom]--><div id="listloopbottom" class="area"></div><!--[/diy]-->
+
+    <!--{ad/articlelist/mbm hm/3}--><!--{ad/articlelist/mbm hm/4}-->
+    <!--{if $list['multi']}--> {$list['multi']} <!--{/if}-->
+  
+    <!--[diy=diycontentbottom]--><div id="diycontentbottom" class="area"></div><!--[/diy]-->
+
+  </div>
+  </div>
+  
+
+<div class="wp mtn">
+  <!--[diy=diy3]--><div id="diy3" class="area"></div><!--[/diy]-->
+</div>
+
+<!--{template common/footer}-->
