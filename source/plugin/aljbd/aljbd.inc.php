@@ -68,6 +68,7 @@ if($_GET['act']=='attend'){
       'hospital'    => $_GET['hospital'],   // 医院
       'bank'        => $_GET['bank'],       // 银行
       'eatting'     => $_GET['eatting'],    // 吃饭
+      'qq'          => (int)$_GET['qq'],         // 联系qq
     );
     // ########### .增加扩展信息 
     $shop_id = C::t('#aljbd#aljbd')->insert($insertarray,true);
@@ -270,6 +271,7 @@ else if($_GET['act']=='gg'){
       'hospital'    => $_GET['hospital'], //医院
       'bank'        => $_GET['bank'],
       'eatting'     => $_GET['eatting'],
+      'qq'          => (int)$_GET['qq'],         // 联系qq
     );
     // ######### .增加扩展信息 
     if($logo){

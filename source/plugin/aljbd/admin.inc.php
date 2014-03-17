@@ -96,6 +96,7 @@ else if($_GET['act']=='recommend'){
       'hospital'    => $_POST['hospital'],   // 医院
       'bank'        => $_POST['bank'],       // 银行
       'eatting'     => $_POST['eatting'],    // 吃饭
+      'qq'          => (int)$_POST['qq'],         // 联系qq
     );
     // ########### .增加扩展信息
     if($logo){
