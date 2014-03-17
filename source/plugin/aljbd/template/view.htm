@@ -49,7 +49,11 @@
                   </div>
                   
                   <p>商家网址:<a class="website">{$extesion['url']}</a></p>
-                  <p>咨询联系人：<span class="con_per">{$extesion['contactuser']}</span>   <span class="tel_bg">tel:</span><span class="tel">$bd['tel']</span>QQ:<em>$extesion['qq']</em></p>
+                  <p>咨询联系人：<span class="con_per">{$extesion['contactuser']}</span>   <span class="tel_bg">tel:</span><span class="tel">$bd['tel']</span>
+                    <!--{if $extesion['qq']}-->
+                    <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin={$extesion['qq']}&site=qq&menu=yes"><img border="0" src="http://wpa.qq.com/pa?p=2:{$extesion['qq']}:51" alt="点击这里给我发消息" title="点击这里给我发消息"/></a>
+                    <!--{/if}-->
+                </p>
                   <p>营业地址：<span class="address">$bd['addr']</span> </p>
                 
                 </div>
